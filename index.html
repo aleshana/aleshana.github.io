@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Assignments and Material for the CIT 230 class">
+    <meta name="author" content="Alesha Anderson McCown">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alesha Anderson McCown's CIT 230 Homepage</title>
+    <link rel="stylesheet" href="../style.css">
+
+    <script>
+    function dateTime() {
+        var dateTimeValue = document.lastModified;
+        console.log("dateTimeValue = " + dateTimeValue);
+        document.getElementById('indexUpdate').innerHTML = "Last Updated  " + " " + dateTimeValue;
+    }
+    </script>
+
+</head>
+<body onload="dateTime()">
+    <div class ="content">
+
+<header>
+    <div class = "indexName">
+    <h1>Alesha Anderson McCown</h1> 
+    </div>
+    <img class = "indexProfilePix" src = "../images/ProfilePix2021.jpg" alt="Alesha's Profile Picture">
+</header>
+
+<main>
+   
+<h2>
+    CIT 230: Assignment Portal
+</h2>
+<hr>
+<ul>
+    <li>Lession 02: <a href = "index.htm">Assignment Link</a></li>
+    <li>Lession 03:<a href = "index.htm">Assignment Link</a></li>
+    <li>Lession 04:<a href = "index.htm"> Link</a> | <a href = "index.htm"> Link</a></li>
+</ul>
+</main>
+
+<footer>
+    <div class = "indexCopyright">
+    &copy;  2021 | Alesha Anderson McCown | Utah | BYU Online Learning
+    </div>
+    <br>
+    <div class= indexUpdate>
+    <div id = "indexUpdate"></div>
+</div>
+</footer>
+</div>
+</body>
+</html>

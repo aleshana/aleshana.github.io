@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Roboto&display=swap');
+
+/* Color Scheme Link: https://coolors.co/0d1821-344966-e6aace-f0f4ef-bfcc94
+  2nd Choice Color Scheme Link : https://coolors.co/363d45-a1b5d8-fffcf7-e4f0d0-c2d8b9
+  2nd Font Ideas: Boogaloo, Patrick Hand, Lobster Two
+*/
+
+body {
+  font-family: 'Roboto', Verdana, Tahoma, sans-serif; 
+  font-size: 18px;
+  background-color:#BFCC94;
+
+}
+
+.content {
+  padding: 1em;
+  margin: 0 auto;
+  line-height: 1.6em;
+  background-color: #F0F4EF;
+  max-width: 60%;
+  color: #011638;
+
+}
+
+h1 {
+  font-family: "Delius Swash Caps", cursive, sans-serif;
+  font-size: 2.50m;
+  color: #F0F4EF;
+  
+}
+
+h2 {
+  color:#344966;
+}
+
+.indexName {
+  border-radius: 1em;
+  background: #344966;
+  padding: 1em;
+  padding-left: 5em;
+  
+}
+
+.indexProfilePix {
+  width: 9em;
+  float: right;
+  position: relative;
+  bottom: 5em;
+  right: .5em;
+  /*padding: 1em;*/
+  margin-bottom: -50em; 
+  border: 0;
+  box-shadow: 0 0 1em 1em #E6AACE;
+  
+}
+
+footer {
+  line-height: .75em;
+  text-align: center;
+  border-radius: 1em;
+  background: #E6AACE;
+  padding: 1em;
+}
+
+.indexUpdate {
+  color: #344966;
+  font-size: 75%;
+}  
+  
+
+
+
+
+/*.indexName {
+
+}
+
+*/
