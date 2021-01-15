@@ -1,6 +1,6 @@
 <!DOCTYPE html> 
 <html lang="en">
-<!-- testing comment 2nd try-->
+
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Assignments and Material for the Web Development and Design 230 class for the Winter Semester 2021">
@@ -8,18 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alesha Anderson McCown's WDD 230 Homepage</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="../style.css">
-
-    <script>
-    function dateTime() {
-        var dateTimeValue = document.lastModified;
-        console.log("dateTimeValue = " + dateTimeValue);
-        document.getElementById('indexUpdate').innerHTML = "Last Updated  " + " " + dateTimeValue;
-    }
-    </script>
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
-<body onload="dateTime()">
+<body>
     <div class ="content">
 
 <header>
@@ -36,7 +28,7 @@
 </h2>
 <hr>
 <ul>
-    <li>Lession 02: <a href = "index.html">Assignment Link</a></li>
+    <li>Lession 02:<a href = "index.html">Assignment Link</a></li>
     <li>Lession 03:<a href = "index.html">Assignment Link</a></li>
     <li>Lession 04:<a href = "index.html"> Link</a> | <a href = "index.html"> Link</a></li>
 </ul>
@@ -44,15 +36,18 @@
 
 <footer>
     <div class = "indexCopyright">
-    &copy;  2021 | Alesha Anderson McCown | Utah | <a href = "https://www.byui.edu/online">BYU Online Learning</a>
+    &copy;<span id = "currentYear"></span> | Alesha Anderson McCown | Utah | <a href = "https://www.byui.edu/online">BYU Online Learning</a>
     </div>
        <br>
     <div class= indexUpdate>
     <div id = "indexUpdate">
     </div>
+    <script src = "js/modifiedDate.js"></script>
+    <script src = "js/currentYear.js"></script>
 </div>
 </footer>
 </div>
 </body>
 
 </html>
+
