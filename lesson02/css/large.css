@@ -1,0 +1,52 @@
+@media (min-width: 64em){
+
+  #content {
+    line-height: 1.6em;
+    max-width: 960px;
+  
+}
+
+.gridBox {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 1em;
+
+}
+.firstPrinciple {
+  height: 2.25em;
+ 
+  }
+  
+  .secondPrinciple{
+    height: 2.25em;
+  
+  }
+  
+  .thirdPrinciple {
+    height: 2.25em;
+  
+  }
+  
+
+.firstColumn{
+  border: .5em solid #36171f;
+  border-radius: .25em;
+}
+
+.secondColumn{
+  border: .5em solid #36171f;
+  border-radius: .5em;
+}
+
+.thirdColumn{
+  border: .5em solid #36171f;
+  border-radius: .5em;
+} 
+
+footer {
+  max-width: 960px;
+  padding: 0;
+  margin: -1em;
+  }
+}

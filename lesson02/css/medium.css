@@ -1,0 +1,45 @@
+@media (min-width: 32.5em){
+
+  #content {
+    line-height: 1.6em;
+   }
+
+.gridBox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 1em;
+
+}
+.firstPrinciple {
+  height: 2.25em;
+  
+  }
+  
+  .secondPrinciple{
+    height: 2.25em;
+  
+  }
+  
+  .thirdPrinciple {
+    height: 2.25em;
+    
+  }
+  
+
+
+.firstColumn{
+  border: .5em solid #36171f;
+  border-radius: .25em;
+}
+
+.secondColumn{
+  border: .5em solid #36171f;
+  border-radius: .25em;
+}
+
+.thirdColumn{
+  border: .5em solid #36171f;
+  border-radius: .25em;
+} 
+}

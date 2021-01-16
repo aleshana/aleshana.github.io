@@ -1,0 +1,32 @@
+
+    #content {
+      line-height: 1.6em;
+    
+  }
+  
+  .gridBox {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    
+  }
+
+  .firstColumn{
+    border: .5em solid #36171f;
+    border-radius: .25em;
+    margin-bottom: .5em;
+  }
+  
+  .secondColumn{
+    border: .5em solid #36171f;
+    border-radius: .25em;
+    margin-bottom: .5em;
+  }
+  
+  .thirdColumn{
+    border: .5em solid #36171f;
+    border-radius: .25em;
+    margin-bottom: .5em;
+  } 
+
+    
