@@ -1,15 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Roboto&display=swap');
-
-/* Design Notes:
-  Color Scheme Link: https://coolors.co/0d1821-344966-e6aace-f0f4ef-bfcc94
+/* Color Scheme Link: https://coolors.co/0d1821-344966-e6aace-f0f4ef-bfcc94
   2nd Choice Color Scheme Link : https://coolors.co/363d45-a1b5d8-fffcf7-e4f0d0-c2d8b9
   2nd Font Ideas: Boogaloo, Patrick Hand, Lobster Two
-  Test comment 2
-  
 */
 
 body {
-  font-family: 'Roboto', Verdana, Tahoma, sans-serif; 
+  font-family: 'Roboto', 'Open Sans' , Tahoma, sans-serif; 
   font-size: 18px;
   background-color:#BFCC94;
 
@@ -26,8 +21,8 @@ body {
 }
 
 h1 {
-  font-family: "Delius Swash Caps", cursive, sans-serif;
-  font-size: 2em;
+  font-family: "Delius Swash Caps", 'Boogaloo', cursive, sans-serif;
+  font-size: 2.50m;
   color: #F0F4EF;
   
 }
@@ -46,10 +41,8 @@ h2 {
 
 .indexProfilePix {
   width: 9em;
-  float: right;
-  position: relative;
   bottom: 5em;
-  right: 1em;
+  right: .5em;
   /*padding: 1em;*/
   margin-bottom: -50em; 
   border: 0;
