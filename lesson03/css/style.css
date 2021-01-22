@@ -1,0 +1,113 @@
+/* Color Scheme Link : https://coolors.co/363d45-a1b5d8-fffcf7-e4f0d0-c2d8b9
+Charcoal: #363D45
+Wild Blue Yonder: #a1b5d8
+Floral White: #fffcf7
+Nyanza: #e4f0d0 (light green)
+Tea Green: C2d8b9
+
+font-family: 'Boogaloo', cursive;
+font-family: 'Noto Sans JP', sans-serif;
+
+Font Ideas: Boogaloo, Patrick Hand, Lobster Two
+*/
+
+body {
+  font-family: 'Noto Sans JP', Tahoma, sans-serif; 
+  font-size: 18px;
+  background-color: #c2d8b9;
+
+}
+
+.content {
+  padding: 1em;
+  margin: 0 auto;
+  line-height: 1.6em;
+  background-color: #fffcf7;
+  color: #363d45;
+
+}
+
+h1 {
+  font-family: 'Boogaloo', cursive;
+  font-size: 2.75rem;
+  color: #363d45;
+  background-color: #a1b5d8;
+  padding: .75em .5em;
+  
+}
+
+h2 {
+  color:#e4f0d0;
+  background-color: #363d45;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 1.75rem;
+  padding: .5em
+}
+
+h3 {
+  font-family: 'Boogaloo', cursive;
+  font-size: 1.5rem;
+  color: #363d45;
+  background-color: #a1b5d8;
+  padding: .5em;
+}
+
+h4{
+  padding: .5em;
+}
+
+nav {
+  background-color: #363d45;
+  text-align: left;
+}
+
+nav ul{
+  /* display: grid;
+  grid-template-columns: repeat(6, minmax(min-content, max-content)); 
+  grid-gap: 3rem; */
+  display:flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /* justify-content: space-evenly; */
+}
+  
+  nav ul li { 
+    flex: 1 1 100%; 
+  }
+
+
+
+
+nav li a {
+  display: block;
+  color:#E4F0D0;
+  display: block;
+  text-align: left;
+  text-decoration: none;
+  padding: .5em;
+  font-size: 1.25rem;
+
+}
+
+nav a:hover { 
+  color: #363d45;
+  background: #E4F0D0
+ }
+
+
+
+footer {
+  line-height: .75em;
+  text-align: center;
+  border-radius: 1em;
+  background: #e4f0d0;
+  padding: 1em;
+}
+
+.indexUpdate {
+  color: #344966;
+  font-size: 75%;
+}  
+  
