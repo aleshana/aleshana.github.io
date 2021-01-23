@@ -1,7 +1,58 @@
 @media (min-width: 32.5em){
 
-    .indexProfilePix {
-        float: right;
-               
-      }
+.content {
+    max-width: 42rem;
+  }
+
+ nav ul li a  { 
+  flex: 1 1 100%; 
+  font-size: 1.25rem;
+}
+
+.colorGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  background: gray;
+  padding: 0;
+  margin:0;
+  
+}
+
+h1 {
+  font-size: 2.25rem;
+  padding: .75em .5em;
+  
+}
+
+h2 {
+ 
+  text-shadow: 2px 1px #363d45;
+  font-size: 1.75rem;
+  padding: .5em
+}
+
+h3 {
+  font-family: 'Boogaloo', cursive;
+  font-size: 1.5rem;
+  color: #363d45;
+  background-color: #e4f0d0;
+  /* color:#363d45; */
+  /* background-color: #363d45; */
+  padding: .5em;
+}
+
+h4{
+  padding: .5em;
+}
+
+footer {
+  line-height: 1em;
+  padding: 1em;
+}
+
+.indexUpdate {
+  font-size: 75%;
+}  
+
 }

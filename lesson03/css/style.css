@@ -21,7 +21,7 @@ body {
 .content {
   padding: 1em;
   margin: 0 auto;
-  line-height: 1.6em;
+  line-height: 2em;
   background-color: #fffcf7;
   color: #363d45;
 
@@ -29,65 +29,54 @@ body {
 
 h1 {
   font-family: 'Boogaloo', cursive;
-  font-size: 2.75rem;
   color: #363d45;
   background-color: #a1b5d8;
-  padding: .75em .5em;
-  
+    
 }
 
 h2 {
-  color:#e4f0d0;
-  background-color: #363d45;
+  color: #FFC100;
   font-family: 'Noto Sans JP', sans-serif;
-  font-size: 1.75rem;
-  padding: .5em
-}
+  text-decoration-line: underline;
+  text-decoration-color: #a1b5d8;
+  }
 
 h3 {
   font-family: 'Boogaloo', cursive;
-  font-size: 1.5rem;
   color: #363d45;
-  background-color: #a1b5d8;
-  padding: .5em;
+  background-color: #e4f0d0;
+  
 }
 
-h4{
-  padding: .5em;
+p {
+  padding: 0 .5em;
 }
+
 
 nav {
+  /* display: flex; */
   background-color: #363d45;
-  text-align: left;
+  text-align: center;
+  /* align-items: left;
+  justify-items: center; */
 }
 
 nav ul{
-  /* display: grid;
-  grid-template-columns: repeat(6, minmax(min-content, max-content)); 
-  grid-gap: 3rem; */
   display:flex;
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  /* justify-content: space-evenly; */
+  justify-content: space-between;
 }
   
-  nav ul li { 
-    flex: 1 1 100%; 
-  }
-
-
-
-
-nav li a {
-  display: block;
+nav ul li a {
+  display:block;
   color:#E4F0D0;
-  display: block;
-  text-align: left;
+  text-align: center;
   text-decoration: none;
-  padding: .5em;
-  font-size: 1.25rem;
+  padding: .75em;
+  /* line-height: 200%; */
 
 }
 
@@ -99,15 +88,61 @@ nav a:hover {
 
 
 footer {
-  line-height: .75em;
   text-align: center;
-  border-radius: 1em;
   background: #e4f0d0;
-  padding: 1em;
 }
 
+.indexTitle {
+  text-align: center;
+}
 .indexUpdate {
   color: #344966;
-  font-size: 75%;
+  
 }  
   
+/* css codes for the index page only
+   */
+
+.indexPurpose {
+  background-color: #a1b5d8;
+  padding-bottom: 1em;
+}
+
+/* css codes for the color scheme page
+   */
+.color1 {
+  background-color:#363D45;
+  color: #fffcf7;
+  padding: 2.5em;
+  margin: .5em;
+}
+
+.color2 {
+  background-color:#ffc100;
+  padding: 2.5em;
+  margin: .5em;
+}
+
+.color3 {
+  background-color:#a1b5d8;
+  padding: 2.5em;
+  margin: .5em;
+}
+
+.color4 {
+  background-color:#fffcf7;
+  padding: 2.5em;
+  margin: .5em;
+
+ }
+.color5 {
+  background-color:#e4f0d0;
+  padding: 2.5em;
+  margin: .5em;
+}
+.color6 {
+  background-color:#c2d8b9;
+  padding: 2.5em;
+  margin: .5em;
+}
+

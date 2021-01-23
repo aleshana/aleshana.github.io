@@ -5,6 +5,49 @@
     max-width: 52rem;
   }
 
+  .colorGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 2em;
+    background:grey;
+    padding: 0;
+    margin:0;
+  }
+  nav ul li a  { 
+    flex: 1 1 100%; 
+    font-size: 1.75rem;
+  }
 
+  h1 {
+    font-size: 2.75rem;
+    padding: .75em .5em;
+    
+  }
   
+  h2 {
+    color: #FFC100;
+    text-shadow: 2px 1px #363d45;
+    font-size: 2rem;
+    padding: .5em
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    padding: .5em;
+  }
+  
+  h4{
+    padding: .5em;
+  }
+
+  footer {
+    line-height: 1em;
+    padding: 1em;
+  }
+  
+    .indexUpdate {
+      font-size: 75%;
+  }  
 }
+
