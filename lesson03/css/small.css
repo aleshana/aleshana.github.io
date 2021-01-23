@@ -1,6 +1,6 @@
-nav ul li { 
+/* nav ul li { 
    font-size: 1.5rem;
-  }
+  } */
   
   .colorGrid {
     display: grid;
@@ -11,7 +11,8 @@ nav ul li {
   }
 
   nav ul li a {
-    font-size: .5em;
+    font-size: .90em;
+    padding: 0;
   }
 
   h1 {

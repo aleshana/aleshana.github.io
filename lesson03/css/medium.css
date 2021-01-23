@@ -1,12 +1,17 @@
-@media (min-width: 32.5em){
+@media (min-width: 37.5em){
 
-.content {
-    max-width: 42rem;
-  }
+
+nav ul {
+  display:flex;
+}
+
+nav li {
+  flex: 1 1 100%;
+  
+}
 
  nav ul li a  { 
-  flex: 1 1 100%; 
-  font-size: 1.25rem;
+    font-size: 1.25rem;
 }
 
 .colorGrid {

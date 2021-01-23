@@ -21,7 +21,7 @@ body {
 .content {
   padding: 1em;
   margin: 0 auto;
-  line-height: 2em;
+  line-height: 1.8em;
   background-color: #fffcf7;
   color: #363d45;
 
@@ -39,7 +39,7 @@ h2 {
   font-family: 'Noto Sans JP', sans-serif;
   text-decoration-line: underline;
   text-decoration-color: #a1b5d8;
-  }
+   }
 
 h3 {
   font-family: 'Boogaloo', cursive;
@@ -47,27 +47,28 @@ h3 {
   background-color: #e4f0d0;
   
 }
+h5 {
+  background-color:#363d45;
+  color: #fffcf7;
+  padding: 0 .5em;
+}
 
 p {
   padding: 0 .5em;
 }
 
-
 nav {
-  /* display: flex; */
-  background-color: #363d45;
+   background-color: #363d45;
   text-align: center;
-  /* align-items: left;
-  justify-items: center; */
+  
 }
 
 nav ul{
-  display:flex;
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  justify-content: space-between;
+ 
 }
   
 nav ul li a {
@@ -76,8 +77,8 @@ nav ul li a {
   text-align: center;
   text-decoration: none;
   padding: .75em;
-  /* line-height: 200%; */
-
+ 
+ 
 }
 
 nav a:hover { 
@@ -85,15 +86,17 @@ nav a:hover {
   background: #E4F0D0
  }
 
-
-
 footer {
   text-align: center;
   background: #e4f0d0;
 }
 
 .indexTitle {
+  display: block;
   text-align: center;
+  height: 6em;
+  background-color: #a1b5d8;
+  
 }
 .indexUpdate {
   color: #344966;
@@ -107,6 +110,12 @@ footer {
   background-color: #a1b5d8;
   padding-bottom: 1em;
 }
+
+.indexDomain {
+  background-color: #a1b5d8;
+  padding-bottom: 1em;
+}
+
 
 /* css codes for the color scheme page
    */
