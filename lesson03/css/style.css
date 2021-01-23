@@ -35,10 +35,11 @@ h1 {
 }
 
 h2 {
-  color: #FFC100;
+  color: #363d45;
+  /* background-color: #FFC100; */
   font-family: 'Noto Sans JP', sans-serif;
-  text-decoration-line: underline;
-  text-decoration-color: #a1b5d8;
+  /* text-decoration-line: underline overline;
+  text-decoration-color:#FFC100; */
    }
 
 h3 {
@@ -55,6 +56,13 @@ h5 {
 
 p {
   padding: 0 .5em;
+}
+
+hr {
+  /* color: #FFC100; */
+  border: 5px solid #ffc100;
+  
+
 }
 
 nav {
@@ -96,7 +104,7 @@ footer {
   text-align: center;
   height: 6em;
   background-color: #a1b5d8;
-  
+  margin-bottom: -1.5em;  
 }
 .indexUpdate {
   color: #344966;
