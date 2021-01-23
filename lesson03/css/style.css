@@ -48,10 +48,16 @@ h3 {
   background-color: #e4f0d0;
   
 }
-h5 {
+h4 {
   background-color:#363d45;
   color: #fffcf7;
-  padding: 0 .5em;
+  padding: 0 .75em;
+}
+
+h5 {
+  background-color: #ffc100;
+  color: #363d45;
+  padding: 0 .75em;
 }
 
 p {
@@ -95,6 +101,7 @@ nav a:hover {
  }
 
 footer {
+  margin-top: -1em;
   text-align: center;
   background: #e4f0d0;
 }
@@ -136,29 +143,34 @@ footer {
 
 .color2 {
   background-color:#ffc100;
+  color: #363D45;
   padding: 2.5em;
   margin: .5em;
 }
 
 .color3 {
   background-color:#a1b5d8;
+  color: #363D45;
   padding: 2.5em;
   margin: .5em;
 }
 
 .color4 {
   background-color:#fffcf7;
+  color: #363D45;
   padding: 2.5em;
   margin: .5em;
 
  }
 .color5 {
   background-color:#e4f0d0;
+  color: #363D45;
   padding: 2.5em;
   margin: .5em;
 }
 .color6 {
   background-color:#c2d8b9;
+  color: #363D45;
   padding: 2.5em;
   margin: .5em;
 }
