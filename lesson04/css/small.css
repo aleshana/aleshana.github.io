@@ -1,0 +1,250 @@
+/* /* Color Scheme Link : https://coolors.co/363d45-a1b5d8-fffcf7-e4f0d0-c2d8b9
+Charcoal: #363D45
+Wild Blue Yonder: #a1b5d8
+Floral White: #fffcf7
+Nyanza: #e4f0d0 (light green)
+Tea Green: C2d8b9
+
+font-family: 'Boogaloo', cursive;
+font-family: 'Noto Sans JP', sans-serif;
+
+Font Ideas: Boogaloo, Patrick Hand, Lobster Two
+*/
+
+body {
+    font-family: 'Noto Sans JP', Tahoma, sans-serif; 
+    font-size: 18px;
+    background-color: #c2d8b9;
+    padding: 0;
+  
+  }
+  
+  .content {
+    padding: 4px;
+    margin: 0 auto;
+    line-height: 1.8em;
+    background-color: #fffcf7;
+    color: #363d45;
+    max-width: 90%;
+  
+  }
+  
+  h1 {
+    font-family: 'Boogaloo', cursive;
+    color: #363d45;
+    background-color: #a1b5d8;
+    padding: 2px;
+      
+  }
+  
+  h2 {
+    color: #363d45;
+    font-family: 'Noto Sans JP', sans-serif;
+    /* text-decoration-line: underline overline;
+    text-decoration-color:#FFC100; */
+     }
+  
+  h3 {
+    font-family: 'Boogaloo', cursive;
+    color: #363d45;
+    background-color: #e4f0d0;
+    
+  }
+  h4 {
+    background-color:#363d45;
+    color: #fffcf7;
+    padding: 0 .75em;
+  }
+  
+  h5 {
+    background-color: #ffc100;
+    color: #363d45;
+    padding: 0 .75em;
+  }
+  
+  p {
+    padding: 0 .5em;
+  }
+  
+  hr {
+    /* color: #FFC100; */
+    border: 3px solid #ffc100;
+    padding:0;
+    margin:0;
+  
+  }
+
+  /* Header Bar and Navigation css */
+
+  header {
+    text-align: center;
+    justify-content: center;
+    background-color: #a1b5d8;
+    display: flex;
+    padding: 4px;
+
+
+  }
+
+  .logoImg {
+    width: 25%;
+    height: 25%;
+    padding: 4px;
+    
+  }
+  
+  .mainHeading {
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+    
+  }
+
+  .mainTagline {
+      padding: 0;
+      margin: 0;
+      font-size: .85em;
+  }
+
+  .titleBar {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    
+      }
+
+
+      /* Navigation css */
+
+      nav {
+        background-color: hsl(212, 12%, 24%);
+        text-align: center;
+        margin: 0 auto;
+        max-width: 760px;
+     
+      
+     }
+    
+     .navigation{
+        list-style: none;
+        text-align: center;
+        padding: 0;
+        
+     }
+     
+     nav ul{
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+       overflow: hidden;
+      
+     }
+    
+     .navigation li:first-child {
+        display: block;
+       
+    
+     }
+        
+    .navigation li {
+            display: none;
+            color: #ffc100;
+    }
+    
+    .responsive li {
+        display: block;
+        text-align: center;
+    }
+    
+    .navigation a {
+       display:block;
+       color: #ffc100;
+       text-decoration: none;
+       padding: .75em;
+      
+     }
+     
+     nav a:hover { 
+       color: #363d45;
+       background: #ffc100;
+      }
+    
+    nav a:active {
+        background-color: #a1b5d8;
+        color: #363d45;
+      }
+
+    .active a {
+        background-color: #a1b5d8;
+        color: #363d45;
+    }
+
+  
+/* 
+Main Section css */
+
+  .heroSummaryDiv{
+    display: block;
+    margin: 10px auto;
+    border: 1px dashed;
+    padding: 15px;
+    background-color:#e4f0d0 ;
+    color:#344966 ;
+    font-style: italic;
+
+  }
+
+
+  .forecastDiv{
+    display: block;
+    margin: 10px auto;
+    border: 1px dashed;
+    padding: 15px;
+    background-color:#e4f0d0 ;
+    color: #344966;
+    font-style: italic;
+  }
+
+
+  .articleDiv{
+    display: block;
+    margin: 10px auto;
+    border: 1px dashed;
+    padding: 15px;
+    background-color:#e4f0d0 ;
+    color:#344966 ;
+    font-style: italic;
+  }
+
+  .contactDiv{
+    display: block;
+    margin: 10px auto;
+    border: 1px dashed;
+    padding: 15px;
+    background-color:#e4f0d0;
+    color:#344966 ;
+    font-style: italic;
+  }
+
+  /* 
+  Main footer css */
+ 
+ .footerBar {
+    padding: .75em;
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+    background:#a1b5d8;
+    font-size: .70em;
+    line-height: 1.25em;
+  }
+  
+  
+   .currentDate {
+     color: #344966;
+     font-size: .80em;
+     
+   }  
