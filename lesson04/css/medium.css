@@ -11,10 +11,14 @@
     max-width: 960px;
     padding: .3em;
     margin: 0;
+    justify-content: center;
+    text-align: center;
   }
 
+  
    .navigation {
     display: flex;
+    
   }
   
   .navigation li {

@@ -240,11 +240,13 @@ Main Section css */
     background:#a1b5d8;
     font-size: .70em;
     line-height: 1.25em;
+    /* font-weight: bold; */
   }
   
   
    .currentDate {
      color: #344966;
      font-size: .80em;
+     font-weight: bold;
      
    }  
