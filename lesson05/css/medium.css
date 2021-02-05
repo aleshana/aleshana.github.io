@@ -1,0 +1,107 @@
+@media (min-width: 32.5rem){
+
+
+  .content {
+    max-width: 90%;
+  }
+
+/* Navigation scaling adjustments for Medium*/
+
+  nav {
+    max-width: 960px;
+    padding: .3em;
+    margin: 0;
+    justify-content: center;
+    text-align: center;
+  }
+
+  
+   .navigation {
+    display: flex;
+    
+  }
+  
+  .navigation li {
+    display: flex;
+    flex: 1 1 auto;
+   
+  }
+  
+  .navigation a {
+    font-size: 1rem;
+    text-align: left;
+  }
+  
+  .navigation li:first-child {
+    display: none;
+  }
+  
+  
+  /* Headings formats */
+  
+  h1 {
+    font-size: 2.25rem;
+    padding: .75em .5em;
+    
+  }
+  
+  h2 {
+   
+    font-size: 1.75rem;
+    padding: .5em
+  }
+  
+  h3 {
+    font-family: 'Boogaloo', cursive;
+    font-size: 1.5rem;
+    color: #363d45;
+    background-color: #e4f0d0;
+    /* color:#363d45; */
+    /* background-color: #363d45; */
+    padding: .5em;
+  }
+  
+  h4{
+    padding: .5em;
+  }
+  
+/* Heading Bar css*/
+
+.mainTitle {
+  font-size: 2.5em;
+  padding: .2em;
+  }
+
+.mainTagline {
+    font-size: 1.15em;
+}
+
+/* Main CSS */
+
+.mainHeading {
+  font-family: 'Boogaloo', cursive;
+  color: #363d45;
+  background-color: #a1b5d8;
+  display: block;
+  font-size: 2.5em;
+  padding: .25em;
+}
+
+
+/* 
+  Main footer css */
+ 
+  .footerBar {
+    padding: .75em;
+    font-size: .9em;
+    line-height: 1.25em;
+    background:#a1b5d8;
+  }
+
+  
+  .currentDate {
+    font-size: 75%;
+  }  
+  
+  }
+  
