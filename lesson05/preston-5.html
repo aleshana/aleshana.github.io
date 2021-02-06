@@ -17,13 +17,14 @@
 </head>
 <body>
     <div class ="content">
+     <div id = "pancakes"></div>
 
 <header>
-    
+
     <img class= "logoImg" src = "images/logo.png" alt = "The logo for Climate Lowdown.">
     <div class = "titleBar">
-        <h1 class = "mainTitle">Climate Lowdown</h1> 
-        <div class = "mainTagline">The whole weather story is here.</div>
+        <h1 class = "headerTitle">Climate Lowdown</h1> 
+        <div class = "headerTagline">The whole weather story is here.</div>
     </div>
    
 </header>
@@ -45,28 +46,76 @@
 <hr>
 
 <main>
-    <div class = "mainHeading">Preston, Idaho</div>
+    <h2 class = "mainHeading">Preston, Idaho</h2>
 
-    <div class = heroSummaryDiv> 
+    <div class = "heroSummary"> 
         <img class= "heroImg" src = "images/sunrayCountryside2.jpg" alt= "Stormy sky with muddy dirt road">
-
-        <h2>Weather Summary</h2>
+        <div class= "weatherSummary">
+            <h3>Weather Summary</h3>
+            <div class = "statistics">
+            Sunny<br>
+            80 &#8457;<br>
+            High: 85 &#8457;<br>
+            Low: 55 &#8457;<br>
+            </div>
+        </div>
     </div>
 
-    <div class = "forecastDiv"> 5 Day Forecast
-        <!-- <h2>Five Day Forecast</h2> -->
+    <div class = "forecastDiv"> 
+        <h3>5 Day Forecast</h3>
+       <div class = "gridForecast">
+        <div class= "day1">Sunday<br>
+        <img class= "forecastImg" src = "images/rainy.png" alt= "Forecast Day One Weather Image">
+       </div>
+
+       <div class = "day2">Monday<br>
+        <img class= "forecastImg" src = "images/sunny.png" alt= "Forecast Day Two Weather Image">
+       </div>
+
+       <div class = "day3">Tuesday<br>
+        <img class= "forecastImg" src = "images/partlySunny.png" alt= "Forecast Day Third Weather Image">
+       </div>
+
+       <div class = "day4">Wednesday<br>
+        <img class= "forecastImg" src = "images/snowy.png" alt= "Forecast Day Forth Weather Image">
+       </div>
+
+       <div class = "day5">Thursday<br>
+        <img class= "forecastImg" src = "images/lightening.png" alt= "Forecast Day Five Weather Image">
+       </div>
+       <!-- <div>Friday</div>
+       <div>Saturday</div> -->
+        </div>
     </div>
 
-    <div class= "articleDiv"> Article
-        <!-- <Article>
-            <img class = "articleImg" src = "#" alt= "image description here">
-        </Article> -->
+    <div class= "articleDiv"> 
+        <h3>Dangerous Weather Coming Our Way</h3>
+       
+        <img class= "articleImg2" src = "images/barnClouds2.jpg" alt= "Tetons and Barn scene">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+            ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+            ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <img class= "articleImg1" src = "images/barnClouds.jpg" alt= "Tetons and Barn scene">
+        
     </div>
      <!-- <img class = "map" src = "#" alt = "descriptive text goes here"> -->
-     <div class= "contactDiv"> Contact Information
-        <!-- <h2>Contact Information</h2>
-        email
-        phone number     -->
+     <div class= "contactDiv"> 
+    <h3>Contact Information</h3>
+       
+    &#128231; email: anyone@emailaddress.com<br>
+    &#128222; phone: (555) 555-5555<br>
+        <img class= "mapImg" src = "images/map.png" alt= "Contact Map">
     </div>
 
 </main>

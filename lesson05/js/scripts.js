@@ -30,3 +30,14 @@ console.log(todaysYear);
 document.getElementById("currentYear").innerHTML = todaysYear;
 
 
+//Pancake Breakfast on Saturdays
+var fridayDay = d.getDate();
+console.log(fridayDay);
+
+if (fridayDay = 4) {
+    document.getElementById("pancakes").innerHTML = "Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.";
+
+}
+
+
+

@@ -2,6 +2,12 @@
 
   .content {
     max-width: 59rem;
+    
+  }
+
+  header {
+  
+    line-height: 2em;
   }
 
   /*navigation tweeks*/
@@ -27,13 +33,23 @@
   }
   
   h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding: .5em;
   }
   
   h4{
     padding: .5em;
   }
+
+/* pancakes css */
+
+#pancakes {
+  font-size: 1.25em;
+  font-weight: bold;
+  padding: .5em;
+  line-height: 1.25em;
+
+}
 
   /* Heading Bar css*/
 
@@ -44,12 +60,12 @@
     
   }
 
-  .mainTitle {
+  .headerTitle {
     font-size: 3.5em;
     padding: .2em;
     }
   
-  .mainTagline {
+  .headerTagline {
       font-size: 1.25em;
   }
   
@@ -65,6 +81,27 @@
   font-size: 3rem;
 }
 
+.gridForecast{
+  padding: 15px;
+  font-size: 1.75em;
+}
+
+.day1 img {
+  width: 110px;
+}
+.day2 img {
+  width: 110px;
+}
+.day3 img {
+  width: 110px;
+}
+.day4 img {
+  width: 110px;
+}
+.day5 img {
+  width: 110px;
+}
+ 
 
   /* 
   Main footer css */

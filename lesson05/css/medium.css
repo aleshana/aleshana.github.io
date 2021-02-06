@@ -56,8 +56,6 @@
     font-size: 1.5rem;
     color: #363d45;
     background-color: #e4f0d0;
-    /* color:#363d45; */
-    /* background-color: #363d45; */
     padding: .5em;
   }
   
@@ -67,13 +65,23 @@
   
 /* Heading Bar css*/
 
-.mainTitle {
+.headerTitle {
   font-size: 2.5em;
   padding: .2em;
   }
 
-.mainTagline {
+.headerTagline {
     font-size: 1.15em;
+}
+
+/* pancakes css */
+
+#pancakes {
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: .5em;
+  line-height: 1.1em;
+
 }
 
 /* Main CSS */
@@ -83,8 +91,49 @@
   color: #363d45;
   background-color: #a1b5d8;
   display: block;
-  font-size: 2.5em;
+  font-size: 2.25em;
   padding: .25em;
+}
+
+.weatherSummary {
+  display: block;
+  position: absolute;
+  left: 1em;
+  background-color: #F9BE51 50%;
+  border: #363d45 solid 5px;
+
+}
+
+.gridForecast{
+  padding: 15px;
+  font-size: 1.5em;
+}
+
+.day1 img {
+  width: 90px;
+}
+.day2 img {
+  width: 90px;
+}
+.day3 img {
+  width: 90px;
+}
+.day4 img {
+  width: 90px;
+}
+.day5 img {
+  width: 90px;
+}
+  
+.articleImg1 {
+  display: none
+}
+
+.articleImg2 {
+  display: inline;
+  float: right;
+  width: 40%;
+  margin: 3px;
 }
 
 
@@ -103,5 +152,5 @@
     font-size: 75%;
   }  
   
-  }
+}
   

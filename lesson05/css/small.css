@@ -76,6 +76,19 @@ body {
   
   }
 
+  #pancakes {
+    display: block;
+    background-color: #F9BE51;
+    color: #363d45;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1em;
+    padding: .25em;
+    text-align: center;
+    line-height: 1.1em;
+
+  }
+
+
   /* Header Bar and Navigation css */
 
   header {
@@ -84,6 +97,7 @@ body {
     background-color: #a1b5d8;
     display: flex;
     padding: 4px;
+    line-height: 1.2em;
 
 
   }
@@ -95,14 +109,14 @@ body {
     
   }
   
-  .mainTitle {
-    font-size: 3em;
+  .headerTitle {
+    font-size: 2em;
     margin: 0;
     padding: .25em;
     
   }
 
-  .mainTagline {
+  .headerTagline {
       padding: 0;
       margin: 0;
       font-size: .85em;
@@ -118,6 +132,7 @@ body {
     
       }
 
+      
 
       /* Navigation css */
 
@@ -202,17 +217,28 @@ Main Section css */
   width: 100%;
 }
 
-  .heroSummaryDiv{
+
+  .heroSummary {
     display: block;
     margin: 10px auto;
     border: 1px dashed;
     padding: 15px;
     background-color:#C2d8b9 ;
     color:#344966 ;
-    font-style: italic;
-
+    
   }
+  .weatherSummary {
+    display: block;
+    background-color: #F9BE51;
+    border: #363d45 solid 2px;
+    line-height: 1.5em;
+    padding: 0;
 
+}
+
+.statistics {
+  margin: 1em;
+}
 
   .forecastDiv{
     display: block;
@@ -221,9 +247,41 @@ Main Section css */
     padding: 15px;
     background-color: #C2d8b9 ;
     color: #344966;
-    font-style: italic;
+    
+    
   }
 
+.gridForecast {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 2px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  font-size: .75em;
+}
+
+  .forecastImg img {
+    width: auto;
+  }
+
+
+.day1 img {
+  width: 60px;
+}
+.day2 img {
+  width: 60px;
+}
+.day3 img {
+  width: 60px;
+}
+.day4 img {
+  width: 60px;
+}
+.day5 img {
+  width: 60px;
+}
 
   .articleDiv{
     display: block;
@@ -232,8 +290,21 @@ Main Section css */
     padding: 15px;
     background-color:#C2d8b9 ;
     color:#344966 ;
-    font-style: italic;
+  
   }
+
+
+.articleImg2 {
+  display: none;
+  
+}
+
+.articleImg1 {
+  display: block;
+  width: 100%;
+  
+}
+
 
   .contactDiv{
     display: block;
@@ -242,10 +313,12 @@ Main Section css */
     padding: 15px;
     background-color:#C2d8b9;
     color:#344966 ;
-    font-style: italic;
+    
   }
 
-
+  .mapImg {
+    width: 75%;
+  }
 
   /* 
   Main footer css */
