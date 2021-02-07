@@ -86,6 +86,11 @@
 
 /* Main CSS */
 
+main{
+  max-width: 800px;
+  margin:auto;
+}
+
 .mainHeading {
   font-family: 'Boogaloo', cursive;
   color: #363d45;
@@ -95,13 +100,38 @@
   padding: .25em;
 }
 
-.weatherSummary {
-  display: block;
-  position: absolute;
-  left: 1em;
-  background-color: #F9BE51 50%;
-  border: #363d45 solid 5px;
+.heroSummary {
+  position: relative;
+}
 
+.heroImage {
+  width: 100%;
+  margin: auto;
+}
+
+.weatherSummary {
+  position: absolute;
+  top: 2em;
+  left: 2em;
+	opacity: .7;
+  width: 10em;
+  background-color: #F9BE51;
+  border: #363d45 solid 3px;
+  font-weight: bold;
+  color: black;
+  font-size: .7em;
+	/* background: radial-gradient(#eee, #4567aa); */
+}
+
+.weatherSummary p{
+  padding: 1em;
+  
+  
+ }
+
+.weatherSummary h3{
+  margin:0;
+  font-size: 1.35em;
 }
 
 .gridForecast{
@@ -137,8 +167,21 @@
 }
 
 
-/* 
-  Main footer css */
+
+  /* Main footer css  */
+
+  .gridContact {
+  display: grid;
+    grid-template-columns: 40% 60%;
+  }
+
+  .contantInfo{
+    font-size: .75em;
+  }
+
+  .columnGrid1 {
+    grid-column: 2 / 3;
+  }
  
   .footerBar {
     padding: .75em;

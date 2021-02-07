@@ -232,13 +232,17 @@ Main Section css */
     background-color: #F9BE51;
     border: #363d45 solid 2px;
     line-height: 1.5em;
-    padding: 0;
-
+    padding: .5em;
 }
 
-.statistics {
+.weatherSummary h3 {
+  margin: 0;
+  padding; 0;
+}
+
+/* .statistics {
   margin: 1em;
-}
+} */
 
   .forecastDiv{
     display: block;
@@ -305,8 +309,7 @@ Main Section css */
   
 }
 
-
-  .contactDiv{
+  .gridContact {
     display: block;
     margin: 10px auto;
     border: 1px dashed;
@@ -317,7 +320,23 @@ Main Section css */
   }
 
   .mapImg {
-    width: 75%;
+    width: 100%;
+    margin: auto;
+  }
+
+  .socialMediaTable {
+    list-style: none;
+
+  }
+
+  .socialMediaTable li {
+    display: inline-block;
+    margin: auto;
+    font-size: 75%;
+  }
+
+  .socialMediaTable img {
+    width: 4em;
   }
 
   /* 
@@ -325,7 +344,7 @@ Main Section css */
  
  .footerBar {
     padding: .75em;
-    margin: 0;
+    margin: auto;
     text-align: center;
     justify-content: center;
     background:#a1b5d8;

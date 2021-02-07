@@ -11,7 +11,7 @@ var todaysDay = d.getDate();
 var todaysMonth = months[d.getMonth()];
 var todaysYear = d.getFullYear();
 
-var fullDate = todaysWeekDay + ", " + todaysMonth + " " + todaysDay + ", " + todaysYear;
+var fullDate = todaysWeekDay + ", " + todaysDay + " " + todaysMonth + " " + todaysYear;
 
 console.log(fullDate);
 document.getElementById("currentDate").innerHTML = fullDate;
@@ -34,7 +34,7 @@ document.getElementById("currentYear").innerHTML = todaysYear;
 var fridayDay = d.getDate();
 console.log(fridayDay);
 
-if (fridayDay = 4) {
+if (fridayDay == 5) {
     document.getElementById("pancakes").innerHTML = "Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.";
 
 }

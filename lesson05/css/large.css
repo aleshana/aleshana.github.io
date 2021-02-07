@@ -81,6 +81,12 @@
   font-size: 3rem;
 }
 
+.weatherSummary {
+  width: 13em;
+  font-size: .9em;
+	/* background: radial-gradient(#eee, #4567aa); */
+}
+
 .gridForecast{
   padding: 15px;
   font-size: 1.75em;
