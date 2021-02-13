@@ -1,4 +1,4 @@
-@media (min-width: 32.5rem){
+@media (min-width: 520px){
 
 
   .content {
@@ -136,23 +136,23 @@ main{
 
 .gridForecast{
   padding: 15px;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 .day1 img {
-  width: 90px;
+  width: 75px;
 }
 .day2 img {
-  width: 90px;
+  width: 75px;
 }
 .day3 img {
-  width: 90px;
+  width: 75px;
 }
 .day4 img {
-  width: 90px;
+  width: 75px;
 }
 .day5 img {
-  width: 90px;
+  width: 75px;
 }
   
 .articleImg1 {
@@ -195,5 +195,31 @@ main{
     font-size: 75%;
   }  
   
+}
+
+@media (min-width: 725px){
+
+  .gridForecast{
+    padding: 15px;
+    font-size: 1.25em;
+  }
+  
+  .day1 img {
+    width: 90px;
+  }
+  .day2 img {
+    width: 90px;
+  }
+  .day3 img {
+    width: 90px;
+  }
+  .day4 img {
+    width: 90px;
+  }
+  .day5 img {
+    width: 90px;
+  }
+
+
 }
   

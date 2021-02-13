@@ -359,3 +359,29 @@ Main Section css */
      font-size: .9em;
      
    }  
+
+   @media (max-width: 400px){
+
+    .gridForecast{
+      /* padding: 15px; */
+      font-size: .65em;
+    }
+    
+    .day1 img {
+      width: 40px;
+    }
+    .day2 img {
+      width: 40px;
+    }
+    .day3 img {
+      width: 40px;
+    }
+    .day4 img {
+      width: 40px;
+    }
+    .day5 img {
+      width: 40px;
+    }
+
+  
+  }

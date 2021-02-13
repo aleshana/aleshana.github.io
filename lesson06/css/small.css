@@ -12,10 +12,8 @@ Font Ideas: Boogaloo, Patrick Hand, Lobster Two
 */
 
 body {
-    font-family: 'Lato', 'Oxygen', Tahoma, sans-serif; 
+    font-family: 'Noto Sans JP', Tahoma, sans-serif; 
     font-size: 18px;
-    /* background-color: #c2d8b9; */
-    /* background-color: #f8e7c1; */
     background-color: #D9EFD7;
     padding: 0;
   
@@ -366,3 +364,29 @@ Main Section css */
      font-size: .9em;
      
    }  
+
+   @media (max-width: 400px){
+
+    .gridForecast{
+      /* padding: 15px; */
+      font-size: .65em;
+    }
+    
+    .day1 img {
+      width: 40px;
+    }
+    .day2 img {
+      width: 40px;
+    }
+    .day3 img {
+      width: 40px;
+    }
+    .day4 img {
+      width: 40px;
+    }
+    .day5 img {
+      width: 40px;
+    }
+  
+  
+  }

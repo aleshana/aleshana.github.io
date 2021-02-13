@@ -15,6 +15,7 @@ var fullDate = todaysWeekDay + ", " + todaysDay + " " + todaysMonth + " " + toda
 
 console.log(fullDate);
 document.getElementById("currentDate").innerHTML = fullDate;
+console.log(todaysWeekDay);
 
 
 // Toggle Function
@@ -31,10 +32,8 @@ document.getElementById("currentYear").innerHTML = todaysYear;
 
 
 //Pancake Breakfast on Saturdays
-var fridayDay = d.getDate();
-console.log(fridayDay);
 
-if (fridayDay == 5) {
+if (todaysWeekDay == "Friday") {
     document.getElementById("pancakes").innerHTML = "Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.";
 
 }

@@ -45,42 +45,10 @@ if (fridayDay == 5) {
 WebFont.load({
     google: {
       families: [
-        'Lato', 'Oxygen' , 'Roboto'
+        'Boogaloo', 'Noto Sans JP','Oxygen' , 'Roboto'
       ]
     }
   });
-
-//   Weather Wind chill Factor
-/*
-Input:  Get temperature and wind speed from user.
-Process:  transfer user input into the wind chill function
-Wind chill = 35.74 + 0.6215T – 35.75 (V^0.16) + 0.4275T (V^0.16)
-return ansnwer to the input/output function
-Output:  Output the answer to the user.
-*/
-
-function doInputOutput() {  
-
-    var Temperature = parseFloat(document.getElementById('temperature').value);
-    var WindSpeed = parseFloat(document.getElementById('windSpeed').value);
-   
-
-    var answer = windChill(Temperature, WindSpeed);
-    document.getElementById('windChillOutput').innerHTML = "Wind Chill:  " + answer.toFixed(2) + " &#8457;";
-   
-}
-
-
-function windChill(tempF, speed) {
-
-    var wc = 35.74 + (0.6215 * tempF) - (35.75 * ( Math.pow(speed, .16))) + (.4275 * tempF) * (Math.
-    pow(speed, .16));
-    console.log(wc);
-    console.log(tempF);
-    console.log(speed);
-    return wc;
-    
-}
 
 
 
