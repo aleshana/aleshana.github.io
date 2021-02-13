@@ -11,7 +11,7 @@ var todaysDay = d.getDate();
 var todaysMonth = months[d.getMonth()];
 var todaysYear = d.getFullYear();
 
-var fullDate = todaysWeekDay + ", " + todaysMonth + " " + todaysDay + ", " + todaysYear;
+var fullDate = todaysWeekDay + ", " + todaysDay + " " + todaysMonth + " " + todaysYear;
 
 console.log(fullDate);
 document.getElementById("currentDate").innerHTML = fullDate;

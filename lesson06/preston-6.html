@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
     <link rel="shortcut icon" href="images/favicon.ico">
+    <!-- <script type = "text/javascript" src = "js/windchill.js"></script> -->
     <script src = "js/windchill.js"></script>
 
 </head>
@@ -35,7 +36,7 @@
     <ul class = "navigation">
         <li><a href = "#" onclick = "toggleMenu()">  &#9776; Menu</a></li>
         <li><a href = "#">Home</a></li>
-        <li class= "active"><a href = "#">Preston</a></li>
+        <li class= "active"><a href = "preston-6.html">Preston</a></li>
         <li><a href = "#">Fish Haven</a></li>
         <li><a href = "#">Storm Center</a></li>
         <li><a href = "#">Gallery</a></li>
@@ -61,12 +62,14 @@
 
         <section class= "weatherSummary">
             <h3>Weather Summary</h3>
-            Sunny<br>
+            Currently: Sunny<br>
             Temp: <span id= "temperature">80</span> &#8457;<br>
             High: 85 &#8457;<br>
             Low: 55 &#8457;<br>
-            Wind Speed: <span id = "windSpeed">20</span> mph<br>
-            <span id="windChillOutput"></span><br>
+            Wind Speed: <span id = "windSpeed">20</span> MPH<br>
+            <span id="windChillOutput">
+                <script type="text/javascript">doInputOutput();</script> 
+            </span>
         </section>
     </div>
 
@@ -168,7 +171,7 @@
         &copy;<span id= "currentYear"> </span>| Climate Lowdown | Alesha Anderson McCown | Utah
             <div class= "currentDate" id = "currentDate">
             </div>
-        <script src = "js/scripts.js"></script>
+        <!-- <script src = "js/scripts.js"></script> -->
     </div>
 
 </footer>
@@ -176,6 +179,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 <script src = "js/scripts.js"></script>
+<script src = "js/windchill.js"></script>
 </body>
 
 </html>
