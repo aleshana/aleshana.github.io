@@ -1,0 +1,391 @@
+/* /* Color Scheme Link : https://coolors.co/363d45-a1b5d8-fffcf7-e4f0d0-c2d8b9
+Charcoal: #363D45
+Wild Blue Yonder: #a1b5d8
+Floral White: #fffcf7
+Nyanza: #e4f0d0 (light green)
+Tea Green: C2d8b9
+
+font-family: 'Boogaloo', cursive;
+font-family: 'Noto Sans JP', sans-serif;
+
+Font Ideas: Boogaloo, Patrick Hand, Lobster Two
+*/
+
+body {
+    font-family: 'Noto Sans JP', Tahoma, sans-serif; 
+    font-size: 18px;
+    background-color: #D9EFD7;
+    padding: 0;
+  
+  }
+
+
+  
+  .content {
+    padding: 4px;
+    margin: 0 auto;
+    line-height: 1.8em;
+    background-color: #fffcf7;
+    color: #363d45;
+    max-width: 90%;
+  
+  }
+  
+  h1 {
+    font-family: 'Boogaloo', cursive;
+    color: #363d45;
+    background-color: #a1b5d8;
+    padding: 2px;
+      
+  }
+  
+  h2 {
+    color: #363d45;
+    font-family: 'Noto Sans JP', sans-serif;
+    
+     }
+  
+  h3 {
+    font-family: 'Boogaloo', cursive;
+    color: #363d45;
+    background-color: #e4f0d0;
+    
+  }
+  h4 {
+    background-color:#363d45;
+    color: #fffcf7;
+    padding: 0 .75em;
+  }
+  
+  h5 {
+    background-color: #F9BE51;
+    color: #363d45;
+    padding: 0 .75em;
+  }
+  
+  p {
+    padding: 0 .5em;
+  }
+  
+  hr {
+    /* color: #F9BE51; */
+    border: 3px solid #F9BE51;
+    padding:0;
+    margin:0;
+  
+  }
+
+  #pancakes {
+    display: block;
+    background-color: #F9BE51;
+    color: #363d45;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1em;
+    padding: .25em;
+    text-align: center;
+    line-height: 1.1em;
+
+  }
+
+
+  /* Header Bar and Navigation css */
+
+  header {
+    text-align: center;
+    justify-content: center;
+    background-color: #a1b5d8;
+    display: flex;
+    padding: 4px;
+    line-height: 1.2em;
+
+
+  }
+
+  .logoImg {
+    width: 25%;
+    height: 25%;
+    padding: 4px;
+    
+  }
+  
+  .headerTitle {
+    font-size: 2em;
+    margin: 0;
+    padding: .25em;
+    
+  }
+
+  .headerTagline {
+      padding: 0;
+      margin: 0;
+      font-size: .85em;
+  }
+
+  .titleBar {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    
+      }
+
+      
+
+      /* Navigation css */
+
+      nav {
+        background-color: hsl(212, 12%, 24%);
+        text-align: center;
+        margin: 0 auto;
+        max-width: 760px;
+     
+      
+     }
+    
+     .navigation{
+        list-style: none;
+        text-align: center;
+        padding: 0;
+        
+     }
+     
+     nav ul{
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+       overflow: hidden;
+      
+     }
+    
+     .navigation li:first-child {
+        display: block;
+       
+    
+     }
+        
+    .navigation li {
+            display: none;
+            color: #F9BE51;
+    }
+    
+    .responsive li {
+        display: block;
+        text-align: center;
+    }
+    
+    .navigation a {
+       display:block;
+       color: #F9BE51;
+       text-decoration: none;
+       padding: .75em;
+      
+     }
+     
+     nav a:hover { 
+       color: #363d45;
+       background: #F9BE51;
+      }
+    
+    nav a:active {
+        background-color: #a1b5d8;
+        color: #363d45;
+      }
+
+    .active a {
+        background-color: #a1b5d8;
+        color: #363d45;
+    }
+
+  
+/* 
+Main Section css */
+
+.mainHeading {
+  font-family: 'Boogaloo', cursive;
+  color: #363d45;
+  background-color: #a1b5d8;
+  display: block;
+  padding: .5em;
+  margin:0;
+  font-size: 2em;
+}
+
+/* .heroImg {
+  width: 100%;
+} */
+
+.heroImagePix img {
+  width: 100%;
+}
+
+
+
+  .heroSummary {
+    display: block;
+    margin: 10px auto;
+    border: 1px dashed;
+    padding: 15px;
+    background-color:#C2d8b9 ;
+    color:#344966 ;
+    
+  }
+  .weatherSummary {
+    display: block;
+    background-color: #F9BE51;
+    border: #363d45 solid 2px;
+    line-height: 1.5em;
+    padding: .5em;
+}
+
+.weatherSummary h3 {
+  margin: 0;
+  padding: 0;
+}
+
+/* .statistics {
+  margin: 1em;
+} */
+
+  .forecastDiv{
+    display: block;
+    margin: 10px auto;
+    border: 1px dashed;
+    padding: 15px;
+    background-color: #C2d8b9 ;
+    color: #344966;
+    
+    
+  }
+
+.gridForecast {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 2px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  font-size: .85em;
+}
+
+  .gridForecast img {
+    width: 90%;
+  }
+
+
+.day1 img {
+  width: 60px;
+}
+.day2 img {
+  width: 60px;
+}
+.day3 img {
+  width: 60px;
+}
+.day4 img {
+  width: 60px;
+}
+.day5 img {
+  width: 60px;
+}
+
+  .articleDiv{
+    display: block;
+    margin: 10px auto;
+    border: 1px dashed;
+    padding: 15px;
+    background-color:#C2d8b9 ;
+    color:#344966 ;
+  
+  }
+
+
+.articleImg2 {
+  display: none;
+  
+}
+
+.articleImg1 {
+  display: block;
+  width: 100%;
+  
+}
+
+  .gridContact {
+    display: block;
+    margin: 10px auto;
+    border: 1px dashed;
+    padding: 15px;
+    background-color:#C2d8b9;
+    color:#344966 ;
+    
+  }
+
+  .mapImg {
+    width: 100%;
+    margin: auto;
+  }
+
+  .socialMediaTable {
+    list-style: none;
+
+  }
+
+  .socialMediaTable li {
+    display: inline-block;
+    margin: auto;
+    font-size: 75%;
+  }
+
+  .socialMediaTable img {
+    width: 4em;
+  }
+
+  /* 
+  Main footer css */
+ 
+ .footerBar {
+    padding: .75em;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    background:#a1b5d8;
+    font-size: .70em;
+    line-height: 1.25em;
+    /* font-weight: bold; */
+  }
+  
+  
+   .currentDate {
+     color: black;
+     font-size: .9em;
+     
+   }  
+
+   @media (max-width: 400px){
+
+    .gridForecast{
+      /* padding: 15px; */
+      font-size: .65em;
+    }
+    
+    .day1 img {
+      width: 40px;
+    }
+    .day2 img {
+      width: 40px;
+    }
+    .day3 img {
+      width: 40px;
+    }
+    .day4 img {
+      width: 40px;
+    }
+    .day5 img {
+      width: 40px;
+    }
+  
+  
+  }
