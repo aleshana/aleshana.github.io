@@ -118,4 +118,38 @@
     font-size: 1em;
     line-height: 1.25em;
   }
+
+
+/* Gallery Page CSS */
+
+.gridGallery{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: #363d45 dashed 1px;
+  grid-gap: 1px;
+    
+}
+
+.lazyImg {
+  text-align: center;
+  font-size: .75em;
+  line-height: 1.2em;
+  box-shadow: 0px 0px 5px .5px #a1b5d8;
+  padding: 1px;
+  margin: 5px;
+
+  
+}
+
+.lazyImg img{
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 1px;
+    
+}  
+.lazyImg:hover {
+  box-shadow: 0px 0px 20px 5px #F9BE51;
+}
+
 }

@@ -58,7 +58,9 @@ body {
   }
   
   h5 {
-    background-color: #F9BE51;
+    background-color: gallery1-sun
+    gallery2-road
+    gallery3-lightening;
     color: #363d45;
     padding: 0 .75em;
   }
@@ -183,7 +185,7 @@ body {
       
      }
      
-     nav a:hover { 
+    nav a:hover { 
        color: #363d45;
        background: #F9BE51;
       }
@@ -243,10 +245,6 @@ Main Section css */
   margin: 0;
   padding: 0;
 }
-
-/* .statistics {
-  margin: 1em;
-} */
 
   .forecastDiv{
     display: block;
@@ -364,7 +362,47 @@ Main Section css */
      
    }  
 
-   @media (max-width: 400px){
+   
+  /* Gallery Page CSS */
+
+.gridGallery{
+  display: grid;
+  grid-template-columns: 1fr;
+  border: #363d45 dashed 1px;
+  grid-gap: 1px;
+    
+}
+
+.lazyImg {
+  text-align: center;
+  font-size: .75em;
+  line-height: 1.2em;
+  box-shadow: 0px 0px 5px .5px #a1b5d8;
+  padding: 1px;
+  margin: 5px;
+
+}
+
+.lazyImg img{
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 1px;
+    
+}  
+
+.lazyImg:hover {
+  box-shadow: 0px 0px 20px 5px #F9BE51;
+}
+
+  .lazyImg figcaption {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+  @media (max-width: 400px){
 
     .gridForecast{
       /* padding: 15px; */
