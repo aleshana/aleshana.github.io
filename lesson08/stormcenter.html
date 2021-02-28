@@ -1,0 +1,199 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Assignment for WWD 230-Weather website, Storm Center Page">
+    <meta name="author" content="Alesha Anderson McCown">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storm Center-The Climate Lowdown</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    
+
+</head>
+<body>
+    <div class ="content">
+   
+
+<header>
+
+    <img class= "logoImg" src = "images/logo.png" alt = "The logo for Climate Lowdown.">
+    <div class = "titleBar">
+        <h1 class = "headerTitle">Climate Lowdown</h1> 
+        <div class = "headerTagline">The whole weather story is here.</div>
+    </div>
+   
+</header>
+   
+<hr>
+
+<nav>
+    <ul class = "navigation">
+        <li><a href = "#" onclick = "toggleMenu()">  &#9776; Menu</a></li>
+        <li><a href = "#">Home</a></li>
+        <li ><a href = "preston-7.html">Preston</a></li>
+        <li><a href = "#">Fish Haven</a></li>
+        <li class= "active"><a href = "stormcenter.html">Storm Center</a></li>
+        <li><a href = "gallery-7.html">Gallery</a></li>
+
+    </ul>
+</nav>
+
+<hr>
+
+<main>
+    <h2 class = "mainHeading">Storm Center</h2>
+    
+    <form method = "get" action = "thanks.html">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label class = "top">Full Name <input type = "text" name ="name" required>
+            </label>
+            
+            <label class = "top">Email<input type = "email" name ="email" placeholder = "someone@somemail.com">
+            </label>
+
+            <label class = "top">Phone<input type = "tel" name ="phone" placeholder = "XXX-XXX-XXXX" 
+                pattern= "\d{3}[\-]\d{3}[\-]\d{4}" required>
+            </label>
+
+            <label class = "top">Zip Code<input type = "number" name ="zip" pattern="(\d{5})" required>
+            </label>
+           
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Storm Information</legend>
+
+            <label class = "top">Storm Date<input type = "date" name ="stormDate" placeholder = "XX/XX/XXXX">
+            </label>
+            
+                       <label class = "top" for="stormType">Storm Type</label>
+            <input list="stormType" id="stormTypeInput" name="stormTypeInput">
+
+            <datalist id="stormType" class = "stormClass">
+                <option value = "">Select Type</option>
+                <option value="Flash Flood">Flash Flood</option>
+                <option value="Hail">Hail</option>
+                <option value="Hurricane">Hurricane</option>
+                <option value="Thunderstorm">Thunderstorm</option>
+                <option value="Tornado">Tornado</option>
+            </datalist>
+        
+    
+            <div class = "sliderDiv">
+            <label class="slider" for="rating">Rating: &nbsp;&nbsp;&nbsp;
+                <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" 
+                oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                <span id="ratingvalue">5</span>
+            </label>
+         
+    
+            <datalist id="tickmarks">
+                <option value="0">
+                <option value="1">
+                <option value="2">
+                <option value="3">
+                <option value="4">
+                <option value="5">
+                <option value="6">
+                <option value="7">
+                <option value="8">
+                <option value="9">
+                <option value="10">
+            </datalist>
+            </div>
+
+            <label class = "top">Select Region
+                <select name = "town">
+                    <option value = "">Select</option>
+                    <option value = "Preston">Preston</option>
+                    <option value = "Soda Springs">Soda Springs</option>
+                    <option value = "Fish Haven">Fish Haven</option>
+                    
+                </select>
+            </label>
+
+            <div>Danger Level</div>
+            <label class = "sbs"><input type="radio" name= "dangerLevel" value = "yes">Yes</label>
+            <label class = "sbs"><input type="radio" name= "dangerLevel" value = "maybe">Maybe</label>
+            <label class = "sbs"><input type="radio" name= "dangerLevel" value = "no">No</label>
+
+            <label class = "comments">Comments<input type = "textarea" name ="comments" rows="20" cols="50">
+            </label>
+    
+    
+        </fieldset>
+
+        <a href = "stormcenter.html" target = "_blank"> 
+            <input type= "submit" value = "Report Storm" class = "submitBtn">
+        </a>
+        
+    </form>
+       
+</main>
+
+<footer>
+  
+    <div class= "gridContact"> 
+        <div class = "gridColumn1">
+    
+        <div class = "contantInfo">
+            <h3>Contact Information</h3> 
+            &#128205; Address:  123 Anywhere Drive, Cloud City, Heaven<br>    
+            &#128231; Email: anyone@emailaddress.com<br>
+            &#128222; Phone: (555) 555-5555<br>   
+        </div>  
+       
+        <div class = "socialMediaDiv">
+            <ul class = "socialMediaTable">
+                <li>
+                    <a target="_blank" href="https://www.facebook.com/">
+                        <img src="images/facebook1.png" alt = "facebook icon">
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.twitter.com/">
+                        <img src="images/twitter1.png" alt = "twitter icon">
+                    </a>
+                </li> 
+                <li>
+                    <a target="_blank" href="https://www.whatsapp.com/">
+                        <img src="images/whatsApp1.png" alt = "whats App icon">
+                    </a>
+                </li>
+
+                <li>
+                    <a target="_blank" href="https://www.youtube.com/">
+                        <img src="images/youTube1.png" alt = "Youtube icon">
+                    </a>
+                </li>
+            </ul>
+            </div>
+        </div>
+   
+    
+            <div class = "gridColumn2">   
+            <img class= "mapImg" src = "images/map2.jpg" alt= "Contact Map"  >
+            </div>
+        </div>
+
+    <div class = "footerBar">
+        &copy;<span id= "currentYear"> </span>| Climate Lowdown | Alesha Anderson McCown | Utah
+            <div class= "currentDate" id = "currentDate">
+            </div>
+    </div>
+
+</footer>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script src = "js/scripts.js"></script>
+</body>
+
+</html>
+

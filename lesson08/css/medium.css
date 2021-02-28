@@ -1,0 +1,268 @@
+@media (min-width: 520px){
+
+
+  .content {
+    max-width: 90%;
+  }
+
+/* Navigation scaling adjustments for Medium*/
+
+  nav {
+    max-width: 960px;
+    padding: .3em;
+    margin: 0;
+    justify-content: center;
+    text-align: center;
+  }
+
+  
+   .navigation {
+    display: flex;
+    
+  }
+  
+  .navigation li {
+    display: flex;
+    flex: 1 1 auto;
+   
+  }
+  
+  .navigation a {
+    font-size: 1rem;
+    text-align: left;
+  }
+  
+  .navigation li:first-child {
+    display: none;
+  }
+  
+  
+  /* Headings formats */
+  
+  h1 {
+    font-size: 2.25rem;
+    padding: .75em .5em;
+    
+  }
+  
+  h2 {
+   
+    font-size: 1.75rem;
+    padding: .5em
+  }
+  
+  h3 {
+    font-family: 'Boogaloo', cursive;
+    font-size: 1.5rem;
+    color: #363d45;
+    background-color: #e4f0d0;
+    padding: .5em;
+  }
+  
+  h4{
+    padding: .5em;
+  }
+  
+/* Heading Bar css*/
+
+.headerTitle {
+  font-size: 2.5em;
+  padding: .2em;
+  }
+
+.headerTagline {
+    font-size: 1.15em;
+}
+
+/* pancakes css */
+
+#pancakes {
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: .5em;
+  line-height: 1.1em;
+
+}
+
+/* Main CSS */
+
+main{
+  max-width: 800px;
+  margin:auto;
+}
+
+.mainHeading {
+  font-family: 'Boogaloo', cursive;
+  color: #363d45;
+  background-color: #a1b5d8;
+  display: block;
+  font-size: 2.25em;
+  padding: .25em;
+}
+
+.heroSummary {
+  position: relative;
+}
+
+.heroImage {
+  width: 100%;
+  margin: auto;
+}
+
+.weatherSummary {
+  position: absolute;
+  top: 2em;
+  left: 2em;
+	opacity: .75;
+  width: 10em;
+  background-color: #F9BE51;
+  border: #363d45 solid 3px;
+  font-weight: bold;
+  color: black;
+  font-size: .7em;
+	/* background: radial-gradient(#eee, #4567aa); */
+}
+
+.weatherSummary p{
+  padding: 1em;
+  
+  
+ }
+
+.weatherSummary h3{
+  margin:0;
+  font-size: 1.35em;
+}
+
+.gridForecast{
+  padding: 15px;
+  font-size: 1em;
+}
+
+.day1 img {
+  width: 75px;
+}
+.day2 img {
+  width: 75px;
+}
+.day3 img {
+  width: 75px;
+}
+.day4 img {
+  width: 75px;
+}
+.day5 img {
+  width: 75px;
+}
+  
+.articleImg1 {
+  display: none
+}
+
+.articleImg2 {
+  display: inline;
+  float: right;
+  width: 40%;
+  margin: 3px;
+}
+
+
+
+  /* Main footer css  */
+
+  .gridContact {
+  display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .contantInfo{
+    font-size: .75em;
+  }
+
+  .columnGrid1 {
+    grid-column: 1 / 2;
+  }
+
+  .columnGrid2 {
+    grid-column: 2 / 3;
+  }
+
+ 
+  .footerBar {
+    padding: .75em;
+    font-size: .9em;
+    line-height: 1.25em;
+    background:#a1b5d8;
+  }
+
+  
+  .currentDate {
+    font-size: 75%;
+  }  
+
+  /* Gallery Page CSS */
+
+.gridGallery{
+
+  grid-template-columns: 1fr 1fr;
+  border: #363d45 dashed 1px;
+  grid-gap: 1px;
+    
+}
+
+.lazyImg {
+  text-align: center;
+  font-size: .75em;
+  line-height: 1.2em;
+  box-shadow: 0px 0px 5px .5px #a1b5d8;
+  padding: 1px;
+  margin: 5px;
+
+  
+}
+
+.lazyImg img{
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 1px;
+    
+}  
+.lazyImg:hover {
+  box-shadow: 0px 0px 20px 5px #F9BE51;
+}
+  
+}
+
+@media (min-width: 725px){
+
+  .gridForecast{
+    padding: 15px;
+    font-size: 1.25em;
+  }
+  
+  .day1 img {
+    width: 90px;
+  }
+  .day2 img {
+    width: 90px;
+  }
+  .day3 img {
+    width: 90px;
+  }
+  .day4 img {
+    width: 90px;
+  }
+  .day5 img {
+    width: 90px;
+  }
+
+
+
+}
+
+/********Thank You Page******/
+
+.thankYouHead {
+  font-size: 4rem;
+}
