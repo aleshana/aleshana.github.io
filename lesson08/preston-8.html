@@ -6,14 +6,13 @@
     <meta name="author" content="Alesha Anderson McCown">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Climate Lowdown- Preston Town Page</title>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Delius+Swash+Caps&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
     <link rel="shortcut icon" href="images/favicon.ico">
-    <!-- <script type = "text/javascript" src = "js/windchill.js"></script> -->
-    <script src = "js/windchill2.js"></script>
+    <script src = "js/windchill.js"></script>
+   
 
 </head>
 <body>
@@ -36,10 +35,10 @@
     <ul class = "navigation">
         <li><a href = "#" onclick = "toggleMenu()">  &#9776; Menu</a></li>
         <li><a href = "#">Home</a></li>
-        <li class= "active"><a href = "preston-6.html">Preston</a></li>
+        <li class= "active"><a href = "preston-7.html">Preston</a></li>
         <li><a href = "#">Fish Haven</a></li>
         <li><a href = "#">Storm Center</a></li>
-        <li><a href = "#">Gallery</a></li>
+        <li><a href = "gallery-7.html">Gallery</a></li>
 
     </ul>
 </nav>
@@ -52,21 +51,20 @@
     <div class = "heroSummary"> 
         <div class = "heroImage">
             <picture class = "heroImagePix">
-                <source media="(max-width: 400px)" srcset="images/lesson6HeroImg200.jpg">
-                <source media="(max-width: 799px)" srcset="images/lesson6HeroImg500.jpg">
-                <source media="(min-width: 800px)" srcset="images/lesson6HeroImg800.jpg">
-                <img src="lesson6HeroImg1.jpg" alt="Lesson 6 Temporary Hero Image.">
+                <source media="(max-width: 400px)" srcset="images/heroImg200.jpg">
+                <source media="(max-width: 799px)" srcset="images/heroImg500.jpg">
+                <source media="(min-width: 800px)" srcset="images/heroImg800.jpg">
+                <img src="sunrayCountryside2.jpg" alt="Sunrays on a green countryside.">
               </picture>
-             <!-- <img class= "heroImg" src = "images/sunrayCountryside2.jpg" alt= "Stormy sky with muddy dirt road"> -->
         </div>
 
         <section class= "weatherSummary">
             <h3>Weather Summary</h3>
             Currently: Sunny<br>
-            Temp: <span id= "temperature">40</span> &#8457;<br>
-            High: 55 &#8457;<br>
-            Low: 35 &#8457;<br>
-            Wind Speed: <span id = "windSpeed">20</span><br>
+            Temp: <span id= "temperature">30</span> &#8457;<br>
+            High: 85 &#8457;<br>
+            Low: 55 &#8457;<br>
+            Wind Speed: <span id = "windSpeed">20</span> MPH<br>
             <span id="windChillOutput">
                 <script >doInputOutput();</script> 
             </span>
@@ -76,23 +74,23 @@
     <section class = "forecastDiv"> 
         <h3>5 Day Forecast</h3>
        <div class = "gridForecast">
-            <div class= "day1">Sunday<br>
+            <div class= "day1">Sun<br>
                 <img class= "forecastImg" src = "images/rainy1.png" alt= "Forecast of a Rainy Day">
             </div>
 
-            <div class = "day2">Monday<br>
+            <div class = "day2">Mon<br>
                 <img class= "forecastImg" src = "images/sunny1.png" alt= "Forecast of a Sunny Day">
             </div>
 
-            <div class = "day3">Tuesday<br>
+            <div class = "day3">Tue<br>
                 <img class= "forecastImg" src = "images/partlySunny1.png" alt= "Forecasting a partly sunny day">
             </div>
 
-            <div class = "day4">Wednesday<br>
+            <div class = "day4">Wed<br>
                 <img class= "forecastImg" src = "images/snowy1.png" alt= "Snow cloud for forecasting">
             </div>
 
-            <div class = "day5">Thursday<br>
+            <div class = "day5">Thur<br>
                 <img class= "forecastImg" src = "images/lightening1.png" alt= "Clouds with lightening coming out">
             </div>
         </div>
