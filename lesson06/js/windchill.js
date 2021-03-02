@@ -19,10 +19,11 @@ function doInputOutput() {
 
 function windChill(tempF, speed) {
 
-    var wc = 35.74 + (0.6215 * tempF) - (35.75 * ( Math.pow(speed, .16))) + (.4275 * tempF) * (Math.pow(speed, .16));
-    console.log(wc);
-    console.log(tempF);
-    console.log(speed);
-    return wc;
-    
+    if (tempF < 50 & speed > 4.8) {
+        var wc = 35.74 + (0.6215 * tempF) - (35.75 * ( Math.pow(speed, .16))) + (.4275 * tempF) * (Math.pow(speed, .16));
+        console.log(wc);
+        console.log(tempF);
+        console.log(speed);
+        return wc;
+    }   
 }
