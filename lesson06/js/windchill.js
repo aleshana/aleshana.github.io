@@ -25,5 +25,6 @@ function windChill(tempF, speed) {
         console.log(tempF);
         console.log(speed);
         return wc;
-    }   
+    }  
+    
 }
