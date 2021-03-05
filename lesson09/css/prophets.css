@@ -50,8 +50,9 @@ div.cards{
 }
 
 .cards section {
-    border: solid 3px lightgray;
+    border: solid 3px lightgray;  /*prophet border */
 }
+
 
 
 img {
