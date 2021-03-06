@@ -71,6 +71,8 @@
   
 /* Main CSS */
 
+
+
 .mainHeading {
   font-family: 'Boogaloo', cursive;
   color: #363d45;
@@ -152,7 +154,6 @@
   box-shadow: 0px 0px 20px 5px #F9BE51;
 }
 
-}
 
 /* ***********Storm Center*********** */
 
@@ -161,3 +162,41 @@
   /* form input.submitBtn{
     max-width: 20rem;
   } */
+
+  /**********HomeTownPage************/
+
+/*
+section ('class',"homeTownBox");
+h2 ('class',"homeTownHeader");
+tagline ('class',"homeTagline");
+p ('class',"homePara");
+img ('class',"homeTownImg");
+*/
+
+/* .townsDiv {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.homeTownBox {
+  background: #e4f0d0;
+  border: solid 3px #a1b5d8;
+  margin: 5px 0;
+  margin:auto;
+  text-align: center;
+  height: 340px;
+  
+}
+
+.homeTownImg{
+  max-width: 90%;
+  margin:auto;
+} */
+
+
+
+
+
+
+}
