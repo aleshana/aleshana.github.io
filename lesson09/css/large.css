@@ -120,6 +120,7 @@
     line-height: 1.25em;
   }
 
+
   
 
 /*********** Gallery Page CSS ************/
@@ -173,30 +174,112 @@ p ('class',"homePara");
 img ('class',"homeTownImg");
 */
 
-/* .townsDiv {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10px;
+.heroHomeImagePix img{
+  width: 100%; 
 }
 
-.homeTownBox {
-  background: #e4f0d0;
-  border: solid 3px #a1b5d8;
-  margin: 5px 0;
+
+/*----Towns-----*/
+.gridTowns {
   margin:auto;
-  text-align: center;
-  height: 340px;
+  max-width: 800px;
+  margin: .5rem auto;  
+}
+
+div.townsDiv {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   
 }
 
-.homeTownImg{
+.townsDiv section {
+  display: block;
+  padding: 10px;
+  height: auto;
+ }
+
+section.homeTownBox {
+  width: 90%; 
+  
+}
+
+.townsDiv section h3 {
+  padding: 10px 0;
+  margin: auto 0;
+  max-height: 65px;
+  width: 100%;
+}
+
+.townsDiv section h6 {
+  padding: 5px 0;
+}
+
+
+/* .homeTownImg img{  
   max-width: 90%;
+  max-height: 90%;
   margin:auto;
 } */
 
+.townsDiv section img {
+  height: auto;
+  margin: auto;
+}
+
+p.homePara {
+  font-size: .75em;
+  line-height: 1.5em;
+}
+
+.homeTownHeader{
+  background: #a1b5d8;
+  margin-bottom:5px;
+}
+
+/*----Articles-----*/
+.homeArticles {
+  max-width: 900px;
+  margin: auto;
+}
+
+.homeArticles Article {
+  background: #e4f0d0;
+  border: solid 3px #a1b5d8;
+  margin: 5px 0;
+  max-width: 800px;
+}
+
+.homeArticles h2 {
+  background: #363D45;
+  color: #F9BE51;
+  padding: 10px;
+  margin: 20px 0 10px 0;
+  border: 3px solid #F9BE51;
+  grid-row:1;
+  max-height: 50px;
+}
+
+.homeArticles h4 {  
+  padding: 10px;
+  margin: 0 0 5px 0;
+}
 
 
+.homeArticles img {
+  width: 150px;
+  margin: auto;
+}
 
+.homeArticles article img {
+  float:left;
+  border: 3px solid #a1b5d8;
+  margin: 10px;
+}
+
+.articleCap{
+  display: none;
+  }
 
 
 }

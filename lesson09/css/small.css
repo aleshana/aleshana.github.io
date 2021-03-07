@@ -590,6 +590,7 @@ img ('class',"homeTownImg");
 
 .heroHomeImagePix img{
   width: 100%;
+ 
 }
 
 /**Towns****/
@@ -601,14 +602,10 @@ img ('class',"homeTownImg");
 
 div.townsDiv {
   display: grid;
-  
   grid-gap: 10px;
   max-width: 100%;
 }
 
-/* section.homeTownBox {
-  max-width: 375px;
-} */
 
 .homeTownBox {
   background: #e4f0d0;
@@ -621,6 +618,7 @@ div.townsDiv {
 .homeTownImg {
   max-width: 90%;
   margin:auto;
+  border: solid 3px #a1b5d8;
 
 }
 
@@ -642,12 +640,6 @@ color:#a1b5d8;
 
 /*----Articles-----*/
 .homeArticles {
-  /* display:grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr; */
-  /* background: #e4f0d0;
-  border: solid 3px #a1b5d8;
-  margin: 5px 0; */
   max-width: 400px;
   margin: auto;
 }
@@ -676,6 +668,7 @@ color:#a1b5d8;
   display:block;
   width: 200px;
   margin: auto;
+  border: solid 3px #a1b5d8;
 
 }
 
