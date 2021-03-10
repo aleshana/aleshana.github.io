@@ -1,0 +1,682 @@
+/* /* Color Scheme Link : https://coolors.co/363d45-a1b5d8-fffcf7-e4f0d0-c2d8b9
+Charcoal: #363D45
+Wild Blue Yonder: #a1b5d8
+Floral White: #fffcf7
+Nyanza: #e4f0d0 (light green)
+Tea Green: C2d8b9
+
+font-family: 'Boogaloo', cursive;
+font-family: 'Noto Sans JP', sans-serif;
+
+Font Ideas: Boogaloo, Patrick Hand, Lobster Two
+*/
+
+body {
+    font-family: 'Noto Sans JP', Tahoma, sans-serif; 
+    font-size: 18px;
+    background-color: #D9EFD7;
+    padding: 0;
+  
+  }
+
+
+  
+  .content {
+    padding: 4px;
+    margin: 0 auto;
+    line-height: 1.8em;
+    background-color: #fffcf7;
+    color: #363d45;
+    max-width: 90%;
+  
+  }
+  
+  h1 {
+    font-family: 'Boogaloo', cursive;
+    color: #363d45;
+    background-color: #a1b5d8;
+    padding: 2px;
+      
+  }
+  
+  h2 {
+    color: #363d45;
+    font-family: 'Noto Sans JP', sans-serif;
+    
+     }
+  
+  h3 {
+    font-family: 'Boogaloo', cursive;
+    color: #363d45;
+    background-color: #e4f0d0;
+    padding:0;
+    margin: 0;
+    
+  }
+  h4 {
+    background-color:#363d45;
+    color: #fffcf7;
+    padding: 0 .75em;
+  }
+  
+  h5 {
+    color: #363d45;
+    padding: 0 .75em;
+  }
+
+  h6 {
+    color: #363d45;
+    padding: 0;
+    line-height: 1.1em;
+    font-style: italic;
+    margin:0;
+  }
+  
+  p {
+    padding: 0 .5em;
+  }
+  
+  hr {
+   
+    border: 3px solid #F9BE51;
+    padding:0;
+    margin:0;
+  
+  }
+
+  #pancakes {
+    display: block;
+    background-color: #F9BE51;
+    color: #363d45;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1em;
+    padding: .25em;
+    text-align: center;
+    line-height: 1.1em;
+
+  }
+
+
+  /*********** Header Bar and Navigation css *************/
+
+  header {
+    text-align: center;
+    justify-content: center;
+    background-color: #a1b5d8;
+    display: flex;
+    padding: 4px;
+    line-height: 1.2em;
+
+
+  }
+
+  .logoImg {
+    width: 25%;
+    height: 25%;
+    padding: 4px;
+    
+  }
+  
+  .headerTitle {
+    font-size: 2em;
+    margin: 0;
+    padding: .25em;
+    
+  }
+
+  .headerTagline {
+      padding: 0;
+      margin: 0;
+      font-size: .85em;
+  }
+
+  .titleBar {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    
+      }
+
+      
+
+      /*********** Navigation css *************/
+
+      nav {
+        background-color: hsl(212, 12%, 24%);
+        text-align: center;
+        margin: 0 auto;
+        max-width: 760px;
+     
+      
+     }
+    
+     .navigation{
+        list-style: none;
+        text-align: center;
+        padding: 0;
+        
+     }
+     
+     nav ul{
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+       overflow: hidden;
+      
+     }
+    
+     .navigation li:first-child {
+        display: block;
+       
+    
+     }
+        
+    .navigation li {
+            display: none;
+            color: #F9BE51;
+    }
+    
+    .responsive li {
+        display: block;
+        text-align: center;
+    }
+    
+    .navigation a {
+       display:block;
+       color: #F9BE51;
+       text-decoration: none;
+       padding: .75em;
+      
+     }
+     
+    nav a:hover { 
+       color: #363d45;
+       background: #F9BE51;
+      }
+    
+    nav a:active {
+        background-color: #a1b5d8;
+        color: #363d45;
+      }
+
+    .active a {
+        background-color: #a1b5d8;
+        color: #363d45;
+    }
+
+/****** Main Section -All *******/
+    main{
+      max-width: 90%;
+      margin:auto;
+    }
+  
+/**************Preston Page**********/
+
+.mainHeading {
+  font-family: 'Boogaloo', cursive;
+  color: #363d45;
+  background-color: #a1b5d8;
+  display: block;
+  padding: .5em;
+  margin:0;
+  font-size: 2em;
+}
+
+.heroImagePix img {
+  width: 100%;
+}
+
+  .heroSummary {
+    display: block;
+    margin: 10px auto;
+    border: 1px dashed;
+    padding: 15px;
+    background-color:#C2d8b9 ;
+    color:#344966 ;
+    
+  }
+  .weatherSummary {
+    display: block;
+    background-color: #F9BE51;
+    border: #363d45 solid 2px;
+    line-height: 1.5em;
+    padding: .5em;
+}
+
+.weatherSummary h3 {
+  margin: 0;
+  padding: 0;
+}
+
+  .forecastDiv{
+    display: block;
+    margin: 10px auto;
+    border: 1px dashed;
+    padding: 15px;
+    background-color: #C2d8b9 ;
+    color: #344966;
+    
+    
+  }
+
+.gridForecast {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 2px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  font-size: .85em;
+}
+
+  .gridForecast img {
+    width: 90%;
+  }
+
+
+.day1 img {
+  width: 60px;
+}
+.day2 img {
+  width: 60px;
+}
+.day3 img {
+  width: 60px;
+}
+.day4 img {
+  width: 60px;
+}
+.day5 img {
+  width: 60px;
+}
+
+  .articleDiv{
+    display: block;
+    margin: 10px auto;
+    border: 1px dashed;
+    padding: 15px;
+    background-color:#C2d8b9 ;
+    color:#344966 ;
+  
+  }
+
+
+.articleImg2 {
+  display: none;
+  
+}
+
+.articleImg1 {
+  display: block;
+  width: 100%;
+  
+}
+
+  .gridContact {
+    display: block;
+    margin: 10px auto;
+    /* border: 1px dashed; */
+    padding: 15px;
+    background-color:#C2d8b9;
+    color:#344966 ;
+    
+  }
+
+  .mapImg {
+    width: 100%;
+    margin: auto;
+  }
+
+  .socialMediaTable {
+    list-style: none;
+
+  }
+
+  .socialMediaTable li {
+    display: inline-block;
+    margin: auto;
+    font-size: 75%;
+  }
+
+  .socialMediaTable img {
+    width: 4em;
+  }
+
+  /************** Main footer css *************/
+ 
+ .footerBar {
+    padding: .75em;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    background:#a1b5d8;
+    font-size: .70em;
+    line-height: 1.25em;
+    /* font-weight: bold; */
+  }
+  
+  
+   .currentDate {
+     color: black;
+     font-size: .9em;
+     
+   }  
+
+
+   
+  /************** Gallery Page CSS **************/
+
+.gridGallery{
+  display: grid;
+  grid-template-columns: 1fr;
+  border: #363d45 dashed 1px;
+  grid-gap: 1px;
+    
+}
+
+.lazyImg {
+  text-align: center;
+  font-size: .75em;
+  line-height: 1.2em;
+  box-shadow: 0px 0px 5px .5px #a1b5d8;
+  padding: 1px;
+  margin: 5px;
+
+}
+
+.lazyImg img{
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 1px;
+    
+}  
+
+.lazyImg:hover {
+  box-shadow: 0px 0px 20px 5px #F9BE51;
+}
+
+  .lazyImg figcaption {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+  @media (max-width: 400px){
+
+    .gridForecast{
+      /* padding: 15px; */
+      font-size: .65em;
+    }
+    
+    .day1 img {
+      width: 40px;
+    }
+    .day2 img {
+      width: 40px;
+    }
+    .day3 img {
+      width: 40px;
+    }
+    .day4 img {
+      width: 40px;
+    }
+    .day5 img {
+      width: 40px;
+    }
+  
+  
+  }
+
+  /* ***********Storm Center*********** */
+
+  /****  Form  ****/
+form fieldset {
+  margin: 2rem 0;
+  border: 1px solid #363D45;
+  border-radius: 5px;
+  padding: 1rem;
+  background-color:#e4f0d0;
+}
+
+form legend{
+  color: #F9BE51;
+  font-size: 1.5rem;
+  margin: 0 1rem;
+  padding: 0 .5rem;
+  background-color:#363D45;
+}
+
+form label.top, form div {
+  display:block;
+  padding-top: 1rem;
+  color: #363D45;
+  font-size: 1rem;
+
+}
+
+form label.top input, form label.top select{
+  display: block;
+  font-size: 1rem;
+  border:solid 1px #a1b5d8;
+  border-radius: 4px;
+  padding: .75rem;
+  color: #363D45;
+  width: 90%;
+  max-width: 25rem;
+  
+  }
+
+form label.top select option {
+  padding: 1.5rem;
+  margin: 1.5rem;
+}
+
+form label.sbs {
+  display:block;
+
+
+}
+
+.slider {
+  display:flex;
+  /* padding: .75 0; */
+  align-items: center;
+}
+
+#ratingvalue {
+	margin: 0 15px;
+	color:blue;
+  font-weight: bold;
+}
+
+form fieldset datalist {
+  background-color: #e4f0d0;
+  width: 90%;
+  max-width: 25rem;
+ 
+}
+
+form label.comments{
+  padding: 1.25rem 0 0 0;
+}
+
+label.comments input{
+  display:block;
+  font-size: 1rem;
+  border:solid 1px#a1b5d8;
+  border-radius: 4px;
+  padding: 3rem .75rem;
+  color: #363D45;
+  width: 90%;
+  max-width: 25rem;
+  
+  
+}
+
+form input.submitBtn{
+  border: none;
+  background: #F9BE51;
+  color: #363D45;
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 1rem 1.5rem;
+  margin: 0 0 2rem 2%;
+  width: 96%;
+  max-width: 25rem;
+  }
+
+form input.submitBtn:hover{
+  background: #363D45;
+  color: #F9BE51;
+}
+
+
+form label.top input:required {
+  border-left:red solid 4px;
+
+}
+
+
+.sliderDiv{
+  margin: 1rem 0;
+}
+
+.region select {
+  font-size: 1rem;
+  border:solid 1px #a1b5d8;
+  border-radius: 4px;
+  color: #363D45;
+  width: 12rem;
+  height: 2rem;
+  }
+
+
+
+/***********Thank You Page*********/
+
+
+.thankYouDiv p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.thankYouHead {
+  font-size: 2rem;
+  text-align: center;
+  padding: 2rem;
+  margin: 1rem 0 1rem 0;
+}
+
+.thankYouImg{
+  display: block;
+  margin: auto;
+}
+
+/**********HomeTownPage************/
+
+/*
+section ('class',"homeTownBox");
+h2 ('class',"homeTownHeader");
+tagline ('class',"homeTagline");
+p ('class',"homePara");
+img ('class',"homeTownImg");
+*/
+
+.heroHomeImagePix img{
+  width: 100%;
+ 
+}
+
+/**Towns****/
+
+.gridTowns {
+  margin:auto;
+  max-width: 400px;
+}
+
+div.townsDiv {
+  display: grid;
+  grid-gap: 10px;
+  max-width: 100%;
+}
+
+
+.homeTownBox {
+  background: #e4f0d0;
+  border: solid 3px #a1b5d8;
+  margin: 5px 0;
+  text-align: center;
+  
+}
+
+.homeTownImg {
+  max-width: 90%;
+  margin:auto;
+  border: solid 3px #a1b5d8;
+
+}
+
+p.homePara {
+  font-size: .75em;
+  line-height: 1.5em;
+}
+
+/* h6.homeTagline {
+color:#a1b5d8;
+} */
+
+.homeTownHeader{
+  background: #a1b5d8;
+  margin-bottom:5px;
+   /* background: #363D45;
+  color: #F9BE51; */
+}
+
+/*----Articles-----*/
+.homeArticles {
+  max-width: 400px;
+  margin: auto;
+}
+
+.homeArticles Article {
+  background: #e4f0d0;
+  border: solid 3px #a1b5d8;
+  margin: 5px 0;
+  max-width: 400px;
+}
+
+.homeArticles h2 {
+
+  background: #363D45;
+  color: #F9BE51;
+  padding: 10px;
+  margin: 20px 0 10px 0;
+  border: 3px solid #F9BE51;
+}
+
+.homeArticles h4 {  
+  padding: 10px;
+  margin: 0 0 5px 0;
+}
+.homeArticles img {
+  display:block;
+  width: 200px;
+  margin: auto;
+  border: solid 3px #a1b5d8;
+
+}
+
+.articleCap{
+  text-align: center;
+  font-size: .75em;
+  }
+
+
+
+

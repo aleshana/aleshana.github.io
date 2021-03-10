@@ -1,0 +1,184 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Assignment for WWD 230-Weather website, town page, Preston">
+    <meta name="author" content="Alesha Anderson McCown">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preston Town Page</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <script src = "js/windchill.js"></script>
+   
+
+</head>
+<body>
+    <div class ="content">
+     <div id = "pancakes"></div>
+
+<header>
+
+    <img class= "logoImg" src = "images/logo.png" alt = "The logo for Climate Lowdown.">
+    <div class = "titleBar">
+        <h1 class = "headerTitle">Climate Lowdown</h1> 
+        <div class = "headerTagline">The whole weather story is here.</div>
+    </div>
+   
+</header>
+   
+<hr>
+
+<nav>
+    <ul class = "navigation">
+        <li><a href = "#" onclick = "toggleMenu()">  &#9776; Menu</a></li>
+        <li><a href = "index.html">Home</a></li>
+        <li class= "active"><a href = "preston-9.html">Preston</a></li>
+        <li><a href = "#">Fish Haven</a></li>
+        <li><a href = "#">Soda Springs</a></li>
+        <li><a href = "stormcenter.html">Storm Center</a></li>
+        <li><a href = "gallery-9.html">Gallery</a></li>
+
+    </ul>
+</nav>
+
+<hr>
+
+<main>
+    <h2 class = "mainHeading">Preston, Idaho</h2>
+
+    <div class = "heroSummary"> 
+        <div class = "heroImage">
+            <picture class = "heroImagePix">
+                <source media="(max-width: 400px)" srcset="images/heroImg200.jpg">
+                <source media="(max-width: 799px)" srcset="images/heroImg500.jpg">
+                <source media="(min-width: 800px)" srcset="images/heroImg800.jpg">
+                <img src="sunrayCountryside2.jpg" alt="Sunrays on a green countryside.">
+              </picture>
+        </div>
+
+        <section class= "weatherSummary">
+            <h3>Weather Summary</h3>
+            Currently: Sunny<br>
+            Temp: <span id= "temperature">40</span> &#8457;<br>
+            High: 55 &#8457;<br>
+            Low: 30 &#8457;<br>
+            Wind Speed: <span id = "windSpeed">20</span> MPH<br>
+            <span id="windChillOutput">
+                <script >doInputOutput();</script> 
+            </span>
+        </section>
+    </div>
+
+    <section class = "forecastDiv"> 
+        <h3>5 Day Forecast</h3>
+       <div class = "gridForecast">
+            <div class= "day1">Sun<br>
+                <img class= "forecastImg" src = "images/rainy1.png" alt= "Forecast of a Rainy Day">
+            </div>
+
+            <div class = "day2">Mon<br>
+                <img class= "forecastImg" src = "images/sunny1.png" alt= "Forecast of a Sunny Day">
+            </div>
+
+            <div class = "day3">Tue<br>
+                <img class= "forecastImg" src = "images/partlySunny1.png" alt= "Forecasting a partly sunny day">
+            </div>
+
+            <div class = "day4">Wed<br>
+                <img class= "forecastImg" src = "images/snowy1.png" alt= "Snow cloud for forecasting">
+            </div>
+
+            <div class = "day5">Thur<br>
+                <img class= "forecastImg" src = "images/lightening1.png" alt= "Clouds with lightening coming out">
+            </div>
+        </div>
+    </section>
+
+    <article class= "articleDiv"> 
+        <h3>Dangerous Weather Coming Our Way</h3>
+       
+        <img class= "articleImg2" src = "images/barnClouds2.jpg" alt= "Tetons and Barn scene">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+            ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+            ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <img class= "articleImg1" src = "images/barnClouds.jpg" alt= "Tetons and Barn scene">
+        
+    </article>
+       
+</main>
+
+<footer>
+  
+    <div class= "gridContact"> 
+        <div class = "gridColumn1">
+    
+        <div class = "contantInfo">
+            <h3>Contact Information</h3> 
+            &#128205; Address:  123 Anywhere Drive, Cloud City, Heaven<br>    
+            &#128231; Email: anyone@emailaddress.com<br>
+            &#128222; Phone: (555) 555-5555<br>   
+        </div>  
+       
+        <div class = "socialMediaDiv">
+            <ul class = "socialMediaTable">
+                <li>
+                    <a target="_blank" href="https://www.facebook.com/">
+                        <img src="images/facebook1.png" alt = "facebook icon">
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.twitter.com/">
+                        <img src="images/twitter1.png" alt = "twitter icon">
+                    </a>
+                </li> 
+                <li>
+                    <a target="_blank" href="https://www.whatsapp.com/">
+                        <img src="images/whatsApp1.png" alt = "whats App icon">
+                    </a>
+                </li>
+
+                <li>
+                    <a target="_blank" href="https://www.youtube.com/">
+                        <img src="images/youTube1.png" alt = "Youtube icon">
+                    </a>
+                </li>
+            </ul>
+            </div>
+        </div>
+   
+    
+            <div class = "gridColumn2">   
+            <img class= "mapImg" src = "images/map.jpg" alt= "Contact Map"  >
+            </div>
+        </div>
+
+    <div class = "footerBar">
+        &copy;<span id= "currentYear"> </span>| Climate Lowdown | Alesha Anderson McCown | Utah
+            <div class= "currentDate" id = "currentDate">
+            </div>
+    </div>
+
+</footer>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script src = "js/scripts.js"></script>
+<script src = "js/windchill.js"></script>
+</body>
+
+</html>
+
