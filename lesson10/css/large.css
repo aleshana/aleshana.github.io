@@ -41,7 +41,7 @@
     padding: .5em;
   }
 
-/* pancakes css */
+/********* pancakes css ************/
 
 #pancakes {
   font-size: 1.25em;
@@ -51,7 +51,7 @@
 
 }
 
-  /* Heading Bar css*/
+  /******** Heading Bar css********/
 
   .logoImg {
     width: 20%;
@@ -69,7 +69,7 @@
       font-size: 1.25em;
   }
   
-/* Main CSS */
+/*********** Main CSS **********/
 
 
 
@@ -90,7 +90,7 @@
 
 }
 
-.gridForecast{
+#gridForecast{
   padding: 15px;
   font-size: 1.75em;
 }

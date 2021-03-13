@@ -256,25 +256,29 @@ body {
     margin: 10px auto;
     border: 1px dashed;
     padding: 15px;
-    background-color: #C2d8b9 ;
+    background-color: #e4f0d0;
     color: #344966;
     
     
   }
 
-.gridForecast {
+#gridForecast {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 2px;
-  justify-content: center;
-  align-items: center;
+  grid-template-rows: 1fr;
+  grid-gap: 4px; 
   text-align: center;
   margin: auto;
   font-size: .85em;
+  font-weight: bold;
 }
 
-  .gridForecast img {
-    width: 90%;
+.forecastDiv h3 {
+  background-color: #C2d8b9;
+  }
+
+  #gridForecast section{
+  border: 1px solid #C2d8b9;
   }
 
 

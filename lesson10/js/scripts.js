@@ -65,14 +65,14 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (jsonObject) {
-    console.table(jsonObject);  // temporary checking for valid response and data parsing
+    // console.table(jsonObject);  // temporary checking for valid response and data parsing
 
     const towns = jsonObject['towns']; //Store data in array
 
     const boxes = document.querySelector('div.townsDiv');  /// the boxes location in HTML
 
     const townsFeatured = new Array();
-    console.table(townsFeatured);
+    // console.table(townsFeatured);
     for (let i=0; i < towns.length; i++){
         if 
         (towns[i].name == 'Preston' || towns[i].name == 'Soda Springs' || towns[i].name == 'Fish Haven') {
@@ -80,7 +80,7 @@ fetch(requestURL)
             }
 
     }
-    console.table(townsFeatured);
+    // console.table(townsFeatured);
     townsFeatured.forEach(town => {
         let box = document.createElement('section');
         let h3 = document.createElement('h3');
@@ -120,20 +120,20 @@ const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&appid
 fetch(apiURL)
   .then((response) => response.json())
   .then ((jsObject) => {
-    console.table(jsObject);  // temporary checking for valid response and data parsing
+    // console.table(jsObject);  // temporary checking for valid response and data parsing
     
-    document.getElementById('windSpeed').textContent = jsObject.wind.speed;
-    document.getElementById('currentTemp').textContent = jsObject.main.temp;
+    document.getElementById('windSpeed').textContent = jsObject.wind.speed.toFixed(0);
+    document.getElementById('currentTemp').textContent = jsObject.main.temp.toFixed(0);
     document.getElementById('currentDesc').textContent = jsObject.weather[0].main;
     document.getElementById('humidity').textContent =  jsObject.main.humidity;
 
     /*************** Wind Chill Calculations and outputing *************/
     var Temperature = jsObject.main.temp;
     var WindSpeed = jsObject.wind.speed;
-    // console.log(Temperature);
+    console.log(Temperature);
   
     var answer = windChill(Temperature, WindSpeed);
-    document.getElementById('windChillOutput').innerHTML = "Wind Chill:  " + answer;
+    document.getElementById('windChillOutput').innerHTML = "Wind Chill:  " + answer + " &#8457;";
 
     function windChill(tempF, speed) {
       var wc = "N/A";
@@ -142,7 +142,7 @@ fetch(apiURL)
           // console.log(wc);
           // console.log(tempF);
           // console.log(speed);
-          wc = wc.toFixed(2)
+          wc = wc.toFixed(0)
         }   
       return wc;
       
@@ -153,21 +153,59 @@ fetch(apiURL)
 /*********JSON FORECAST DATA***********/
 // let cityID = '5604473';
 // let keyID = 'e73db471f9317b7f3bf9d5f6c28904fc';
-let apiWeatherURL = 'http://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=e73db471f9317b7f3bf9d5f6c28904fc';
+let apiWeatherURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=e73db471f9317b7f3bf9d5f6c28904fc&units=imperial';
 
 fetch(apiWeatherURL)
   .then((response) => response.json())
   .then ((jsObject2) => {
     console.table(jsObject2); 
 
-    let forecastDays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+    // console.log(jsObject2.list[0].dt_txt);
 
-//   const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';  // note the concatenation
+    var forecast5 = []     //create new array of just 18:00:00 objects
+    for (i = 0; i< jsObject2.list.length; i++) {
+     
+      if (jsObject2.list[i].dt_txt.includes('18:00:00')) {                  ///.clouds.dt_txt === "*18:00:00")
+        // console.log(jsObject2.list[i].dt_txt);
+        forecast5.push(jsObject2.list[i]);
+      }
+      // else {
+      //   console.log(jsObject2.list[i].dt_txt);
+      // }
+    }
+    console.log(forecast5);  //check new array
+
+    //Populate days in the forecast
+
+    let forecastDays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+    var forecastIndex = 0;
+    var days5 = new Array();
+    for (i = 0; i<5; i++) {
+      forecastIndex = (d.getDay() + i) % forecastDays.length;
+      days5.push(forecastDays[forecastIndex]);
+      
+    }
+    console.log(days5);
+
+    //publish 5-day data to webpage
+    var strForecast = "";
+    for (i = 0; i<5; i++) {
+          
+      strForecast = strForecast +=`<section class = "day${i+1}"> ${days5[i]}<br> 
+      <img class = "forecastImg" src= "https://openweathermap.org/img/w/${forecast5[i].weather[0].icon}.png" 
+      alt = "${forecast5[i].weather[0].description}"><br>
+      <div class = "forecastDayTemp">${forecast5[i].main.temp.toFixed(0)} &#8457;</div></section>`;
+      }
+
+    document.getElementById('gridForecast').innerHTML = strForecast;
+   
+  });
+  
+  //   const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';  // note the concatenation
 // const desc = jsObject2.weather[0].description;  // note how we reference the weather array
 // document.getElementById('imagesrc').textContent = imagesrc;  // informational specification only
 // document.getElementById('icon').setAttribute('src', imagesrc);  // focus on the setAttribute() method
 // document.getElementById('icon').setAttribute('alt', desc);
 
-  });
 
   

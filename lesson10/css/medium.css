@@ -139,9 +139,9 @@ main{
   font-size: 1.35em;
 }
 
-.gridForecast{
+#gridForecast{
   padding: 15px;
-  font-size: 1em;
+  font-size: 1.5em;
 }
 
 .day1 img {
