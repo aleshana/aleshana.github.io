@@ -408,6 +408,11 @@ section.homeTownBox {
 
 }
 
+article figure {      /*add to week 10 */
+  margin: auto;
+  padding: 5px;
+}
+
 
 .homeArticles article img {
   float:left;
