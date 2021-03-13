@@ -243,12 +243,12 @@ p.homePara {
   margin: auto;
 }
 
-.homeArticles Article {
+/* .homeArticles Article {     Change in week 10
   background: #e4f0d0;
   border: solid 3px #a1b5d8;
   margin: 5px 0;
   max-width: 800px;
-}
+} */
 
 .homeArticles h2 {
   background: #363D45;
@@ -271,10 +271,10 @@ p.homePara {
   margin: auto;
 }
 
-.homeArticles article img {
+.homeArticles picture img {
   float:left;
   border: 3px solid #a1b5d8;
-  margin: 10px;
+  margin: auto 10px;  /*change in week 10*/
 }
 
 .articleCap{

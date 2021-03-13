@@ -1,6 +1,6 @@
 
 
-// Todays Current Date
+/************Todays Current Date********/
 var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
 
 var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
@@ -17,26 +17,28 @@ console.log(fullDate);
 document.getElementById("currentDate").innerHTML = fullDate;
 
 
-// Toggle Function
+/**************Toggle Function********/
 function toggleMenu() {
     document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
 }
 
 
-//Current Year
+/************Current Year********/
 var todaysDate = new Date();
 var todaysYear = todaysDate.getFullYear();
 console.log(todaysYear);
 document.getElementById("currentYear").innerHTML = todaysYear;
 
 
-//Pancake Breakfast on Saturdays
+/**************Pancake Breakfast on Saturdays********/
 
-if (todaysWeekDay == "Friday") {
-    document.getElementById("pancakes").innerHTML = "Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.";
+// if (todaysWeekDay == "Friday") {
+//     document.getElementById("pancakes").innerHTML = "Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.";
 
-}
-// Loading Font
+// }
+
+
+//**************Loading Font********/
 
 WebFont.load({
     google: {
@@ -64,10 +66,10 @@ fetch(requestURL)
   .then(function (response) {
     return response.json();
   })
-  .then(function (jsonObject) {
-    console.table(jsonObject);  // temporary checking for valid response and data parsing
+  .then(function (jsonTown) {
+    console.table(jsonTown);  // temporary checking for valid response and data parsing
 
-    const towns = jsonObject['towns']; //Store data in array
+    const towns = jsonTown['towns']; //Store data in array
 
     const boxes = document.querySelector('div.townsDiv');  /// the boxes location in HTML
 

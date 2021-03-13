@@ -168,7 +168,7 @@ main{
   display: inline;
   float: right;
   width: 40%;
-  margin: 3px;
+  margin: 1px;
 }
 
 
@@ -395,16 +395,24 @@ section.homeTownBox {
 }
 
 
+/* .homeArticles img {
+  width: 150px;
+  /* margin: auto;
+  padding: 0;
+} */
 .homeArticles img {
   width: 150px;
-  margin: auto;
+  margin: 1px;
+  padding: 1px;
+  border: solid 3px #a1b5d8;
+
 }
+
 
 .homeArticles article img {
   float:left;
   border: 3px solid #a1b5d8;
-  margin: 10px;
-}
+  }
 
 .articleCap{
   display: none;
