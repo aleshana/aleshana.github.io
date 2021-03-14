@@ -180,7 +180,7 @@ fetch(apiWeatherURL)
     let forecastDays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
     var forecastIndex = 0;
     var days5 = new Array();
-    for (i = 0; i<5; i++) {
+    for (i = 0; i<6; i++) {
       forecastIndex = (d.getDay() + i) % forecastDays.length;
       days5.push(forecastDays[forecastIndex]);
       
@@ -191,7 +191,7 @@ fetch(apiWeatherURL)
     var strForecast = "";
     for (i = 0; i<5; i++) {
           
-      strForecast = strForecast +=`<section class = "day${i+1}"> ${days5[i]}<br> 
+      strForecast = strForecast +=`<section class = "day${i+1}"> ${days5[i+1]}<br> 
       <img class = "forecastImg" src= "https://openweathermap.org/img/w/${forecast5[i].weather[0].icon}.png" 
       alt = "${forecast5[i].weather[0].description}"><br>
       <div class = "forecastDayTemp">${forecast5[i].main.temp.toFixed(0)} &#8457;</div></section>`;

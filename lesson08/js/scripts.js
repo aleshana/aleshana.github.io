@@ -30,12 +30,6 @@ console.log(todaysYear);
 document.getElementById("currentYear").innerHTML = todaysYear;
 
 
-//Pancake Breakfast on Saturdays
-
-if (todaysWeekDay == "Friday") {
-    document.getElementById("pancakes").innerHTML = "Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.";
-
-}
 // Loading Font
 
 WebFont.load({
@@ -56,3 +50,10 @@ WebFont.load({
     document.getElementById("ratingvalue").innerHTML = rating;
 }
   
+
+//Pancake Breakfast on Saturdays
+
+if (todaysWeekDay == "Friday") {
+  document.getElementById("pancakes").innerHTML = "Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.";
+
+}
