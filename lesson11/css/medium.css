@@ -139,7 +139,7 @@ main{
   font-size: 1.35em;
 }
 
-#gridForecast{
+.gridForecast{
   padding: 15px;
   font-size: 1.5em;
 }

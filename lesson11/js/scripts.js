@@ -113,19 +113,19 @@ fetch(requestURL)
     });
 });
 
-/*********JSON CURRENT WEATHER DATA***********/
+/*********JSON PRESTON CURRENT WEATHER DATA***********/
 
-const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=e73db471f9317b7f3bf9d5f6c28904fc&units=imperial';
+const prestonCurrentURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=e73db471f9317b7f3bf9d5f6c28904fc&units=imperial';
 
-fetch(apiURL)
+fetch(prestonCurrentURL)
   .then((response) => response.json())
   .then ((jsObject) => {
     // console.table(jsObject);  // temporary checking for valid response and data parsing
     
-    document.getElementById('windSpeed').textContent = jsObject.wind.speed.toFixed(0);
-    document.getElementById('currentTemp').textContent = jsObject.main.temp.toFixed(0);
-    document.getElementById('currentDesc').textContent = jsObject.weather[0].main;
-    document.getElementById('humidity').textContent =  jsObject.main.humidity;
+    document.getElementById('windSpeedPreston').textContent = jsObject.wind.speed.toFixed(0);
+    document.getElementById('currentTempPreston').textContent = jsObject.main.temp.toFixed(0);
+    document.getElementById('currentDescPreston').textContent = jsObject.weather[0].main;
+    document.getElementById('humidityPreston').textContent =  jsObject.main.humidity;
 
     /*************** Wind Chill Calculations and outputing *************/
     var Temperature = jsObject.main.temp;
@@ -133,7 +133,7 @@ fetch(apiURL)
     console.log(Temperature);
   
     var answer = windChill(Temperature, WindSpeed);
-    document.getElementById('windChillOutput').innerHTML = "Wind Chill:  " + answer + " &#8457;";
+    document.getElementById('windChillPreston').innerHTML = "Wind Chill:  " + answer + " &#8457;";
 
     function windChill(tempF, speed) {
       var wc = "N/A";
@@ -150,12 +150,66 @@ fetch(apiURL)
 
 });
 
-/*********JSON FORECAST DATA***********/
+/*********JSON PRESTON FORECAST DATA***********/
 // let cityID = '5604473';
 // let keyID = 'e73db471f9317b7f3bf9d5f6c28904fc';
-let apiWeatherURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=e73db471f9317b7f3bf9d5f6c28904fc&units=imperial';
+let prestonForecastURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=e73db471f9317b7f3bf9d5f6c28904fc&units=imperial';
 
-fetch(apiWeatherURL)
+fetch(prestonForecastURL)
+  .then((response) => response.json())
+  .then ((jsObject2) => {
+    console.table(jsObject2); 
+
+    console.log(jsObject2.list[0].dt_txt);
+
+    var forecast5 = []     //create new array of just 18:00:00 objects
+    for (i = 0; i< jsObject2.list.length; i++) {
+     
+      if (jsObject2.list[i].dt_txt.includes('18:00:00')) {                  ///.clouds.dt_txt === "*18:00:00")
+        // console.log(jsObject2.list[i].dt_txt);
+        forecast5.push(jsObject2.list[i]);
+      }
+      // else {
+      //   console.log(jsObject2.list[i].dt_txt);
+      // }
+    }
+    console.log(forecast5);  //check new array
+
+    //Populate days in the forecast
+
+    let forecastDays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+    var forecastIndex = 0;
+    var days5 = new Array();
+    for (i = 0; i<6; i++) {
+      forecastIndex = (d.getDay() + i) % forecastDays.length;
+      days5.push(forecastDays[forecastIndex]);
+      
+    }
+    console.log(days5);
+
+    //publish 5-day data to webpage
+    var strForecast = "";
+    for (i = 0; i<5; i++) {
+          
+      strForecast = strForecast +=`<section class = "day${i+1}"> ${days5[i+1]}<br> 
+      <img class = "forecastImg" src= "https://openweathermap.org/img/w/${forecast5[i].weather[0].icon}.png" 
+      alt = "${forecast5[i].weather[0].description}"><br>
+      <div class = "forecastDayTemp">${forecast5[i].main.temp.toFixed(0)} &#8457;</div></section>`;
+      }
+      console.log(strForecast);
+
+    document.getElementById('gridForecastPreston').innerHTML = strForecast;
+   
+  });
+  
+
+
+/*********JSON FISH HAVEN FORECAST DATA***********/
+// let cityID = '5585010';
+// let keyID = 'e73db471f9317b7f3bf9d5f6c28904fc';
+let fishHavenForecastURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5585010&appid=e73db471f9317b7f3bf9d5f6c28904fc&units=imperial';
+
+fetch(fishHavenForecastURL)
   .then((response) => response.json())
   .then ((jsObject2) => {
     console.table(jsObject2); 
@@ -197,15 +251,135 @@ fetch(apiWeatherURL)
       <div class = "forecastDayTemp">${forecast5[i].main.temp.toFixed(0)} &#8457;</div></section>`;
       }
 
-    document.getElementById('gridForecast').innerHTML = strForecast;
+    document.getElementById('gridForecastFishHaven').innerHTML = strForecast;
    
   });
-  
-  //   const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';  // note the concatenation
-// const desc = jsObject2.weather[0].description;  // note how we reference the weather array
-// document.getElementById('imagesrc').textContent = imagesrc;  // informational specification only
-// document.getElementById('icon').setAttribute('src', imagesrc);  // focus on the setAttribute() method
-// document.getElementById('icon').setAttribute('alt', desc);
 
+  /*********JSON FISH HAVEN CURRENT WEATHER DATA***********/
+
+const fishHavenCurrentURL = 'https://api.openweathermap.org/data/2.5/weather?id=5585010&appid=e73db471f9317b7f3bf9d5f6c28904fc&units=imperial';
+
+
+fetch(fishHavenCurrentURL)
+  .then((response) => response.json())
+  .then ((jsObject) => {
+  console.table(jsObject);  // temporary checking for valid response and data parsing
+    
+    document.getElementById('windSpeedFishHaven').textContent = jsObject.wind.speed.toFixed(0);
+    document.getElementById('currentTempFishHaven').textContent = jsObject.main.temp.toFixed(0);
+    document.getElementById('currentDescFishHaven').textContent = jsObject.weather[0].main;
+    document.getElementById('humidityFishHaven').textContent =  jsObject.main.humidity;
+
+    /*************** Wind Chill Calculations and outputing *************/
+    var Temperature = jsObject.main.temp;
+    var WindSpeed = jsObject.wind.speed;
+    console.log(Temperature);
+  
+    var answer = windChill(Temperature, WindSpeed);
+    document.getElementById('windChillFishHaven').innerHTML = "Wind Chill:  " + answer + " &#8457;";
+
+    function windChill(tempF, speed) {
+      var wc = "N/A";
+      if (tempF < 50 & speed > 4.8) {
+          wc = 35.74 + (0.6215 * tempF) - (35.75 * ( Math.pow(speed, .16))) + (.4275 * tempF) * (Math.pow(speed, .16));
+          // console.log(wc);
+          // console.log(tempF);
+          // console.log(speed);
+          wc = wc.toFixed(0)
+        }   
+      return wc;
+      
+    }
+
+});
+
+/*********JSON SODA SPRINGS FORECAST DATA***********/
+// let cityID = '5607916';
+// let keyID = 'e73db471f9317b7f3bf9d5f6c28904fc';
+let sodaSpringsForecastURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5607916&appid=e73db471f9317b7f3bf9d5f6c28904fc&units=imperial';
+
+fetch(sodaSpringsForecastURL)
+  .then((response) => response.json())
+  .then ((jsObject2) => {
+    console.table(jsObject2); 
+
+    // console.log(jsObject2.list[0].dt_txt);
+
+    var forecast5 = []     //create new array of just 18:00:00 objects
+    for (i = 0; i< jsObject2.list.length; i++) {
+     
+      if (jsObject2.list[i].dt_txt.includes('18:00:00')) {                  ///.clouds.dt_txt === "*18:00:00")
+        // console.log(jsObject2.list[i].dt_txt);
+        forecast5.push(jsObject2.list[i]);
+      }
+      // else {
+      //   console.log(jsObject2.list[i].dt_txt);
+      // }
+    }
+    console.log(forecast5);  //check new array
+
+    //Populate days in the forecast
+
+    let forecastDays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+    var forecastIndex = 0;
+    var days5 = new Array();
+    for (i = 0; i<6; i++) {
+      forecastIndex = (d.getDay() + i) % forecastDays.length;
+      days5.push(forecastDays[forecastIndex]);
+      
+    }
+    console.log(days5);
+
+    //publish 5-day data to webpage
+    var strForecast = "";
+    for (i = 0; i<5; i++) {
+          
+      strForecast = strForecast +=`<section class = "day${i+1}"> ${days5[i+1]}<br> 
+      <img class = "forecastImg" src= "https://openweathermap.org/img/w/${forecast5[i].weather[0].icon}.png" 
+      alt = "${forecast5[i].weather[0].description}"><br>
+      <div class = "forecastDayTemp">${forecast5[i].main.temp.toFixed(0)} &#8457;</div></section>`;
+      }
+
+    document.getElementById('gridForecastSodaSprings').innerHTML = strForecast;
+   
+  });
+
+  /*********JSON SODA SPRINGS CURRENT WEATHER DATA***********/
+
+const sodaSpringsCurrentURL = 'https://api.openweathermap.org/data/2.5/weather?id=5607916&appid=e73db471f9317b7f3bf9d5f6c28904fc&units=imperial';
+
+
+fetch(sodaSpringsCurrentURL)
+  .then((response) => response.json())
+  .then ((jsObject) => {
+  console.table(jsObject);  // temporary checking for valid response and data parsing
+    
+    document.getElementById('windSpeedSodaSprings').textContent = jsObject.wind.speed.toFixed(0);
+    document.getElementById('currentTempSodaSprings').textContent = jsObject.main.temp.toFixed(0);
+    document.getElementById('currentDescSodaSprings').textContent = jsObject.weather[0].main;
+    document.getElementById('humiditySodaSprings').textContent =  jsObject.main.humidity;
+
+    /*************** Wind Chill Calculations and outputing *************/
+    var Temperature = jsObject.main.temp;
+    var WindSpeed = jsObject.wind.speed;
+    console.log(Temperature);
+  
+    var answer = windChill(Temperature, WindSpeed);
+    document.getElementById('windChillSodaSprings').innerHTML = "Wind Chill:  " + answer + " &#8457;";
+
+    function windChill(tempF, speed) {
+      var wc = "N/A";
+      if (tempF < 50 & speed > 4.8) {
+          wc = 35.74 + (0.6215 * tempF) - (35.75 * ( Math.pow(speed, .16))) + (.4275 * tempF) * (Math.pow(speed, .16));
+          // console.log(wc);
+          // console.log(tempF);
+          // console.log(speed);
+          wc = wc.toFixed(0)
+        }   
+      return wc;
+      
+    }
+
+});
 
   

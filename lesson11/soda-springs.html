@@ -31,7 +31,7 @@
 <nav>
     <ul class = "navigation">
         <li><a href = "#" onclick = "toggleMenu()">  &#9776; Menu</a></li>
-        <li><a href = "#">Home</a></li>
+        <li><a href = "index.html>Home</a></li>
         <li><a href = "preston.html">Preston</a></li>
         <li class= "active"><a href = "soda-springs.html">Soda Springs</a></li>
         <li><a href = "fish-haven.html">Fish Haven</a></li>
@@ -45,6 +45,36 @@
 
 <main>
     <h2 class = "mainHeading">Soda Springs, Idaho</h2>
+
+    <div class = "heroSummary"> 
+        <div class = "heroImage">
+            <picture class = "heroImagePix">
+                <source media="(max-width: 400px)" srcset="images/heroImg200.jpg">
+                <source media="(max-width: 799px)" srcset="images/heroImg500.jpg">
+                <source media="(min-width: 800px)" srcset="images/heroImg800.jpg">
+                <img src="sunrayCountryside2.jpg" alt="Sunrays on a green countryside.">
+              </picture>
+        </div>
+
+        <section class= "weatherSummary">
+            <h3>Weather Summary</h3>
+            Currently: <span id = "currentDescSodaSprings"></span><br>
+            Temp: <span id= "currentTempSodaSprings"></span> &#8457;<br>
+            Humidity: <span id="humiditySodaSprings"></span> %<br>
+            <!-- Low: <span id='lowTemp'></span> &#8457;<br> -->
+            Wind Speed: <span id = "windSpeedSodaSprings"></span> MPH<br>
+            <span id="windChillSodaSprings">
+                <!-- <script type="text/javascript">window.onload = doInputOutput();</script>  -->
+            </span>
+        </section>
+    </div>
+
+    <section class = "forecastDiv"> 
+        <h3>5 Day Forecast</h3>
+        <div id = "gridForecastSodaSprings" class= "gridForecast">
+        
+        </div>
+    </section>
     <h3>Localized Cold Front Freezes Lake in Time for Hockey Game</h3>
 
     <article class = "homeArticle3">

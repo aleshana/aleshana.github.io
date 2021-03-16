@@ -32,7 +32,7 @@
 <nav>
     <ul class = "navigation">
         <li><a href = "#" onclick = "toggleMenu()">  &#9776; Menu</a></li>
-        <li><a href = "#">Home</a></li>
+        <li><a href = "index.html">Home</a></li>
         <li><a href = "preston.html">Preston</a></li>
         <li><a href = "soda-springs.html">Soda Springs</a></li>
         <li class= "active"><a href = "fish-haven.html">Fish Haven</a></li>
@@ -46,9 +46,41 @@
 
 <main>
     <h2 class = "mainHeading">Fish Haven, Idaho</h2>
-    <h3>Falling Fish from Sky Populate Local Reservoir</h3>
+    
+
+    <div class = "heroSummary"> 
+        <div class = "heroImage">
+            <picture class = "heroImagePix">
+                <source media="(max-width: 400px)" srcset="images/heroImg200.jpg">
+                <source media="(max-width: 799px)" srcset="images/heroImg500.jpg">
+                <source media="(min-width: 800px)" srcset="images/heroImg800.jpg">
+                <img src="sunrayCountryside2.jpg" alt="Sunrays on a green countryside.">
+              </picture>
+        </div>
+
+        <section class= "weatherSummary">
+            <h3>Weather Summary</h3>
+            Currently: <span id = "currentDescFishHaven"></span><br>
+            Temp: <span id= "currentTempFishHaven"></span> &#8457;<br>
+            Humidity: <span id="humidityFishHaven"></span> %<br>
+            Wind Speed: <span id = "windSpeedFishHaven"></span> MPH<br>
+            <span id="windChillFishHaven">
+                
+            </span>
+        </section>
+    </div>
+
+    <section class = "forecastDiv"> 
+        <h3>5 Day Forecast</h3>
+       <div id = "gridForecastFishHaven" class= "gridForecast">
+
+        
+        </div>
+    </section>
+
 
     <article class = "homeArticle2">
+        <h3>Falling Fish from Sky Populate Local Reservoir</h3>
         
         <!-- <h4 class = "homeArticle2Header">Falling Fish from Sky Populate Local Reservoir</h4> -->
       <picture class = "homeArticleImg2">
