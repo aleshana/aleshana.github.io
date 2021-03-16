@@ -1,0 +1,201 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Assignment for WWD 230-Weather website, Homepage">
+    <meta name="author" content="Alesha Anderson McCown">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page-The Climate Lowdown</title>
+    <link rel="stylesheet" href="css/normalize2.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    
+
+</head>
+<body>
+    <div class ="content">
+   
+<header>
+
+    <img class= "logoImg" src = "images/logo.png" alt = "The logo for Climate Lowdown.">
+    <div class = "titleBar">
+        <h1 class = "headerTitle">Climate Lowdown</h1> 
+        <div class = "headerTagline">The whole weather story is here.</div>
+    </div>
+   
+</header>
+   
+<hr>
+
+<nav>
+    <ul class = "navigation">
+        <li><a href = "#" onclick = "toggleMenu()">  &#9776; Menu</a></li>
+        <li class= "active"><a href = "#">Home</a></li>
+        <li ><a href = "preston-10.html">Preston</a></li>
+        <li ><a href = "#">Soda Springs</a></li>
+        <li><a href = "#">Fish Haven</a></li>
+        <li><a href = "stormcenter.html">Storm Center</a></li>
+        <li><a href = "gallery.html">Gallery</a></li>
+
+    </ul>
+</nav>
+
+<hr>
+
+<main>
+
+        <div class = "heroHomeImage">
+            <picture class = "heroHomeImagePix">
+                <!-- <source media="(max-width: 400px)" srcset="images/mudRoad320.jpg">
+                 <source media="(max-width: 799px)" srcset="images/heroHomeImg500.jpg"> -->
+                <!-- <source media="(min-width: 800px)" srcset="images/mudRoad800.jpg"> --> 
+                <img src="images/mudRoad.jpg" alt="A Country Side Road after a Storm.">
+              </picture>
+        </div>
+        
+        <div class = "gridTowns">
+        <div class= "townsDiv"></div>
+        </div>
+
+<div class = "homeArticles">
+    
+     
+      <h2 class = "homeArticilesHeader">Featured Weather Stories</h2>
+      
+      
+      <article class = "homeArticle1">
+        <h4 class = "homeArticle1Header">Lightening Strike Energized Power Plant</h4>
+        <picture class = "homeArticleImg1" >
+            <source media="(max-width: 400px)" srcset="images/lightening200.jpg">
+            <source media="(max-width: 799px)" srcset="images/lightening500.jpg">
+            <source media="(min-width: 800px)" srcset="images/lightening800.jpg">
+            <img src="lighteningNight.jpg" alt="Massive lightening bold striking a structure.">
+            <div class="articleCap">Preston's power plant was hit by lightening.</div>
+        </picture>
+      <p class = "homeArticle1Para">A massive bolt of lightening hit the Preston, Idaho
+          power plant filling up the stations energy coffers.  During Wednesday's nights rainstorm,
+          the lightening hit the exact spot of the power plants generator, filling it to capacity.
+          The stunned power manager, John Electrica said, "I have never seen anything like this before,
+          residents will have free power for months."  <a href = "homeArticles.html">Continue Reading...</a>
+      </p>
+    </article>
+
+    <article class = "homeArticle2">
+        
+        <h4 class = "homeArticle2Header">Falling Fish from Sky Populate Reservoir</h4>
+      <picture class = "homeArticleImg2">
+        <source media="(max-width: 400px)" srcset="images/fish200.jpg">
+        <source media="(max-width: 799px)" srcset="images/fish500.jpg">
+        <source media="(min-width: 800px)" srcset="images/fish800.jpg">
+        <img src="fish.jpg" alt="Heavliy populated fish in pond.">
+        <div class="articleCap">The Reservoir is well stocked in the Fish Haven.</div>
+      </picture>
+      <p class = "homeArticle2Para">The fish hole of residents from Fish Haven was suddenly stocked 
+          with new fish from an unlikely source.  People close to Fish Haven Reservoir reported a large
+          dark cloud suddenly hovering over the water.  Suddenly, the cloud began to rain fish. The cloud
+          continued to shower the lake with what appeared to be rainbow trout, a favorite fish among
+          residents.  <a href = "homeArticles.html">Continue Reading...</a>
+      </p>
+       
+    </article>
+
+    <article class = "homeArticle3">
+    <h4 class = "homeArticle3Header">Localized Cold Front Freezes Lake in Time for Hockey Game</h4>
+      <picture class = "homeArticleImg3">
+        <source media="(max-width: 400px)" srcset="images/hockey200.jpg">
+        <source media="(max-width: 799px)" srcset="images/hockey500.jpg">
+        <source media="(min-width: 800px)" srcset="images/hockey800.jpg">
+        <img src="hockey.jpg" alt="Men playing hockey on a lake.">
+        <div class="articleCap">Boys play on the frozen Soda Springs Pond.</div>
+        </picture>
+        <p class = "homeArticle3Para">A radical cold front breifly decsended on Soda Springs Pond yesterday
+          causing the entire body of water to freeze solid.  Meteorolgists are baffled by the quick moving
+          extremely small cold front that materialized and then disappaited over Soda Springs Pond. George
+          Weather, a local broadcaster for Channel 11, was flabergasted saying, "I have never seen anything like this.  It's 
+          as if the Boys Championship Hockey Game just had to happen!" <a href = "homeArticles.html">Continue Reading...</a>
+      </p>
+      </article>
+
+    <article class = "homeArticle4">
+      <h4 class = "homeArticle4Header">A Sudden Wind Gust Transports Women's Condemed Home</h4>
+      <picture class = "homeArticleImg4">
+        <source media="(max-width: 400px)" srcset="images/pioneerHome200.jpg">
+        <source media="(max-width: 799px)" srcset="images/pioneerHome500.jpg">
+        <source media="(min-width: 800px)" srcset="images/pioneerHome800.jpg">
+        <img src="pioneerHome.jpg" alt="Old rock pioneer school.">
+        <div class="articleCap">The pioneer home landed safely and unharmed.</div>
+      </picture>
+      <p class = "homeArticle4Para">Whitnesses claim yesterday, that it was a scene right out of
+          the "Wizard of Oz".  An old pioneer home was picked up by a sudden windstorm and transported
+          mile away.  The appeared to land intact and completely unharmed 50 yards from North Fork
+          Creek. It is unclear whether the wind was an actual tornado or just a really strong gust.
+          <a href = "homeArticles.html">Continue Reading...</a>
+      </p>
+      
+    </article>
+</div>
+    
+</main>
+
+<footer>
+  
+    <div class= "gridContact"> 
+        <div class = "gridColumn1">
+    
+        <div class = "contantInfo">
+            <h3>Contact Information</h3> 
+            &#128205; Address:  123 Anywhere Drive, Cloud City, Heaven<br>    
+            &#128231; Email: anyone@emailaddress.com<br>
+            &#128222; Phone: (555) 555-5555<br>   
+        </div>  
+       
+        <div class = "socialMediaDiv">
+            <ul class = "socialMediaTable">
+                <li>
+                    <a rel="noopener" target="_blank" href="https://www.facebook.com/">
+                        <img src="images/facebook1.png" alt = "facebook icon">
+                    </a>
+                </li>
+                <li>
+                    <a rel="noopener" target="_blank" href="https://www.twitter.com/">
+                        <img src="images/twitter1.png" alt = "twitter icon">
+                    </a>
+                </li> 
+                <li>
+                    <a rel="noopener" target="_blank" href="https://www.whatsapp.com/">
+                        <img src="images/whatsApp1.png" alt = "whats App icon">
+                    </a>
+                </li>
+
+                <li>
+                    <a rel="noopener" target="_blank" href="https://www.youtube.com/">
+                        <img src="images/youTube1.png" alt = "Youtube icon">
+                    </a>
+                </li>
+            </ul>
+            </div>
+        </div>
+   
+    
+            <div class = "gridColumn2">   
+            <img class= "mapImg" src = "images/mapImg2.jpg" alt= "Contact Map"  >
+            </div>
+        </div>
+
+    <div class = "footerBar">
+        &copy;<span id= "currentYear"> </span>| Climate Lowdown | Alesha Anderson McCown | Utah
+            <div class= "currentDate" id = "currentDate">
+            </div>
+    </div>
+
+</footer>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script src = "js/scripts.js"></script>
+</body>
+
+</html>
+
