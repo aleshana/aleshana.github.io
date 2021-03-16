@@ -1,0 +1,143 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Assignment for WWD 230-Weather website, Fish Haven Page">
+    <meta name="author" content="Alesha Anderson McCown">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fish Haven-The Climate Lowdown</title>
+    <link rel="stylesheet" href="css/normalize2.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    
+
+</head>
+<body>
+    <div class ="content">
+   
+<header>
+
+    <img class= "logoImg" src = "images/logo.png" alt = "The logo for Climate Lowdown.">
+    <div class = "titleBar">
+        <h1 class = "headerTitle">Climate Lowdown</h1> 
+        <div class = "headerTagline">The whole weather story is here.</div>
+    </div>
+   
+</header>
+   
+<hr>
+
+<nav>
+    <ul class = "navigation">
+        <li><a href = "#" onclick = "toggleMenu()">  &#9776; Menu</a></li>
+        <li><a href = "#">Home</a></li>
+        <li><a href = "preston.html">Preston</a></li>
+        <li><a href = "soda-springs.html">Soda Springs</a></li>
+        <li class= "active"><a href = "fish-haven.html">Fish Haven</a></li>
+        <li><a href = "stormcenter.html">Storm Center</a></li>
+        <li><a href = "gallery.html">Gallery</a></li>
+
+    </ul>
+</nav>
+
+<hr>
+
+<main>
+    <h2 class = "mainHeading">Fish Haven, Idaho</h2>
+    <h3>Falling Fish from Sky Populate Local Reservoir</h3>
+
+    <article class = "homeArticle2">
+        
+        <!-- <h4 class = "homeArticle2Header">Falling Fish from Sky Populate Local Reservoir</h4> -->
+      <picture class = "homeArticleImg2">
+        <source media="(max-width: 400px)" srcset="images/fish200.jpg">
+        <source media="(max-width: 799px)" srcset="images/fish500.jpg">
+        <source media="(min-width: 800px)" srcset="images/fish800.jpg">
+        <img src="fish.jpg" alt="Heavliy populated fish in pond.">
+      </picture>
+      <p class = "homeArticle2Para">The fish hole of residents from Fish Haven was suddenly stocked 
+          with new fish from an unlikely source.  People close to Fish Haven Reservoir reported a large
+          dark cloud suddenly hovering over the water.  Suddenly, the cloud began to rain fish. The cloud
+          continued to shower the lake with what appeared to be rainbow trout, a favorite fish among
+          residents.  
+      </p>
+       <p>The National Forest Service was there today counting and sampling the fish.  Roger Forester,
+           a wild life and fish expert from the forest service said, "these are the biggest and tastiet
+           fish I have ever seen.  Adding that there is just the right fish population for a healthy 
+           fish environment."  
+       </p>
+        <p>The State of Idaho announced earlier this year, that Fish Haven Reservoir
+            would not be stocked with year due to budget cuts.  Many residents and tourists who frequent
+            the beloved fish whole had unsuccessfully petitioned the state to change their stance.
+            Local resident, Janet Salmon, joyful proclaimed, "My family will be able to eat fish all 
+            year now."
+        </p>
+    </article>
+
+    
+</main>
+
+<footer>
+  
+    <div class= "gridContact"> 
+        <div class = "gridColumn1">
+    
+        <div class = "contantInfo">
+            <h3>Contact Information</h3> 
+            &#128205; Address:  123 Anywhere Drive, Cloud City, Heaven<br>    
+            &#128231; Email: anyone@emailaddress.com<br>
+            &#128222; Phone: (555) 555-5555<br>   
+        </div>  
+       
+        <div class = "socialMediaDiv">
+            <ul class = "socialMediaTable">
+                <li>
+                    <a rel="noopener" target="_blank" href="https://www.facebook.com/">
+                        <img src="images/facebook1.png" alt = "facebook icon">
+                    </a>
+                </li>
+                <li>
+                    <a rel="noopener" target="_blank" href="https://www.twitter.com/">
+                        <img src="images/twitter1.png" alt = "twitter icon">
+                    </a>
+                </li> 
+                <li>
+                    <a rel="noopener" target="_blank" href="https://www.whatsapp.com/">
+                        <img src="images/whatsApp1.png" alt = "whats App icon">
+                    </a>
+                </li>
+
+                <li>
+                    <a rel="noopener" target="_blank" href="https://www.youtube.com/">
+                        <img src="images/youTube1.png" alt = "Youtube icon">
+                    </a>
+                </li>
+            </ul>
+            </div>
+        </div>
+   
+    
+            <div class = "gridColumn2">   
+            <img class= "mapImg" src = "images/mapImg2.jpg" alt= "Contact Map"  >
+            </div>
+        </div>
+
+    <div class = "footerBar">
+        Weather data provided by 
+        <a target="_blank" rel="noopener" href="https://https://openweathermap.org//">OpenWeatherMap</a><br>
+        &copy;<span id= "currentYear"> </span>| Climate Lowdown | Alesha Anderson McCown | Utah
+            <div class= "currentDate" id = "currentDate">
+            </div>
+    </div>
+
+</footer>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script src = "js/scripts.js"></script>
+</body>
+
+</html>
+
