@@ -160,18 +160,28 @@ main{
   width: 75px;
 }
   
-.articleImg1 {
+/* .articleImg1 {
   display: none
-}
+} */
 
-.articleImg2 {
+/* .articleImg2 {
   display: inline;
   float: right;
   width: 40%;
   margin: 3px;
+} */
+
+.prestonArticle img {
+  display:inline;
+  float:left;
+  width: 200px;
+  margin: auto 10px;
+  
 }
 
-
+.prestonArticleCap {
+  display:none;
+  }
 
   /* Main footer css  */
 
@@ -216,7 +226,6 @@ main{
 .gridGallery{
 
   grid-template-columns: 1fr 1fr;
-  border: #363d45 dashed 1px;
   grid-gap: 1px;
     
 }
@@ -409,6 +418,34 @@ section.homeTownBox {
 .articleCap{
   display: none;
   }
+
+
+/************Soda Springs Page************/
+.sodaSpringsArticle img {
+  display:inline;
+  float:left;
+  width: 200px;
+  margin: auto 10px;
+
+}
+
+.sodaSpringsArticleCap {
+  display:none;
+  }
+
+/************Soda Springs Page************/
+.fishHavenArticle img {
+  display:inline;
+  float:left;
+  margin: auto 10px;
+
+}
+
+.fishHavenArticleCap {
+  display:none;
+  }
+
+
 
 
 }

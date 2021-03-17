@@ -232,7 +232,7 @@ body {
   .heroSummary {
     display: block;
     margin: 10px auto;
-    border: 1px dashed;
+    border: #a1b5d8 3px solid;
     padding: 15px;
     background-color:#C2d8b9 ;
     color:#344966 ;
@@ -241,7 +241,7 @@ body {
   .weatherSummary {
     display: block;
     background-color: #F9BE51;
-    border: #363d45 solid 2px;
+    border: #a1b5d8 solid 3px;
     line-height: 1.5em;
     padding: .5em;
 }
@@ -254,11 +254,10 @@ body {
   .forecastDiv{
     display: block;
     margin: 10px auto;
-    border: 1px dashed;
+    border: #a1b5d8 3px solid;
     padding: 15px;
     background-color: #e4f0d0;
     color: #344966;
-    
     
   }
 
@@ -298,7 +297,7 @@ body {
   width: 60px;
 }
 
-  .articleDiv{
+  /* .articleDiv{
     display: block;
     margin: 10px auto;
     border: 1px dashed;
@@ -306,8 +305,21 @@ body {
     background-color:#C2d8b9 ;
     color:#344966 ;
   
-  }
+  } */
 
+
+.prestonArticle img {
+  display:block;
+  width: 200px;
+  margin: auto;
+  border: solid 3px #F9BE51;
+
+}
+
+.prestonArticleCap {
+  text-align: center;
+  font-size: .75em;
+  }
 
 .articleImg2 {
   display: none;
@@ -377,7 +389,7 @@ body {
 .gridGallery{
   display: grid;
   grid-template-columns: 1fr;
-  border: #363d45 dashed 1px;
+  border: #a1b5d8 solid 3px;
   grid-gap: 1px;
     
 }
@@ -681,6 +693,38 @@ color:#a1b5d8;
   font-size: .75em;
   }
 
+.articleHeader {
+  background: #363D45;
+  color: #F9BE51;
+  padding: 10px;
+  margin: 20px 0 10px 0;
+  border: 3px solid #F9BE51;
+  }
 
+/************Soda Springs Page************/
+.sodaSpringsArticle img {
+  display:block;
+  width: 200px;
+  margin: auto;
+  border: solid 3px #F9BE51;
 
+}
 
+.sodaSpringsArticleCap {
+  text-align: center;
+  font-size: .75em;
+  }
+
+/************Fish Haven Page************/
+.fishHavenArticle img {
+  display:block;
+  width: 200px;
+  margin: auto;
+  border: solid 3px #F9BE51;
+
+}
+
+.fishHavenArticleCap {
+  text-align: center;
+  font-size: .75em;
+  }
