@@ -297,17 +297,6 @@ body {
   width: 60px;
 }
 
-  /* .articleDiv{
-    display: block;
-    margin: 10px auto;
-    border: 1px dashed;
-    padding: 15px;
-    background-color:#C2d8b9 ;
-    color:#344966 ;
-  
-  } */
-
-
 .prestonArticle img {
   display:block;
   width: 200px;
@@ -321,7 +310,7 @@ body {
   font-size: .75em;
   }
 
-.articleImg2 {
+/* .articleImg2 {
   display: none;
   
 }
@@ -330,7 +319,31 @@ body {
   display: block;
   width: 100%;
   
+} */
+
+.gridEventsPreston {
+  display:grid;
+  grid-template-columns: 1fr;
+  margin: 0;
 }
+
+.gridEventsPreston1 {
+  grid-row:1;
+  font-size: .75em;
+  font-weight: bold;
+  margin: 0;
+  text-shadow: .5px .5px white;
+  /* padding: 10px; */
+}
+
+.gridEventsPreston2 img{
+  grid-row:2;
+  width: 100%;
+  margin: auto;
+    /* padding: 10px; */
+}
+
+
 
   .gridContact {
     display: block;
@@ -715,6 +728,29 @@ color:#a1b5d8;
   font-size: .75em;
   }
 
+  .gridEventsSodaSprings {
+    display:grid;
+    grid-template-columns: 1fr;
+    margin: 0;
+  }
+  
+  .gridEventsSodaSprings1 {
+    grid-row:1;
+    font-size: .75em;
+    font-weight: bold;
+    margin: 0;
+    text-shadow: .5px .5px white;
+    /* padding: 10px; */
+  }
+  
+  .gridEventsSodaSprings2 img{
+    grid-row:2;
+    width: 100%;
+    margin: auto;
+      /* padding: 10px; */
+  }
+  
+
 /************Fish Haven Page************/
 .fishHavenArticle img {
   display:block;
@@ -727,4 +763,47 @@ color:#a1b5d8;
 .fishHavenArticleCap {
   text-align: center;
   font-size: .75em;
+}
+
+  .gridEventsFishHaven {
+    display:grid;
+    grid-template-columns: 1fr;
+    margin: 0;
   }
+  
+  .gridEventsFishHaven1 {
+    grid-row:1;
+    font-size: .75em;
+    font-weight: bold;
+    margin: 0;
+    text-shadow: .5px .5px white;
+    /* padding: 10px; */
+  }
+  
+  .gridEventsFishHaven2 img{
+    grid-row:2;
+    width: 100%;
+    margin: auto;
+      /* padding: 10px; */
+  }
+  
+
+/********All Town Pages*********/
+.author {
+  font-size: 1em;
+  color:darkblue;
+  text-emphasis: italic;
+}
+
+.eventsDiv {
+  background-color:#a1b5d8;
+  border: solid 3px #a1b5d8;
+  padding:0;
+  margin:0;
+}
+
+.eventsDiv h3{
+background-color: #C2d8b9;
+padding: 5px;
+}
+

@@ -49,9 +49,9 @@
     <div class = "heroSummary"> 
         <div class = "heroImage">
             <picture class = "heroImagePix">
-                <source media="(max-width: 400px)" srcset="images/heroImg200.jpg">
-                <source media="(max-width: 799px)" srcset="images/heroImg500.jpg">
-                <source media="(min-width: 800px)" srcset="images/heroImg800.jpg">
+                <source media="(max-width: 400px)" srcset="images/ssHeroImg200.jpg">
+                <source media="(max-width: 799px)" srcset="images/ssHeroImg500.jpg">
+                <source media="(min-width: 800px)" srcset="images/ssHeroImg800.jpg">
                 <img src="sunrayCountryside2.jpg" alt="Sunrays on a green countryside.">
               </picture>
         </div>
@@ -63,47 +63,46 @@
             Humidity: <span id="humiditySodaSprings"></span> %<br>
             <!-- Low: <span id='lowTemp'></span> &#8457;<br> -->
             Wind Speed: <span id = "windSpeedSodaSprings"></span> MPH<br>
-            <span id="windChillSodaSprings">
-                <!-- <script type="text/javascript">window.onload = doInputOutput();</script>  -->
-            </span>
+            <span id="windChillSodaSprings"></span>
         </section>
     </div>
 
     <section class = "forecastDiv"> 
         <h3>5 Day Forecast</h3>
         <div id = "gridForecastSodaSprings" class= "gridForecast">
-        
+        </div>
+    </section>
+
+    <section class = "eventsDiv"> 
+        <h3>Soda Springs City Events</h3>
+       <div class = "gridEventsSodaSprings" id = "gridEventsSodaSprings">
+            <div class = "gridEventsSodaSprings1" id = "gridEventsSodaSprings1">
+            </div>
+            
+            <div class = "gridEventsSodaSprings2" id = "gridEventsSodaSprings2">
+                <img class = "eventsImgSodaSprings" src="images/ssEventPix.jpg" alt="Girl getting her face painted.">
+            </div>
         </div>
     </section>
     
-    <article class = "sodaSpringsArticle">
-        <h3 class = articleHeader>Localized Cold Front Freezes Lake in Time for Hockey Game</h3>
-
-        <!-- <h4 class = "homeArticle3Header">Localized Cold Front Freezes Lake in Time for Hockey Game</h4> -->
-          <picture class = "sodaSpringsArticleImg">
-            <!-- <source media="(max-width: 400px)" srcset="images/hockey200.jpg">
-            <source media="(max-width: 799px)" srcset="images/hockey500.jpg">
-            <source media="(min-width: 800px)" srcset="images/hockey800.jpg"> -->
-            <img src="images/hockey200.jpg" alt="Men playing hockey on a lake.">
-            <div class ="sodaSpringsArticleCap">Boys play on the frozen Soda Springs Pond.</div>
-          </picture><p class = "sodaSpringsArticlePara">A radical cold front breifly decsended on Soda Springs Pond yesterday
-              causing the entire body of water to freeze solid.  Meteorolgists are baffled by the quick moving
-              extremely small cold front that materialized and then disappaited over Soda Springs Pond. George
-              Weatherman, a local broadcaster for Channel 11, was flabergasted saying, "I have never seen anything like this.  It's 
-              as if the Boys Championship Hockey Game just had to happen!"
-          </p>
-           <p>Many residents claim that this is proof that hockey is a divine sport.  Alice Jumper, whose son
-               is on the Soda Spring Boys Hockey Team, said, "This is proof that hockey games are a matter
-               of great signficance.  No one will ever say, 'It's just a game' anymore."
-           </p>
-            <p>A cold front in extreme is potentially dangerous for surrounding areas.  However, state farm
-                inspectors say that no farms were damaged or touched.  Jacob Plowman, a neighboring farmer,
-                claimed the cold front didn't harm is crops at all. "And now I get to sit back and watch the
-                championship game from my porch."  The original game had been postponed indefinitely until 
-                the city arean's zambogy was repaired.  The game has now been moved to Soda Springs Pond which 
-                has inexplicable remained frozen.
+    <section class = "cityArticles">
+        <article class = "sodaSpringsArticle">
+            <h3 class = articleHeader>Localized Cold Front Freezes Lake in Time for Hockey Game</h3>
+            <picture class = "sodaSpringsArticleImg">
+                <img src="images/hockey200.jpg" alt="Men playing hockey on a lake.">
+                <div class ="sodaSpringsArticleCap">Boys play on the frozen Soda Springs Pond.</div>
+            </picture>
+            <p class="author">By Thunder Darknight</p>  
+            <p class = "sodaSpringsArticlePara">A radical cold front breifly decsended on Soda Springs Pond yesterday
+                causing the entire body of water to freeze solid.  Meteorolgists are baffled by the quick moving
+                extremely small cold front that materialized and then disappaited over Soda Springs Pond. George
+                Weatherman, a local broadcaster for Channel 11, was flabergasted saying, "I have never seen anything like this.  It's 
+                as if the Boys Championship Hockey Game just had to happen!"
+                <a href = "homeArticles.html#homeArticle3">
+                    ...continue reading</a>
             </p>
-        </article>
+            </article>
+    </section>
          
     
 </main>
@@ -166,6 +165,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 <script src = "js/scripts.js"></script>
+<script src = "js/soda-springs.js"></script>
 </body>
 
 </html>

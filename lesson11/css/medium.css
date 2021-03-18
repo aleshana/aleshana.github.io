@@ -183,6 +183,38 @@ main{
   display:none;
   }
 
+  .gridEventsPreston {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+  }
+  
+  .gridEventsPreston1 {
+    grid-column: 1;
+    grid-row:1;
+    font-size: 1.25em;
+    font-weight: bold;
+    margin: 0;
+    text-shadow: .5px .5px white;
+    /* padding: 10px; */
+  }
+  
+  .gridEventsPreston2 {
+    grid-column: 2;
+    grid-row:1;
+    margin: auto;
+      /* padding: 10px; */
+  }
+
+  Img.eventsImgPreston {
+    margin:auto;
+    width: 300px;
+    padding: 20px  10px 10px 10px;
+
+  }
+
+  
+
   /* Main footer css  */
 
   .gridContact {
@@ -433,7 +465,31 @@ section.homeTownBox {
   display:none;
   }
 
-/************Soda Springs Page************/
+  .gridEventsSodaSprings1 {
+    grid-column: 1;
+    grid-row:1;
+    font-size: 1.25em;
+    font-weight: bold;
+    margin: 0;
+    text-shadow: .5px .5px white;
+    /* padding: 10px; */
+  }
+  
+  .gridEventsSodaSprings2 {
+    grid-column: 2;
+    grid-row:1;
+    margin: auto;
+      /* padding: 10px; */
+  }
+
+  Img.eventsImgSodaSprings {
+    margin:auto;
+    width: 300px;
+    padding: 20px  10px 10px 10px;
+
+  }
+
+/************Fish Haven Page************/
 .fishHavenArticle img {
   display:inline;
   float:left;
@@ -445,7 +501,29 @@ section.homeTownBox {
   display:none;
   }
 
+  .gridEventsFishHaven1 {
+    grid-column: 1;
+    grid-row:1;
+    font-size: 1.25em;
+    font-weight: bold;
+    margin: 0;
+    text-shadow: .5px .5px white;
+    /* padding: 10px; */
+  }
+  
+  .gridEventsFishHaven2 {
+    grid-column: 2;
+    grid-row:1;
+    margin: auto;
+      /* padding: 10px; */
+  }
 
+  Img.eventsImgFishHaven {
+    margin:auto;
+    width: 300px;
+    padding: 20px  10px 10px 10px;
+
+  }
 
 
 }

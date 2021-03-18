@@ -110,6 +110,11 @@
 .day5 img {
   width: 110px;
 }
+
+.gridEventsPreston1 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
  
 
   /************ Main footer css ************/
@@ -281,4 +286,16 @@ p.homePara {
   }
 
 
+}
+
+/* Fish Haven Page*/
+.gridEventsFishHaven1 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* Soda Springs Page*/
+.gridEventsSodaSprings1 {
+  font-size: 1.5em;
+  font-weight: bold;
 }
