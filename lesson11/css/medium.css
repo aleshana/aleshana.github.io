@@ -315,24 +315,10 @@ main{
 }
 
 /************Storm Center***************/
-/* form label.top input, form label.top select{
+form {
+  max-width: 800px;
   
-  width: 100%;
-  max-width: 20rem;
-  }
-
-  form fieldset datalist {
-    background-color: #e4f0d0;
-    width: 100%;
-    max-width: 20rem;
-  }
-
-  form label.comments input{
-    width: 100%;
-    max-width: 20rem;
-    
-  } */
-
+}
   /**********HomeTownPage************/
 
 .heroHomeImagePix img{

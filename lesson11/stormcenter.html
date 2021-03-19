@@ -47,21 +47,22 @@
 <main>
     <h2 class = "mainHeading">Storm Center</h2>
     
-    <form method = "get" action = "thanks.html">
+    <form method="post" action="thanks.html">
+
         <fieldset>
             <legend>Personal Information</legend>
-            <label class = "top">Full Name <input type = "text" name ="name" pattern="[A-Za-z]{5,}" required>
-            </label>
+            <label class = "top">Full Name <input type = "text" name ="name" required  pattern="[\sA-Za-z]{5,}">
+            </label> 
             
             <label class = "top">Email<input type = "email" name ="email" placeholder = "someone@somemail.com" 
                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
             </label>
 
-            <label class = "top">Phone<input type = "tel" name ="phone" placeholder = "XXX-XXX-XXXX" 
-                pattern= "\d{3}[\-]\d{3}[\-]\d{4}" required>
+            <label class = "top">Phone<input type = "tel" name ="phone" placeholder = "1235551234" 
+                 required>
             </label>
 
-            <label class = "top">Zip Code<input type = "number" name ="zip" pattern="(\d{5})" required>
+            <label class = "top">Zip Code<input type = "number" name ="zip" required>  <!--pattern="(\d{5})" -->
             </label>
            
         </fieldset>
@@ -70,12 +71,12 @@
         <fieldset>
             <legend>Storm Information</legend>
 
-            <label class = "top">Storm Date<input type = "date" name ="stormDate" placeholder = "XX/XX/XXXX">
+            <label class = "top">Storm Date<input type = "date" name ="stormDate" placeholder = "01/01/2021">
             </label>
             
             
             <label class = "top" for="stormType">Storm Type</label>
-            <input list="stormType" id="stormTypeInput" name="stormTypeInput">
+            <input list="stormType" id="stormTypeInput" name="stormTypeInput" class = stormTypeInput>
 
             <datalist id="stormType" class = "stormClass">
                 <option class = stormOption value = "">Select Type</option>
@@ -111,8 +112,8 @@
             </div>
 
             <div class = "region">
-                <select name = "town">
-                    <option value = "">Select Region</option>
+                <select name = "town" class = "selectRegion">
+                    <option value = "" disabled selected>Select Region &#9662;</option>
                     <option value = "Preston">Preston</option>
                     <option value = "Soda Springs">Soda Springs</option>
                     <option value = "Fish Haven">Fish Haven</option>  
@@ -128,15 +129,10 @@
            
             <label class = "comments">Comments<input type = "textarea" name ="comments" rows="20" cols="50">
             </label>
-            
     
         </fieldset>
-
-        
-            <input type= "submit" value = "Report Storm" class = "submitBtn" onclick = "thanksPage()">
-        
-        
-    </form>
+                <input type= "submit" value = "Report Storm" class = "submitBtn">
+        </form>
        
 </main>
 

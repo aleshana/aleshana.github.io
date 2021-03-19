@@ -437,6 +437,7 @@ form legend{
   margin: 0 1rem;
   padding: 0 .5rem;
   background-color:#363D45;
+  font-weight: bold;
 }
 
 form label.top, form div {
@@ -529,19 +530,40 @@ form label.top input:required {
 
 }
 
+form label.top input:required:valid {
+  border-left:green solid 4px;
+}
+
 
 .sliderDiv{
   margin: 1rem 0;
 }
 
-.region select {
+.selectRegion {
   font-size: 1rem;
   border:solid 1px #a1b5d8;
   border-radius: 4px;
   color: #363D45;
-  width: 12rem;
-  height: 2rem;
+  width: 90%;
+  height: 2.5rem;
+  max-width: 25rem;
+  
   }
+
+  .stormTypeInput {
+    font-size: 1.5rem;
+    border:solid 1px #a1b5d8;
+    border-radius: 4px;
+    color: #363D45;
+    width: 90%;
+    height: 2.5rem;
+    max-width: 25rem;
+    
+    }
+
+    .stormClass Option {
+      font-size: 1.5;
+    }
 
 
 
