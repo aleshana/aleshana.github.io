@@ -1,7 +1,7 @@
 @media (min-width: 1024px){
 
   .content {
-    max-width: 960px;
+    max-width: 1000px;
     
   }
 
@@ -164,10 +164,7 @@
 
   /****  Form  ****/
 
-  /* form input.submitBtn{
-    max-width: 20rem;
-  } */
-
+  
   /**********HomeTownPage************/
 
 /*
@@ -219,12 +216,6 @@ section.homeTownBox {
   padding: 5px 0;
 }
 
-
-/* .homeTownImg img{  
-  max-width: 90%;
-  max-height: 90%;
-  margin:auto;
-} */
 
 .townsDiv section img {
   height: auto;

@@ -160,17 +160,6 @@ main{
   width: 75px;
 }
   
-/* .articleImg1 {
-  display: none
-} */
-
-/* .articleImg2 {
-  display: inline;
-  float: right;
-  width: 40%;
-  margin: 3px;
-} */
-
 .prestonArticle img {
   display:inline;
   float:left;
@@ -196,14 +185,14 @@ main{
     font-weight: bold;
     margin: 0;
     text-shadow: .5px .5px white;
-    /* padding: 10px; */
+    
   }
   
   .gridEventsPreston2 {
     grid-column: 2;
     grid-row:1;
     margin: auto;
-      /* padding: 10px; */
+     
   }
 
   Img.eventsImgPreston {
@@ -458,14 +447,14 @@ section.homeTownBox {
     font-weight: bold;
     margin: 0;
     text-shadow: .5px .5px white;
-    /* padding: 10px; */
+    
   }
   
   .gridEventsSodaSprings2 {
     grid-column: 2;
     grid-row:1;
     margin: auto;
-      /* padding: 10px; */
+      
   }
 
   Img.eventsImgSodaSprings {
@@ -494,14 +483,14 @@ section.homeTownBox {
     font-weight: bold;
     margin: 0;
     text-shadow: .5px .5px white;
-    /* padding: 10px; */
+   
   }
   
   .gridEventsFishHaven2 {
     grid-column: 2;
     grid-row:1;
     margin: auto;
-      /* padding: 10px; */
+      
   }
 
   Img.eventsImgFishHaven {

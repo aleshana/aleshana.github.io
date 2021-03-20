@@ -310,17 +310,6 @@ body {
   font-size: .75em;
   }
 
-/* .articleImg2 {
-  display: none;
-  
-}
-
-.articleImg1 {
-  display: block;
-  width: 100%;
-  
-} */
-
 .gridEventsPreston {
   display:grid;
   grid-template-columns: 1fr;
@@ -333,14 +322,13 @@ body {
   font-weight: bold;
   margin: 0;
   text-shadow: .5px .5px white;
-  /* padding: 10px; */
+  
 }
 
 .gridEventsPreston2 img{
   grid-row:2;
   width: 100%;
   margin: auto;
-    /* padding: 10px; */
 }
 
 
@@ -348,7 +336,6 @@ body {
   .gridContact {
     display: block;
     margin: 10px auto;
-    /* border: 1px dashed; */
     padding: 15px;
     background-color:#C2d8b9;
     color:#344966 ;
@@ -385,7 +372,7 @@ body {
     background:#a1b5d8;
     font-size: .70em;
     line-height: 1.25em;
-    /* font-weight: bold; */
+    
   }
   
   
@@ -440,8 +427,7 @@ body {
   @media (max-width: 400px){
 
     .gridForecast{
-      /* padding: 15px; */
-      font-size: .65em;
+       font-size: .65em;
     }
     
     .day1 img {
@@ -517,7 +503,6 @@ form label.sbs {
 
 .slider {
   display:flex;
-  /* padding: .75 0; */
   align-items: center;
 }
 
@@ -676,15 +661,11 @@ p.homePara {
   line-height: 1.5em;
 }
 
-/* h6.homeTagline {
-color:#a1b5d8;
-} */
 
 .homeTownHeader{
   background: #a1b5d8;
   margin-bottom:5px;
-   /* background: #363D45;
-  color: #F9BE51; */
+   
 }
 
 /*----Articles-----*/
@@ -767,7 +748,7 @@ color:#a1b5d8;
     grid-row:2;
     width: 100%;
     margin: auto;
-      /* padding: 10px; */
+      
   }
   
 
@@ -797,14 +778,14 @@ color:#a1b5d8;
     font-weight: bold;
     margin: 0;
     text-shadow: .5px .5px white;
-    /* padding: 10px; */
+    
   }
   
   .gridEventsFishHaven2 img{
     grid-row:2;
     width: 100%;
     margin: auto;
-      /* padding: 10px; */
+    
   }
   
 
