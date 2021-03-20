@@ -47,7 +47,7 @@
 <main>
     <h2 class = "mainHeading">Storm Center</h2>
     
-    <form method="post" action="thanks.html">
+    <form method="GET" action="https://aleshana.github.io/lesson11/thanks.html">
 
         <fieldset>
             <legend>Personal Information</legend>
@@ -71,11 +71,11 @@
         <fieldset>
             <legend>Storm Information</legend>
 
-            <label class = "top">Storm Date<input type = "date" name ="stormDate" placeholder = "01/01/2021">
+            <label class = "top">Storm Date<input type = "date" name ="stormDate">
             </label>
             
             
-            <label class = "top" for="stormType">Storm Type</label>
+            <label class = "top" for="stormTypeInput">Storm Type
             <input list="stormType" id="stormTypeInput" name="stormTypeInput" class = stormTypeInput>
 
             <datalist id="stormType" class = "stormClass">
@@ -86,7 +86,7 @@
                 <option class = stormOption value="Thunderstorm">Thunderstorm</option>
                 <option class = stormOption value="Tornado">Tornado</option>
             </datalist>
-        
+            </label>
     
 
             <div class = "sliderDiv">
@@ -111,14 +111,16 @@
             </datalist>
             </div>
 
-            <div class = "region">
-                <select name = "town" class = "selectRegion">
+            <label for="stormRegion" class = "region"> 
+            <!-- <div class = "region"> -->
+                <select name = "town" class = "selectRegion" id = "stormRegion">
                     <option value = "" disabled selected>Select Region &#9662;</option>
                     <option value = "Preston">Preston</option>
                     <option value = "Soda Springs">Soda Springs</option>
                     <option value = "Fish Haven">Fish Haven</option>  
                 </select>
-            </div>
+            <!-- </div> -->
+        </label>  
 
             <div>Danger Level
                 <label class = "sbs"><input type="radio" name= "dangerLevel" value = "yes">Yes</label>
@@ -127,7 +129,7 @@
             </div>
             <br>
            
-            <label class = "comments">Comments<input type = "textarea" name ="comments" rows="20" cols="50">
+            <label class = "comments">Comments<input type = "text" name ="comments">
             </label>
     
         </fieldset>
@@ -151,23 +153,23 @@
         <div class = "socialMediaDiv">
             <ul class = "socialMediaTable">
                 <li>
-                    <a target="_blank" href="https://www.facebook.com/">
+                    <a target="_blank" href="https://www.facebook.com/" rel="noopener">
                         <img src="images/facebook1.png" alt = "facebook icon">
                     </a>
                 </li>
                 <li>
-                    <a target="_blank" href="https://www.twitter.com/">
+                    <a target="_blank" href="https://www.twitter.com/" rel="noopener">
                         <img src="images/twitter1.png" alt = "twitter icon">
                     </a>
                 </li> 
                 <li>
-                    <a target="_blank" href="https://www.whatsapp.com/">
+                    <a target="_blank" href="https://www.whatsapp.com/" rel="noopener">
                         <img src="images/whatsApp1.png" alt = "whats App icon">
                     </a>
                 </li>
 
                 <li>
-                    <a target="_blank" href="https://www.youtube.com/">
+                    <a target="_blank" href="https://www.youtube.com/" rel="noopener">
                         <img src="images/youTube1.png" alt = "Youtube icon">
                     </a>
                 </li>
@@ -196,3 +198,4 @@
 </body>
 
 </html>
+
