@@ -6,22 +6,20 @@ fetch(townDataURL)
     return response.json();
   })
   .then(function (jsonObject) {
-    console.table(jsonObject);  // temporary checking for valid response and data parsing
-
+    
         const towns = jsonObject['towns']; //Store data in array
 
         const boxes = document.querySelector('.townsDiv');  /// the boxes location in HTML
-        console.log(boxes);
+        
         const townsFeatured = new Array();
-        // console.table(townsFeatured);
-        for (let i=0; i < towns.length; i++){
+          for (let i=0; i < towns.length; i++){
             if 
             (towns[i].name == 'Preston' || towns[i].name == 'Soda Springs' || towns[i].name == 'Fish Haven') {
               townsFeatured.push(towns[i]);
              }  //if bracket
         }    //for bracket
 
-      console.table(townsFeatured);
+      
     
     townsFeatured.forEach(town => {
         let box = document.createElement('section');
@@ -49,15 +47,11 @@ fetch(townDataURL)
         box.appendChild(motto);
         box.appendChild(para); 
         box.appendChild(image);
-        console.log("*****");
-        console.log(box);
-        console.log(boxes);
         boxes.append(box);
 
       });  //townsFeatured.forEach Funcion bracket
 
-      console.table(townsFeatured);
-
+      
   
  });  // .then jsonObject funtion
 

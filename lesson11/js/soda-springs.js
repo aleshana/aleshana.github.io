@@ -7,19 +7,19 @@ const sodaSpringsCurrentURL = 'https://api.openweathermap.org/data/2.5/weather?i
 fetch(sodaSpringsCurrentURL)
   .then((response) => response.json())
   .then ((jsObject) => {
-    console.table(jsObject);  // temporary checking for valid response and data parsing
+    
     
     document.getElementById('windSpeedSodaSprings').textContent = jsObject.wind.speed.toFixed(0);
     document.getElementById('currentTempSodaSprings').textContent = jsObject.main.temp.toFixed(0);
     document.getElementById('currentDescSodaSprings').textContent = jsObject.weather[0].main;
     document.getElementById('humiditySodaSprings').textContent =  jsObject.main.humidity;
 
-    console.log(jsObject.wind.speed.toFixed(0));
+    
 
     /*************** Wind Chill Calculations and outputing *************/
     var Temperature = jsObject.main.temp;
     var WindSpeed = jsObject.wind.speed;
-    console.log(Temperature);
+    
   
     var answer = windChill(Temperature, WindSpeed);
     document.getElementById('windChillSodaSprings').innerHTML = "Wind Chill:  " + answer + " &#8457;";
@@ -28,9 +28,6 @@ fetch(sodaSpringsCurrentURL)
       var wc = "N/A";
       if (tempF < 50 & speed > 4.8) {
           wc = 35.74 + (0.6215 * tempF) - (35.75 * ( Math.pow(speed, .16))) + (.4275 * tempF) * (Math.pow(speed, .16));
-          console.log(wc);
-          console.log(tempF);
-          console.log(speed);
           wc = wc.toFixed(0)
         }   
       return wc;
@@ -47,22 +44,19 @@ let apiWeatherURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5607916
 fetch(apiWeatherURL)
   .then((response) => response.json())
   .then ((jsObject2) => {
-    console.table(jsObject2); 
+     
 
-    // console.log(jsObject2.list[0].dt_txt);
+  
 
     var forecast5 = []     //create new array of just 18:00:00 objects
     for (i = 0; i< jsObject2.list.length; i++) {
      
-      if (jsObject2.list[i].dt_txt.includes('18:00:00')) {                  ///.clouds.dt_txt === "*18:00:00")
-        // console.log(jsObject2.list[i].dt_txt);
-        forecast5.push(jsObject2.list[i]);
+      if (jsObject2.list[i].dt_txt.includes('18:00:00')) {                 
+            forecast5.push(jsObject2.list[i]);
       }
-      // else {
-      //   console.log(jsObject2.list[i].dt_txt);
-      // }
+      
     }
-    console.log(forecast5);  //check new array
+   
 
     //Populate days in the forecast
 
@@ -74,7 +68,7 @@ fetch(apiWeatherURL)
       days5.push(forecastDays[forecastIndex]);
       
     }
-    console.log(days5);
+    
 
     //publish 5-day data to webpage
     var strForecast = "";
@@ -99,7 +93,7 @@ fetch(townDataURL)
     return response.json();
   })
   .then(function (jsonObject) {
-    console.table(jsonObject);  // temporary checking for valid response and data parsing
+    
 
         let towns = jsonObject['towns']; //Store data in array
 
@@ -110,8 +104,7 @@ fetch(townDataURL)
              }  //if bracket
         }    //for bracket
 
-      console.table(townSodaSprings);
-
+      
       const eventOutput  = document.querySelector('.gridEventsSodaSprings1');  /// the output location in HTML
         let strCityEvents = "";
         let strEvents = new Array(); 
@@ -120,14 +113,10 @@ fetch(townDataURL)
         let eventPara = document.createElement('p');
         strCityEvents = townSodaSprings.name.split(" ").join("");
       
-          console.log(townSodaSprings.events);
-
+      
         for (i = 0; i< townSodaSprings.events.length; i++) {
             strEvents = strEvents += townSodaSprings.events[i] + "<br><br>";
             }
-
-        console.log(strEvents);
-        console.log(strCityEvents);
  
         eventPara.innerHTML = strEvents;
         eventPara.setAttribute ('class',"cityEventPara");
