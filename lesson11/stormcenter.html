@@ -71,11 +71,11 @@
         <fieldset>
             <legend>Storm Information</legend>
 
-            <label class = "top">Storm Date<input type = "date" name ="stormDate" placeholder = "01/01/2021">
+            <label class = "top">Storm Date<input type = "date" name ="stormDate">
             </label>
             
             
-            <label class = "top" for="stormType">Storm Type
+            <label class = "top" for="stormTypeInput">Storm Type
             <input list="stormType" id="stormTypeInput" name="stormTypeInput" class = stormTypeInput>
 
             <datalist id="stormType" class = "stormClass">
@@ -111,15 +111,15 @@
             </datalist>
             </div>
 
-            <label for="stormRegion" class = "labelRegion"> 
-            <div class = "region">
+            <label for="stormRegion" class = "region"> 
+            <!-- <div class = "region"> -->
                 <select name = "town" class = "selectRegion" id = "stormRegion">
                     <option value = "" disabled selected>Select Region &#9662;</option>
                     <option value = "Preston">Preston</option>
                     <option value = "Soda Springs">Soda Springs</option>
                     <option value = "Fish Haven">Fish Haven</option>  
                 </select>
-            </div>
+            <!-- </div> -->
         </label>  
 
             <div>Danger Level
@@ -129,7 +129,7 @@
             </div>
             <br>
            
-            <label class = "comments">Comments<input type = "textarea" name ="comments" rows="20" cols="50">
+            <label class = "comments">Comments<input type = "textarea" name ="comments">
             </label>
     
         </fieldset>
