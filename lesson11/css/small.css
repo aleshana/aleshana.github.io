@@ -432,6 +432,7 @@ body {
   .lazyImg figcaption {
     margin: 0;
     padding: 0;
+    font-size: 1rem;
 }
 
 
@@ -598,16 +599,13 @@ form label.top input:required:valid {
     border-radius: 4px;
     color: #363D45;
     width: 90%;
-    height: 2.5rem;
     max-width: 25rem;
     
     }
 
-    .stormClass Option {
-      font-size: 1;
-    }
+    
 
-
+    
 
 /***********Thank You Page*********/
 
@@ -814,8 +812,7 @@ color:#a1b5d8;
 .author {
   font-size: 1em;
   color:darkblue;
-  text-emphasis: italic;
-}
+  }
 
 .eventsDiv {
   background-color:#a1b5d8;
