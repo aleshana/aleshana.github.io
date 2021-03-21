@@ -61,7 +61,7 @@ fetch(apiWeatherURL)
     }
     
   }
-  console.log(forecast5);  //check new array
+  
 
   //Populate days in the forecast
 
