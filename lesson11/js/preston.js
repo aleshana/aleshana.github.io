@@ -55,6 +55,8 @@ fetch(apiWeatherURL)
       if (jsObject2.list[i].dt_txt.includes('18:00:00')) {                  
         forecast5.push(jsObject2.list[i]);
       }
+
+    }
       
     //Populate days in the forecast
 
