@@ -1,0 +1,700 @@
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@400;700;800&family=Nunito:ital,wght@0,400;0,700;0,800;1,400&display=swap');
+
+/*
+font-family: 'BioRhyme', serif;
+font-family: 'Nunito', sans-serif;
+https://www.color-hex.com/color-palette/81433
+burgundy  #633836 (99, 56, 54)—Header 1
+dark gray #485051 (72, 80, 81)—Body Text
+dark teal #336a85 (51, 106, 133)--- Header 2 background
+powder blue #94b1c5 (148, 177, 197)—colored background
+medium gray #ababab (171, 171, 171)---colored background
+light gray #D5D5D5---colored background and heading
+
+*/
+
+
+/************GENERAL WEBSITE FORMATS***********/
+
+body {
+    padding: 0;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+h1 {
+    font-family: 'BioRhyme', serif;
+    color: #633836;  
+    font-weight: 800; 
+    font-size: 2rem; 
+    line-height: 1em;
+}
+
+h2 {
+    font-family: 'Nunito', sans-serif;
+    color:#d5d5d5;
+    background-color: #336a85;  
+    font-weight: 800; 
+    font-size: 1.75rem;
+    padding: .5em;
+    margin: 0;
+    line-height: 1em;
+    text-align: center;
+    
+    
+}
+
+h3 {
+    font-family: 'BioRhyme', serif;
+    color: #485051;  
+    font-weight: bold; 
+    font-size: 1.25rem; 
+    background-color: #D5D5D5; 
+    padding: .5em; 
+    margin:0;
+    line-height: 1em;
+}
+
+h4 {
+    font-family: 'Nunito', sans-serif;
+    color: #633836;  
+    font-weight: bold; 
+    font-size: 1.25rem; 
+    /* background-color: #94b1c5;  */
+} 
+
+h5 {
+    font-family: 'Nunito', sans-serif;
+    color: #485051;  
+    font-weight: bold; 
+    font-size: 1rem; 
+} 
+
+p {
+    font-family: 'Nunito', sans-serif;
+    color: #485051;  
+    font-size: 1rem; 
+} 
+
+hr {
+    border: 3px solid #336a85;
+    padding:0;
+    margin:0;
+  }
+
+  .pageTitle{
+      font-size: 1.25em;
+  }
+
+
+/**************HEADER/NAVIGATION**************/
+
+header {
+    background-color: #d5d5d5;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.contact-social {
+    display:none;
+}
+
+.titleBar {
+    display: grid;
+}
+
+
+
+.logoImg {
+    padding: 1em;
+    margin: auto;
+}
+
+.navigation{
+    list-style: none;
+    text-align: center;
+    padding: 0;
+ }
+ 
+
+ nav ul{
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+  
+ }
+
+.navigation li {
+        display: none;
+        color: #d5d5d5;
+}
+
+.responsive li {
+    display: block;
+    text-align: center;
+}
+
+.navigation a {
+   display:block;
+   color: #336a85;
+   text-decoration: none;
+   padding: .75em;
+ }
+ 
+ #mainLogoImg {
+     display:none;
+ }
+ 
+nav a:hover { 
+    background-color: #336a85;
+    color: #d5d5d5;
+  }
+
+nav .active a{
+    background-color: #633836;
+    color: #d5d5d5;
+}
+
+nav .active a:visited{
+    color: #d5d5d5;
+}
+
+
+/*----small navigation-----*/
+
+.logoImgSm {    /* Small Logo */
+    grid-template-columns: 1;
+    display:flex;
+    max-width: 50%;
+    justify-content: left;
+    margin:.1em auto .1em .1em;
+}
+
+.navSm {   /* Grid Div */
+    padding: .5em;
+    display:flex;
+}
+
+.navSm a:visited {
+    color: #633836;
+}
+
+.menuIcon {        /* Menu text and hamburger */
+    position: absolute;
+    right: 2em;
+    top: 4.75em;
+    font-size: .75em;
+    font-family: 'BioRhyme', serif;
+    
+}
+
+/**************FOOTER**************/
+.bottomSection {
+    /* display:grid;
+    grid-template-columns: 1fr 1fr 1fr; */
+    border-top: 20px solid #633836;
+    background-color: #485051;
+    color: #d5d5d5;
+    font-weight: bold;
+    padding: .25em;
+    
+}
+
+section.contactUs{
+    padding: .5em;
+}
+
+section.contactUs  a:visited{
+    color: #ababab;
+}
+
+section.contactUs  a{
+    color: #94b1c5;
+    padding: .5em;
+    
+}
+
+.contactTable{
+    margin: .5em;
+    line-height: 1.5em;
+}
+
+section.contactUs  a:hover{
+    color: white;
+}
+
+
+section.upcomingEvents{
+    padding: .5em;
+}
+
+section.socialMedia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5em;
+    
+
+}
+
+section.socialMedia img {
+    padding: .25em;
+    
+}
+
+section.socialMedia a:hover img{
+    box-shadow: 0px 0px 20px 5px white;
+
+}
+
+
+.footerBar {
+    padding: .75em;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    background:#336a85;
+    color: #d5d5d5;
+    line-height: 1.25em;
+    
+  }
+  
+  
+   .currentDate {
+     color: #94b1c5;
+     font-size: .9em;
+     
+   }  
+
+
+
+/***********HOMEPAGE-CONTENT*************/
+
+.content{
+    max-width: 95%;
+    padding:1em;
+    margin:auto;
+}
+
+.smallHomeHead {
+    color: white;
+    background-color:#633836;
+    text-align: center;
+    padding: .25em;
+    margin: 0 auto;
+}
+
+.slideShowDiv{
+    margin: auto;
+}
+
+.sliderImage {
+    max-width: 100%;
+    margin: auto;
+}
+
+.joinUsAction{
+    background-color: orange;
+    color:white;
+    font-size: 2em;
+    font-weight: 800;
+    text-align: center;
+}
+
+.joinUsAction a{
+    display: block;
+    color:black;
+    text-decoration: none;
+    padding: .5em;
+}
+
+.joinUsAction a:hover{
+    display: block;
+    color: #485051;
+    background-color:#94b1c5;
+    padding: .5em;
+    text-decoration: none;
+}
+
+.goals {
+    background-color: #ababab;
+    padding:1em;
+    margin:auto;
+    text-align:left;
+    
+}
+
+.goals img{
+    display:block;
+    margin:auto;
+}
+
+
+/*--------weather---------*/
+#currentWeather{
+    background-color:#94b1c5;
+    border: 5px solid #485051;
+    padding-bottom: .5em;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.05em;
+    line-height: 1.25em;
+}
+
+#currentIcon img{
+    width: 25%;
+    display: block;
+    margin: auto;
+}
+
+.forecastWeather{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border: 5px solid #485051;
+    grid-gap: 5px;
+    background-color: #485051;
+     
+}
+
+.forecastSection0, .forecastSection1, .forecastSection2{
+    display: block;
+    justify-content: center;
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+    background-color: #d5d5d5;
+}
+
+.forecastWeather img {
+    width: 75%;
+}
+
+.forecastWeather p {
+    font-size: 1.25em;
+}
+
+.forecastWeather h4 {
+    font-size: 1.25em;
+}
+/*--------article---------*/
+.articleImg {
+    max-width:40%;
+    float: left;
+    padding: .25em;
+    margin: 3px;
+}
+
+/*--------advertisements---------*/
+.adImg {
+    display: block;
+    margin: auto;
+    border: 5px solid #633836;
+    max-width: 95%;
+}
+
+/***********JOIN FORM-CONTENT*************/
+form fieldset {
+    margin: 2rem 0;
+    border: 3px solid #633836;
+    border-radius: .25em;
+    padding: 1em;
+    background-color:#D5D5D5;
+    max-width: 50em;
+  }
+  
+  form legend{
+    color: #336a85;
+    font-size: 1.75em;
+    margin: 0 1em;
+    padding: 0 .25em;
+    font-weight: bold;
+    line-height: 1;
+  }
+  
+  form label.top, form div {
+    display:block;
+    padding-top: 1rem;
+    color: #485051;
+    font-size: 1rem;
+  
+  }
+  
+  form label.top input, form label.top select{
+    display: block;
+    font-size: 1rem;
+    border:solid 2px #633836;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #485051;
+    width: 90%;
+    max-width: 25rem;
+    
+    }
+  
+  form label.sbs {
+    display:block;
+  }
+  
+  
+  form fieldset datalist {
+    background-color: #e4f0d0;
+    width: 90%;
+    max-width: 25rem;
+   
+  }
+  
+  form label.comments{
+    padding: 1.25rem 0 0 0;
+    color: #485051;
+  }
+  
+  label.comments input{
+    display: block;
+    font-size: 1rem;
+    border:solid 2px #633836;
+    border-radius: 4px;
+    padding: 2rem .75rem;
+    color: #485051;
+    width: 90%;
+    max-width: 25rem;
+  } 
+
+  .memberLevel{
+      line-height: 1.5em;
+      color:#485051;
+  }
+
+  .memberTable {
+    border: 2px solid #94b1c5;
+  }
+  
+  .memberTable td, .memberTable th {
+    border: 2px solid #94b1c5;
+    padding: .5em;
+  }
+  
+  .memberTable tr:nth-child(odd){background-color: #94b1c5;}
+  
+  .memberTable th {
+    padding-top: .75em;
+    padding-bottom: .75em;
+    text-align: left;
+    background-color: #633836;
+    color: #d5d5d5;
+  }
+  
+  form input.submitBtn{
+    background: #633836;
+    color: #d5d5d5;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 1rem 1.5rem;
+    margin: 0 0 1em 0;
+    width: 96%;
+    max-width: 25rem;
+    }
+  
+  form input.submitBtn:hover{
+    background: #336a85;
+    color: #d5d5d5;
+  }
+  
+  
+  form label.top input:required {
+    border-left:red solid 4px;
+  }
+  
+  form label.top input:required:valid {
+    border-left:green solid 4px;
+  }
+
+/***********CONTACT-CONTENT*************/
+
+/*--------information table---------*/
+
+.contactTableInfo {
+    border: 2px solid #94b1c5;
+    font-size: .85em;
+    max-width: 35em;
+    width: 95%;
+  }
+
+  .contactTableInfo th {
+    padding-top: .75em;
+    padding-bottom: .75em;
+    text-align: left;
+    background-color: #633836;
+    color: #d5d5d5;
+    border: 2px solid #94b1c5;
+  }
+  
+  .contactTableInfo td {
+    border: 2px solid #94b1c5;
+    padding: .5em;
+  }
+  
+  .contactTableInfo tr:nth-child(odd){background-color: #94b1c5;}
+  
+  .googleMap {
+    border: 5px solid #633836;
+    width: 400px;
+    height: 300px;
+  }
+
+  /*--------contact form---------*/
+  form label.topContact {
+    display:block;
+    padding-top: 1rem;
+    color: #485051;
+    font-size: 1rem;
+  
+  }
+  
+  form label.topContact input {
+    display: block;
+    font-size: 1rem;
+    border:solid 2px #633836;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #485051;
+    width: 90%;
+    max-width: 25rem;
+    
+    }
+
+
+  .contactFormHead {
+      font-size: 1.25em;
+      padding:0;
+      margin: .2em;
+  }
+
+  .contactFormSection fieldset{
+    margin-top:0;
+  }
+
+  form label.commentsContact{
+    padding: 1.25rem 0 0 0;
+    color: #485051;
+  }
+  
+  label.commentsContact input{
+    display: block;
+    font-size: 1rem;
+    border:solid 2px #633836;
+    border-radius: 4px;
+    padding: 2rem .75rem;
+    color: #485051;
+    width: 90%;
+    max-width: 25rem;
+  } 
+
+  form input.contactBtn{
+    background: #633836;
+    color: #d5d5d5;
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: .5rem 1rem;
+    margin: 1em 0 1em 0;
+    width: 90%;
+    max-width: 35rem;
+    border-radius: 4px;
+    }
+
+  /*--------directors table---------*/
+
+  .directorsHead {
+      font-size: 1.25em;
+      margin: .2em;
+  }
+  
+  .directorsTable th {
+    padding-top: .75em;
+    padding-bottom: .75em;
+    text-align: left;
+    background-color: #633836;
+    color: #d5d5d5;
+    border: 2px solid #94b1c5;
+  }
+
+  
+  .directorsTable {
+    border: 2px solid #94b1c5;
+    font-size: .85em;
+    max-width: 35em;
+    width: 95%;
+  }
+  
+  
+  .directorsTable td {
+    border: 2px solid #94b1c5;
+    padding: .5em;
+  }
+  
+  .directorsTable tr:nth-child(odd){background-color: #94b1c5;}
+
+  /***********MAPLETON CITY-CONTENT*************/
+
+
+  .cityH3 {
+      background-color: #633836;
+      color: #d5d5d5;
+  }
+
+  img.city-img {
+      display:block;
+      margin: auto;
+      max-width: 100%;
+      padding: .25em;
+  }
+
+.cityH2{
+    font-size: 1.5em;
+}
+
+/*--------Events table---------*/
+
+.cityEventsList {
+    font-size: 1em;
+    background-color:#d5d5d5;
+    line-height: 1.5em;
+}
+/*--------demographics table---------*/
+.cityDemoList {
+    font-size: 1em;
+    background-color:#d5d5d5;
+    line-height: 1.5em;
+}
+
+/*--------history section---------*/
+
+/*--------City Today---------*/
+
+/*--------city future---------*/
+
+
+/***********DIRECTORY-CONTENT*************/
+  
+/*--------Events table---------*/
+
+
+/*--------demographics table---------*/
+
+/*--------history section---------*/
+
+
+  
+      
+  
+      
+  
+
+
+
+
+

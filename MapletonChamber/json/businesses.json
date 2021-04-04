@@ -1,0 +1,94 @@
+{
+    "companies":[
+        {
+        "name": "Holiday Oil",
+        "phone": "801-704-9481",
+        "email": "info@holidayoil.com",
+        "logo": "holiday-oil-logo.png",
+        "address": "1000 US-89 Mapleton UT",
+        "url": "https://www.holidayoil.com/"
+        },
+
+     {
+        "name": "Family Pet Hospital",
+        "phone": "801-489-6369",
+        "email": "info@fphmapleton.com",
+        "logo": "fph-logo.jpeg" ,
+        "address": "448 N 1600 W Mapleton UT",
+        "url": "https://fphmapleton.com/"
+    } ,        
+
+    {
+        "name": "Sorensen Professional Automotive",
+        "phone": "801-489-6141",
+        "email": "info@sorensenproauto.com",
+        "logo": "sorensen-logo.jpg",
+        "address": "1410 W 1600 N Mapleton, UT",
+        "url": "https://www.facebook.com/Sorensensauto/"
+    },
+
+    {
+        "name": "Central Bank",
+        "phone": "801-489-5640",
+        "email":"info@cbutah.com" ,
+        "logo": "central-bank-logo.png",
+        "address":"385 N Main St Mapleton UT",
+        "url":"https://cbutah.com/central-bank/locations/mapleton/" 
+    },
+
+    {
+        "name": "Quiet Meadow Farm",
+        "phone": "801-438-9394" ,
+        "email": "info@quietmeadowfarms.com",
+        "logo": "qmf-logo.png" ,
+        "address": "1805 E 1200 N Mapleton UT",
+        "url": "https://www.quietmeadowfarms.com/"
+    },
+
+    {
+        "name": "Blade and Beard",
+        "phone":"801-309-4214",
+        "email": "info@bladeandbeard.co",
+        "logo": "beard-blade-logo.png",
+        "address": "1685 W Maple St Suite C Mapleton UT",
+        "url": "https://bladeandbeard.co/" 
+    },
+
+    {
+        "name": "Fiiz Drinks",
+        "phone":"801-515-6277" ,
+        "email": "info@fiizdrinks.com" ,
+        "logo": "fiiz-logo.png",
+        "address":"790 N 1600 W Mapleton UT",
+        "url": "https://www.fiizdrinks.com/" 
+    },
+
+    {
+        "name": "Maple Mountain Pharmacy",
+        "phone": "801-515-6048",
+        "email": "info@mmpharmacy.com/" ,
+        "logo": "mmpharmacy-logo.jpg",
+        "address":"800 N 1600 W", 
+        "url": "https://www.mmpharmacy.com/"
+    },
+
+    {
+        "name": "Mapleton Floral and Gifts",
+        "phone": "801-491-2220" ,
+        "email":"info@mapletonfloralandgifts.com" ,
+        "logo":"mfg-logo.png",
+        "address": "828 N US-89 Mapleton UT" ,
+        "url": "http://www.mapletonfloralandgifts.com/"
+    },
+
+    {
+        "name": "Maverik Gas Station",
+        "phone": "801-489-7224" ,
+        "email":"info@maverik.com/" ,
+        "logo":"maverik-logo.jpg",
+        "address": "1615 S 1600 W Mapleton UT " ,
+        "url": "https://www.maverik.com/"
+    }
+
+    ]
+}

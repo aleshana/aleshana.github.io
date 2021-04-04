@@ -1,0 +1,164 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Mapleton Chamber of Commerce, Homepage">
+    <meta name="author" content="Alesha Anderson McCown">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page-Mapleton Chamber of Commerce</title>
+    <link rel="stylesheet" href="css/normalize2.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    
+</head>
+
+<body>
+<div class ="content">
+
+    <header>  
+        <hr>
+        <div class = "titleBar">
+            <img class= "logoImgSm" src = "images/logo-sm.png" alt = "Mapleton City Chamber of Commerce">
+            <hr class = "headerSm">
+            <nav>
+                <ul class = "navigation">
+                    <li><a href = "#" onclick = "toggleMenu()">  &#9776; Menu</a></li>
+                    <li class= "active" id = "menuHome"><a href = "index">Home</a></li>
+                    <li ><a href = "mapleton.html">Mapleton City</a></li>
+                    <li ><a href = "directory.html">Business Directory</a></li>
+                    <li id = "menuImg"><a href = "index"><img class= "logoImg" src = "images/logo-sm.png" alt = "Mapleton City Chamber of Commerce"></a></li>
+                    <li><a href = "join.html">Join Us</a></li>
+                    <li><a href = "contact.html">Contact Us</a></li>
+
+                </ul>
+            </nav>
+        </div>
+        <hr>
+    </header> 
+
+    <main>
+
+        <div class = "imageBanner"> 
+            <div class = "heroImage">
+                <picture class = "heroImagePix">
+                    <source media="(max-width: 400px)" srcset="images/heroImg200.jpg">
+                    <source media="(max-width: 799px)" srcset="images/heroImg500.jpg">
+                    <source media="(min-width: 800px)" srcset="images/heroImg800.jpg">
+                    <img src="heroImagePix.jpg" alt="Sunrays on a green countryside.">
+                </picture>
+            </div>
+
+            <div class = "joinUsButton">
+                <a href = "join.html">Join Us</a>
+            </div>
+
+        <section class ="goalsWeather">   
+
+        <h2 class = "goalsHeading">Our Goals </h2>
+
+        <div class = "goals">
+            <img class = "goalsImg" src="goalIcon1.jpg" alt="Icon of Goal."> 
+            <p class = "goalsPara">Initiate, promote, and participate in acts of service</p>
+        </div>
+
+        <div class = "goals">
+            <img class = "goalsImg" src="goalIcon2.jpg" alt="Icon of Goal."> 
+            <p class = "goalsPara">bring Mapleton citizens and business together for mutual 
+                benefit by providing a network platform</p>
+        </div>
+
+        <div class = "goals">
+            <img class = "goalsImg" src="goalIcon3.jpg" alt="Icon of Goal."> 
+            <p class = "goalsPara">encourage local commerce and good economic health in the city of Mapleton</p>
+        </div>
+
+        </div>
+            
+        
+    <section>
+        <div class = "mainHeader">Main Header</div><br>
+        <div class = "mainNav">Main Navigation</div><br>
+        <div class = "mainFooter">Main Footer</div><br>
+        <h1>Header 1-Mapleton Chamber of Commerce</h1>
+        <h2>Header 2-Mapleton Chamber of Commerce</h2>
+        <h3>Header 3-Mapleton Chamber of Commerce</h3>
+        <h4>Header 4-Mapleton Chamber of Commerce</h4>
+        <h5>Header 5-Mapleton Chamber of Commerce</h5>
+        <p>Body Text: <br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+        </p>
+
+    </section>
+
+
+
+
+        
+    </main>
+
+    <footer>
+    
+        <div class= "gridContact"> 
+            <div class = "gridColumn1">
+        
+            <div class = "contantInfo">
+                <h3>Contact Information</h3> 
+                &#128205; Address:  123 Anywhere Drive, Cloud City, Heaven<br>    
+                &#128231; Email: anyone@emailaddress.com<br>
+                &#128222; Phone: (555) 555-5555<br>   
+            </div>  
+        
+            <div class = "socialMediaDiv">
+                <ul class = "socialMediaTable">
+                    <li>
+                        <a rel="noopener" target="_blank" href="https://www.facebook.com/">
+                            <img src="images/facebook1.png" alt = "facebook icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a rel="noopener" target="_blank" href="https://www.twitter.com/">
+                            <img src="images/twitter1.png" alt = "twitter icon">
+                        </a>
+                    </li> 
+                    <li>
+                        <a rel="noopener" target="_blank" href="https://www.whatsapp.com/">
+                            <img src="images/whatsApp1.png" alt = "whats App icon">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a rel="noopener" target="_blank" href="https://www.youtube.com/">
+                            <img src="images/youTube1.png" alt = "Youtube icon">
+                        </a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+    
+        
+                <div class = "gridColumn2">   
+                <img class= "mapImg" src = "images/mapImg2.jpg" alt= "Contact Map"  >
+                </div>
+            </div>
+
+        <div class = "footerBar">
+            &copy;<span id= "currentYear"> </span>| Mapleton Chamber of Commerce | Alesha Anderson McCown | Utah
+                <div class= "currentDate" id = "currentDate">
+                </div>
+        </div>
+
+    </footer>
+</div>
+
+<script src = "js/scripts.js"></script>
+
+</body>
+
+</html>
+

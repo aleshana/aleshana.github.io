@@ -1,0 +1,218 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Mapleton Chamber of Commerce, Joining the Chamber Form">
+    <meta name="author" content="Alesha Anderson McCown">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us-Mapleton Chamber of Commerce</title>
+    <link rel="stylesheet" href="css/normalize2.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    
+</head>
+
+<body>
+    <div class ="content">
+    
+        <header>  
+            <hr>
+            <div class = "titleBar">
+                <div class = "navSm">
+                    <a href = "index"><img class= "logoImgSm" src = "images/logo-sm.png" alt = "Mapleton City Chamber of Commerce"></a>
+                    <a href = "#" onclick = "toggleMenu()" class = "menuIcon">  &#9776; Menu</a>
+                </div>
+                <a id = "mainLogoImg" href = "index.html"><img class= "logoImg" src = "images/logo-sm.png" alt = "Mapleton City Chamber of Commerce"></a>
+                <nav>
+                    <ul class = "navigation">
+                        <li class= "active" id = "menuHome"><a href = "#">Home</a></li>
+                        <li ><a href = "mapleton.html">Mapleton City</a></li>
+                        <li ><a href = "directory.html">Directory</a></li>
+                        <li><a href = "join.html">Join Us</a></li>
+                        <li><a href = "contact.html">Contact Us</a></li>
+    
+                    </ul>
+                </nav>
+            </div>
+            <hr>
+        </header> 
+    
+         <!------------ main section here -------------->
+        <main>
+    
+            <h1 class= "pageTitle">Join The Mapleton Chamber of Commerce</h1>
+            
+    
+            <form method="GET" action="https://aleshana.github.io/mapleton-chamber/thanks.html">
+        
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    
+                    <label class = "top">First Name <input type = "text" name ="firstName" required  pattern="[A-Za-z]{5,}">
+                    </label> 
+
+                    <label class = "top">Last Name <input type = "text" name ="lastName" required  pattern="[A-Za-z]{5,}">
+                    </label> 
+
+                    <label class = "top">Professional Title<input type = "text" name ="title">
+                    </label> 
+                    
+                    <label class = "top">Email<input type = "email" name ="email" placeholder = "someone@somemail.com" 
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                    </label>
+        
+                    <label class = "top">Cell Phone<input type = "tel" name ="phone" placeholder = "1235551234">
+                    </label>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Company Information</legend>
+                    
+                    <label class = "top">Business Name <input type = "text" name ="companyName" required  pattern="[\sA-Za-z]{5,}">
+                    </label> 
+
+                    <label class = "top" for="url">Enter an https:// URL: <input type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30">
+                    </label>
+
+                    <label class = "top">Business Address <input type = "text" name ="companyAddress"><br>
+                    </label> 
+
+                    <label class = "comments">Business Description<input type = "text" name ="comments">
+                    </label>
+                    
+                </fieldset>
+        
+        
+                <fieldset>
+                    <legend>Membership Levels</legend>
+        
+                    <div class = "memberLevel">Choose Your Membership
+                        <label class = "sbs"><input type="radio" name= "memberLevel" value = "non-profit">Non-Profit $100</label>
+                        <label class = "sbs"><input type="radio" name= "memberLevel" value = "bronze">Bronze $200</label>
+                        <label class = "sbs"><input type="radio" name= "memberLevel" value = "silver">Silver $400</label>
+                        <label class = "sbs"><input type="radio" name= "memberLevel" value = "gold">Gold $1000</label>
+                    </div>
+                   <br>
+                   <div class = "memberLevel">Membership Level Descriptions
+                        <table class = "memberTable">
+                            <tr>
+                            <th>Level</th>
+                            <th>Benefits</th>
+                            </tr>
+
+                            <tr>
+                                <td>Non-Profit</td> 
+                                <td>&#x2666;Directory Access  &#x2666;;Monthly Network Luncheons  
+                                    &#x2666;Monthly Symbosim  
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Bronze</td>
+                                <td>&#x2666;Directory Access  &#x2666;Monthly Network Luncheons  
+                                    &#x2666;Monthly Symbosim  
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Silver</td><td>&#x2666;Directory Access  &#x2666;Monthly Network Luncheons  
+                                    &#x2666;Monthly Symbosim  &#x2666;Website Ad Space
+                                    &#x2666;Half Page Newsletter Ad Space
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Gold</td><td>&#x2666;Directory Access  &#x2666;Mapleton Professional Conference
+                                    &#x2666;Monthly Network Luncheons  &#x2666;Monthly Symbosim  &#x2666;Website Ad Space
+                                    &#x2666;Full Page Newsletter Ad Space
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                </fieldset>
+                        <input type= "submit" value = "Join the Chamber" class = "submitBtn">
+                </form>
+               
+        </main>
+        
+    
+    
+               
+        <br>
+        </main>
+
+        <!------------ footer section here -------------->
+    
+        <footer>
+        
+           <div class = bottomSection>
+                <div class = "contactGrid">    
+                <h3>Contact Us</h3>
+                <section class = "contactUs">
+    
+                    <table class = "contactTable">
+                        <tr>
+                            <td>&#9743;</td> <td>phone: (123) 456-7890</td>
+                        </tr>
+                        <tr>
+                            <td>&#9906;</td><td>address: 10 Main St, Mapleton UT</td>
+                        </tr>
+                        <tr>
+                            <td>&#9993;</td><td>email:<a href=mailto:webmaster@example.com> contact@somemail.com </a></td>
+                        </tr>
+                    </table>
+                </section>
+                </div>
+    
+                <div class = "eventsGrid">  
+                <h3>Upcoming Events</h3>
+                <section class = "upcomingEvents">
+                    <ul>
+                        <li>April 17, Saturday--Annual City Cleanup Day</li><br>
+                        <li>April 21, Monday--Adopt a Highway Cleanup</li><br>
+                        <li>July 24, Wedneday--Mapleton Pioneer Days</li><br>
+                        <li>August 31, Friday Children's Art Competition Awards Event</li><br>
+                    </ul>
+                </section>
+                </div>
+               
+                <div class = "followGrid">
+                <h3>Follow Us</h3>
+                <section class = "socialMedia">
+                    
+                    
+                    <a rel="noopener" target="_blank" href="https://www.facebook.com/">
+                            <img src="images/facebook.png" alt = "facebook icon"></a>
+                       
+                    <a rel="noopener" target="_blank" href="https://www.twitter.com/">
+                            <img src="images/twitter.png" alt = "twitter icon"></a>
+                        
+                    <a rel="noopener" target="_blank" href="https://www.youtube.com/">
+                                <img src="images/youTube.png" alt = "Youtube icon"></a>
+                       
+                </section>
+                </div>
+    
+            </div>
+        
+            
+    
+    
+            <div class = "footerBar">
+                &copy;<span id= "currentYear"> </span>| Mapleton Chamber of Commerce | Alesha Anderson McCown | Utah
+                    <div class= "currentDate" id = "currentDate">
+                    </div>
+            </div>
+    
+        </footer>
+    </div>
+    
+    <script src = "js/scripts.js"></script>
+   
+    </body>
+    
+    </html>

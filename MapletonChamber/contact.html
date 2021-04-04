@@ -1,0 +1,205 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Mapleton Chamber of Commerce, Contact Page">
+    <meta name="author" content="Alesha Anderson McCown">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page-Mapleton Chamber of Commerce</title>
+    <link rel="stylesheet" href="css/normalize2.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    
+</head>
+
+<body>
+    <div class ="content">
+    
+        <header>  
+            <hr>
+            <div class = "titleBar">
+                <div class = "navSm">
+                    <a href = "index"><img class= "logoImgSm" src = "images/logo-sm.png" alt = "Mapleton City Chamber of Commerce"></a>
+                    <a href = "#" onclick = "toggleMenu()" class = "menuIcon">  &#9776; Menu</a>
+                </div>
+                <a id = "mainLogoImg" href = "index.html"><img class= "logoImg" src = "images/logo-sm.png" alt = "Mapleton City Chamber of Commerce"></a>
+                <nav>
+                    <ul class = "navigation">
+                        <li class= "active" id = "menuHome"><a href = "#">Home</a></li>
+                        <li ><a href = "mapleton.html">Mapleton City</a></li>
+                        <li ><a href = "directory.html">Directory</a></li>
+                        <li><a href = "join.html">Join Us</a></li>
+                        <li><a href = "contact.html">Contact Us</a></li>
+    
+                    </ul>
+                </nav>
+            </div>
+            <hr>
+        </header> 
+    
+        <main>
+    
+            <h1 class= "pageTitle">Contact The Mapleton Chamber of Commerce</h1>
+
+            <section class = "contactInfo">
+                <table class = "contactTableInfo">
+                    <tr>
+                        <th colspan="2">Our Contact Information</th>
+                    </tr>
+                    <tr>
+                        <td>&#9743;Phone:</td> <td>(123) 456-7890</td>
+                    </tr>
+                    <tr>
+                        <td>&#9906;Address:</td><td>10 Main St, Mapleton UT</td>
+                    </tr>
+                    <tr>
+                        <td>&#9993;Email:</td><td><a href=mailto:webmaster@example.com> contact@somemail.com </a></td>
+                    </tr>
+                </table>
+                <br>
+                <div class = "googleMap" >
+                    <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48795.864237513204!2d-111.59377391171655!3d40.148041174654395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874dbc2d2e4c0baf%3A0xe8a2bc579c57788b!2sMapleton%20City%20Office!5e0!3m2!1sen!2sus!4v1617548065334!5m2!1sen!2sus" 
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <br>
+            </section>
+            
+            <section class = "contactFormSection">
+                    <h4 class = "contactFormHead">Your Contact Information</h4>
+                    <form method="GET" action="https://aleshana.github.io/mapleton-chamber/thanks.html">
+            
+                        <fieldset>
+                        
+                            <label class = "topContact">First Name <input type = "text" name ="firstName" required  pattern="[A-Za-z]{5,}">
+                            </label> 
+
+                            <label class = "topContact">Last Name <input type = "text" name ="lastName" pattern="[A-Za-z]{5,}">
+                            </label> 
+                            
+                            <label class = "topContact">Email<input type = "email" name ="email" placeholder = "someone@somemail.com" 
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                            </label>
+                
+                            <label class = "topContact">Cell Phone<input type = "tel" name ="phone" placeholder = "1235551234">
+                            </label>
+                            <br>
+                            <label class = "commentsContact">Business Description<input type = "text" name ="comments">
+                            </label>
+                            <br>
+                            <input type= "submit" value = "Contact Us" class = "contactBtn">
+
+                        </fieldset>
+                    </form>
+            </section>
+
+            <section class = "directorsSection"></section> 
+                <h4 class = "directorsHead">Our Board of Directors</h4>
+                        <table class = "directorsTable">
+                            <tr>
+                            <th>Name</th>
+                            <th>Title</th>
+                            </tr>
+
+                            <tr>
+                                <td>Jancie I. Workalot</td> 
+                                <td>Chairwomen of the Board, Member since 1965
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Smiley L. Retireman</td>
+                                <td>Honorary Member since 1945
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Richy K. MoneyBags</td>
+                                <td>Member since 2020
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Diamond R. Lovely</td>
+                                <td>Member since 1990
+                                </td>
+                            </tr>
+                        </table>
+                        <br>
+                    </div>
+                    
+                </section>
+               
+        </main>
+
+     <!------------ footer section here -------------->
+        <footer>
+        
+           <div class = bottomSection>
+                <div class = "contactGrid">    
+                <h3>Contact Us</h3>
+                <section class = "contactUs">
+    
+                    <table class = "contactTable">
+                        <tr>
+                            <td>&#9743;</td> <td>phone: (123) 456-7890</td>
+                        </tr>
+                        <tr>
+                            <td>&#9906;</td><td>address: 10 Main St, Mapleton UT</td>
+                        </tr>
+                        <tr>
+                            <td>&#9993;</td><td>email:<a href=mailto:webmaster@example.com> contact@somemail.com </a></td>
+                        </tr>
+                    </table>
+                </section>
+                </div>
+    
+                <div class = "eventsGrid">  
+                <h3>Upcoming Events</h3>
+                <section class = "upcomingEvents">
+                    <ul>
+                        <li>April 17, Saturday--Annual City Cleanup Day</li><br>
+                        <li>April 21, Monday--Adopt a Highway Cleanup</li><br>
+                        <li>July 24, Wedneday--Mapleton Pioneer Days</li><br>
+                        <li>August 31, Friday Children's Art Competition Awards Event</li><br>
+                    </ul>
+                </section>
+                </div>
+               
+                <div class = "followGrid">
+                <h3>Follow Us</h3>
+                <section class = "socialMedia">
+                    
+                    
+                    <a rel="noopener" target="_blank" href="https://www.facebook.com/">
+                            <img src="images/facebook.png" alt = "facebook icon"></a>
+                       
+                    <a rel="noopener" target="_blank" href="https://www.twitter.com/">
+                            <img src="images/twitter.png" alt = "twitter icon"></a>
+                        
+                    <a rel="noopener" target="_blank" href="https://www.youtube.com/">
+                                <img src="images/youTube.png" alt = "Youtube icon"></a>
+                       
+                </section>
+                </div>
+    
+            </div>
+        
+            
+    
+    
+            <div class = "footerBar">
+                &copy;<span id= "currentYear"> </span>| Mapleton Chamber of Commerce | Alesha Anderson McCown | Utah
+                    <div class= "currentDate" id = "currentDate">
+                    </div>
+            </div>
+    
+        </footer>
+    </div>
+    
+    <script src = "js/scripts.js"></script>
+    
+    </body>
+    
+    </html>

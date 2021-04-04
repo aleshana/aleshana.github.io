@@ -1,0 +1,173 @@
+@media (min-width: 1024px){
+
+/************GENERAL WEBSITE FORMATS***********/
+.content {
+    max-width: 1000px;
+}
+
+.pageTitle{
+    font-size: 2em;
+}
+
+
+/**************HEADER/NAVIGATION**************/
+.titleBar{
+    display: inline;
+}
+.contact-social {
+    display:flex;
+    background-color: #336a85;
+    padding: .25em;
+    position: relative;
+    height: 1.2em;
+
+}
+
+.topSocial img{
+    max-width: 1em;
+    display: inline;
+}
+
+.topSocial {
+    position:absolute;
+    right: 1em;
+}
+
+.topBarContact {
+    color: #d5d5d5;
+    font-size: .75em;
+    position: absolute;
+    left: 1em;
+}
+
+.topContact a{
+    color: #d5d5d5;
+    font-size: .75em;
+}
+
+.titleBarLg{
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    position: relative;
+    height: 7em;
+}
+
+nav {
+    grid-column: 2/3;
+    padding: .25em;
+    display: block;
+    position:absolute;
+    top: 4.25em;
+    right: 1em;
+    
+}
+
+.navigation li {
+    display: inline-block; 
+    font-size: 1.10em; 
+    padding: .25em;        
+}
+
+.logoImg {
+    padding: .25em;
+    margin: 4px;
+    height: 5.25em;
+}
+
+.mainLogoImg {
+    grid-column: 1/2;
+    display: block;
+    position:absolute;
+    left: 1em;
+    top: .5em;
+
+}
+
+header {
+    text-align: left;
+    align-items: center;
+}
+
+
+
+
+/**************FOOTER**************/
+.bottomSection {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr;
+    grid-gap: 5px;
+}
+
+.contactGrid {
+    grid-column: 1/2;
+    border: 3px solid #336a85;
+}
+
+.eventsGrid {
+    display: block;
+    grid-column: 2/3;
+    border: 3px solid #336a85;
+
+}
+
+.followGrid {
+    grid-column: 3/4;
+    border: 3px solid #336a85;
+    
+}
+
+
+/***********HOMEPAGE-CONTENT*************/
+
+.goals {
+    height: 13em;
+}
+
+.currentH3{
+
+    padding-top: 1.5em;
+    
+}
+
+.forecastH3{
+    
+    padding-top: 1.5em;
+    
+}
+
+/***********CONTACT US-CONTENT*************/
+
+/*--------information table---------*/
+
+  /*--------contact form---------*/
+  .contactFormHead {
+      font-size: 1.75rem;
+        }
+
+  form label.topContact {
+    font-size: 1.15rem;
+  }
+  
+  form label.topContact input {
+    font-size: 1.25rem;
+    }
+
+
+  .contactFormHead {
+      font-size: 1.5rem;
+  }
+  
+  label.commentsContact {
+    font-size: 1.25rem;
+  } 
+
+  form input.contactBtn{
+    
+    font-size: 1.5em;
+    padding: 1rem 1.5rem;
+    margin: 1em 0 1em 0;
+     }
+
+}
