@@ -94,6 +94,8 @@ header {
     background-color: #d5d5d5;
     text-align: center;
     font-size: 1.5em;
+    border-top: 5px solid #336a85;
+    border-bottom: 5px solid #336a85;
 }
 
 .contact-social {

@@ -123,10 +123,10 @@ section.socialMedia img {
     color:white;
     text-align: center;
     position:absolute;
-    right: .9em;
-    bottom: 6.25em;
+    right: 1em;
+    bottom: 1em;
     border: 5px solid white;
-    opacity: 75%;
+    opacity: 85%;
 }
 
 .joinUsAction a{
@@ -142,7 +142,7 @@ section.socialMedia img {
 }
 
 .joinUsAction a:visited{
-    color:#485051;
+    color:white;
     background-color:#633836 ;
     padding: .75em;
     opacity: 50%;
@@ -464,6 +464,25 @@ section.socialMedia img {
         font-size: .85em;
         height: 19em;
     }
+
+    .joinUsAction{
+        font-size: 1.5em;
+    }
+
+    .joinUsAction a{
+        padding: 1em; 
+        font-size: 1.5em;
+    }
+    
+    .joinUsAction a:hover{
+        padding: 1em;
+    }
+    
+    .joinUsAction a:visited{
+        padding: 1em;
+        
+    }
+    
    }
 
    @media (min-width: 725px){
@@ -476,6 +495,10 @@ section.socialMedia img {
     
         font-size: 1em;
         height: 16em;
+    }
+
+    .joinUsAction a{
+        font-size: 1.75em;
     }
    }
 

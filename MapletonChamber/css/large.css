@@ -64,16 +64,28 @@ nav {
     grid-column: 2/3;
     padding: .25em;
     display: block;
+    
+    
+}
+
+.navDiv {
     position:absolute;
     top: 4.25em;
     right: 1em;
-    
+
 }
+
+/* .navigation ul{
+    position:absolute;
+    top: 4.25em;
+    right: 1em;     
+} */
 
 .navigation li {
     display: inline-block; 
     font-size: 1.10em; 
-    padding: .25em;        
+    padding: .25em;   
+    
 }
 
 .logoImg {
