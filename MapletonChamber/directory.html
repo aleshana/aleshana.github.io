@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
     <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
 </head>
 
@@ -21,15 +22,15 @@
             <hr>
             <div class = "titleBar">
                 <div class = "navSm">
-                    <a href = "index"><img class= "logoImgSm" src = "images/logo-sm.png" alt = "Mapleton City Chamber of Commerce"></a>
+                    <a href = "index.html"><img class= "logoImgSm" src = "images/logo-sm.png" alt = "Mapleton City Chamber of Commerce"></a>
                     <a href = "#" onclick = "toggleMenu()" class = "menuIcon">  &#9776; Menu</a>
                 </div>
                 <a id = "mainLogoImg" href = "index.html"><img class= "logoImg" src = "images/logo-sm.png" alt = "Mapleton City Chamber of Commerce"></a>
                 <nav>
                     <ul class = "navigation">
-                        <li class= "active" id = "menuHome"><a href = "#">Home</a></li>
+                        <li id = "menuHome"><a href = "index.html">Home</a></li>
                         <li ><a href = "mapleton.html">Mapleton City</a></li>
-                        <li ><a href = "directory.html">Directory</a></li>
+                        <li class= "active"><a href = "directory.html">Directory</a></li>
                         <li><a href = "join.html">Join Us</a></li>
                         <li><a href = "contact.html">Contact Us</a></li>
     
@@ -42,15 +43,20 @@
         <main>
     
             <h1 class= "pageTitle">Member Directory</h1>
+            
+            <div id="directButtons">
+                <p>Click on a button for a grid or a list view.</p>
+                <button id= "directListIcon" class="directBtn" onclick="Column1View()"><i class="fa fa-list"></i> List</button> 
+                <button id= "direcGridIcon1" class="directBtn active" onclick="Column2View()"><i class="fa fa-th-large"></i> Grid</button>
+                <button id= "directGridIcon2" class="directBtn" onclick="Column3View()"><i class="fa fa-th"></i> Grid2</button>
+              </div>
+              <br>
+
 
             <div class = "directGrid">
 
-                
-            </div>
 
-    
-    
-    
+            </div>
                
         <br>
         </main>

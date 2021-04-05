@@ -21,10 +21,6 @@ const cards = document.querySelector('div.directGrid');
         let urlLink = document.createElement('div');
         
         
-
-        // let email = company.email;
-        // let url = company.url;
-
         logo.innerHTML = ""
         name.innerHTML = company.name;
         phone.innerHTML = company.phone;
@@ -32,6 +28,8 @@ const cards = document.querySelector('div.directGrid');
         emailLink.innerHTML = `<a href = "mailto:${company.email}">Email</a>`;
         urlLink.innerHTML = `<a href = "${company.url}">Website</a>`;
 
+
+        card.setAttribute ('class', "directSection");
         logo.setAttribute ('src', `images/${company.logo}`);
         logo.setAttribute ('alt', `${company.name} Logo`);
         logo.setAttribute ('class', "directLogo");
@@ -39,16 +37,11 @@ const cards = document.querySelector('div.directGrid');
 
         card.appendChild(name);
         card.appendChild(logo); 
-        
-        card.appendChild(phone);
-         
+        card.appendChild(phone); 
         card.appendChild(address);
-        
         card.appendChild(emailLink);
-        
         card.appendChild(urlLink);
-        
-        
+        // card.appendChild("<br>");
         cards.append(card);
 
 

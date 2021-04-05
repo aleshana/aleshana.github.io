@@ -84,7 +84,7 @@ hr {
   }
 
   .pageTitle{
-      font-size: 1.25em;
+      font-size: 1.5em;
   }
 
 
@@ -680,12 +680,21 @@ form fieldset {
 
 /***********DIRECTORY-CONTENT*************/
   
-/*--------Events table---------*/
+.directLogo {
+  width:75px;
+  padding-bottom: .25em;
+}
 
+.directSection{
+  border: 2px solid #94b1c5;
+  padding: 0 .5em .5em .5em;
+  margin: .5em;
+}
 
-/*--------demographics table---------*/
-
-/*--------history section---------*/
+/*--------grid and list formating---------*/
+#directButtons{
+  display:none;
+}
 
 
   

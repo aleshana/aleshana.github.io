@@ -170,4 +170,25 @@ header {
     margin: 1em 0 1em 0;
      }
 
+
+/***********DIRECTORY-CONTENT*************/
+  
+.directLogo {
+    width:75px;
+    padding-bottom: .25em;
+  }
+  
+  .directSection{
+    border: 2px solid #94b1c5;
+    padding: 0 .5em .5em .5em;
+    margin: .5em;
+  }
+  
+  /*--------grid and list formating---------*/
+
+
+  #directGridIcon2 {
+      display: inline;
+  }
+  
 }

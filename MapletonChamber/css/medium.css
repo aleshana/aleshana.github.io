@@ -404,6 +404,33 @@ section.socialMedia img {
 
 }
 
+/***********DIRECTORY-CONTENT*************/
+  
+.directLogo {
+    width:75px;
+    padding-bottom: .25em;
+  }
+  
+  .directSection{
+    border: 2px solid #94b1c5;
+    padding: 0 .5em .5em .5em;
+    margin: .5em;
+  }
+  
+  /*--------grid and list formating---------*/
+  #directButtons{
+    display:inline;
+  }
+
+  #directGridIcon2 {
+      display: none;
+  }
+
+  .fa:hover{
+    color: #94b1c5;
+  }
+  
+
 
 
 
