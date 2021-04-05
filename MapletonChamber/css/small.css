@@ -230,6 +230,11 @@ section.contactUs  a:hover{
 
 section.upcomingEvents{
     padding: .5em;
+    
+}
+
+section.upcomingEvents li{
+  padding: .5em;
 }
 
 section.socialMedia{
