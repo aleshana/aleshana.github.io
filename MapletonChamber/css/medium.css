@@ -433,6 +433,7 @@ section.socialMedia img {
   /*--------grid and list formating---------*/
   #directButtons{
     display:inline;
+    /* padding: .5em */
   }
 
   #directGridIcon2 {

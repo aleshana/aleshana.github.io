@@ -167,7 +167,7 @@ nav .active a:visited{
 /*----small navigation-----*/
 
 .logoImgSm {    /* Small Logo */
-    grid-template-columns: 1;
+    /* grid-template-columns: 1; */
     display:flex;
     max-width: 50%;
     justify-content: left;
@@ -193,10 +193,12 @@ nav .active a:visited{
 }
 
 /**************FOOTER**************/
+
+footer h2 {
+  background-color: #633836;
+}
+
 .bottomSection {
-    /* display:grid;
-    grid-template-columns: 1fr 1fr 1fr; */
-    border-top: 20px solid #633836;
     background-color: #485051;
     color: #d5d5d5;
     font-weight: bold;
@@ -699,6 +701,10 @@ form fieldset {
 
 
 /***********DIRECTORY-CONTENT*************/
+.membersH2 {
+  background-color: #633836;
+}
+
   
 .directLogo {
   width:75px;
@@ -716,6 +722,7 @@ form fieldset {
 #directButtons{
   display:none;
 }
+
 
 
   
