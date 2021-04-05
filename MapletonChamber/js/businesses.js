@@ -9,7 +9,7 @@ fetch(getDirectory)
 
 const companies = jsonDir['companies'];
 
-const cards = document.querySelector('div.directGrid'); 
+const cards = document.querySelector('div.directRow'); 
 
     companies.forEach(company => {
         let card = document.createElement('section');
@@ -29,7 +29,7 @@ const cards = document.querySelector('div.directGrid');
         urlLink.innerHTML = `<a href = "${company.url}">Website</a>`;
 
 
-        card.setAttribute ('class', "directSection");
+        card.setAttribute ('class', `directSection${company.idnumber}`);
         logo.setAttribute ('src', `images/${company.logo}`);
         logo.setAttribute ('alt', `${company.name} Logo`);
         logo.setAttribute ('class', "directLogo");
@@ -41,10 +41,28 @@ const cards = document.querySelector('div.directGrid');
         card.appendChild(address);
         card.appendChild(emailLink);
         card.appendChild(urlLink);
-        // card.appendChild("<br>");
         cards.append(card);
 
 
     });
 
 });
+
+/*************Grid to List View Code****************/
+
+// var gridColumnOutput = document.getElementsByClassName("directGrid");
+
+function Column1View() {
+  var gridColumnOutput = document.getElementsByClassName("directGrid");
+  gridColumnOutput.style.gridTemplateColumns == "1fr";
+}
+
+function Column2View() {
+  var gridColumnOutput = document.getElementsByClassName("directGrid");
+  gridColumnOutput.style.gridTemplateColumns == "1fr 1fr";
+}
+
+function Column3View() {
+  var gridColumnOutput = document.getElementsByClassName("directGrid");
+  gridColumnOutput.style.gridTemplateColumns == "1fr 1fr 1fr";
+}

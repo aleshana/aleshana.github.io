@@ -429,6 +429,11 @@ section.socialMedia img {
   .fa:hover{
     color: #94b1c5;
   }
+
+  .directGrid {
+      display:grid;
+      grid-template-columns: 1fr;
+  }
   
 
 
