@@ -411,10 +411,11 @@ section.socialMedia img {
     padding-bottom: .25em;
   }
   
-  .directSection{
-    border: 2px solid #94b1c5;
+  .companyDiv{
+    /* border: none; */
     padding: 0 .5em .5em .5em;
     margin: .5em;
+    
   }
   
   /*--------grid and list formating---------*/
@@ -426,13 +427,14 @@ section.socialMedia img {
       display: none;
   }
 
-  .fa:hover{
-    color: #94b1c5;
-  }
+  
 
   .directGrid {
       display:grid;
-      grid-template-columns: 1fr;
+      grid-gap: 5px;
+      /* background-color: #94b1c5; */
+    /* background-color: #2196F3 */
+      
   }
   
 

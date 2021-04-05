@@ -659,15 +659,22 @@ form fieldset {
 
 /*--------Events table---------*/
 
+.cityEvents{
+  background-color:#d5d5d5;
+}
+
 .cityEventsList {
     font-size: 1em;
-    background-color:#d5d5d5;
+    /* background-color:#d5d5d5; */
     line-height: 1.5em;
 }
 /*--------demographics table---------*/
+.cityDemo {
+  background-color:#d5d5d5;
+}
+
 .cityDemoList {
     font-size: 1em;
-    background-color:#d5d5d5;
     line-height: 1.5em;
 }
 
@@ -685,10 +692,11 @@ form fieldset {
   padding-bottom: .25em;
 }
 
-.directSection{
-  border: 2px solid #94b1c5;
+.companyDiv{
+  border: 4px solid #94b1c5;
   padding: 0 .5em .5em .5em;
   margin: .5em;
+  background-color: #d5d5d5;
 }
 
 /*--------grid and list formating---------*/

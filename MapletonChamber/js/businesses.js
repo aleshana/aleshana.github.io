@@ -9,17 +9,16 @@ fetch(getDirectory)
 
 const companies = jsonDir['companies'];
 
-const cards = document.querySelector('div.directRow'); 
+const cards = document.querySelector('section.directGrid'); 
 
     companies.forEach(company => {
-        let card = document.createElement('section');
+        let card = document.createElement('div');
         let name = document.createElement('h4');
         let logo = document.createElement('img');
         let phone = document.createElement('div');
         let address = document.createElement('div');
         let emailLink = document.createElement('div');
         let urlLink = document.createElement('div');
-        
         
         logo.innerHTML = ""
         name.innerHTML = company.name;
@@ -28,12 +27,13 @@ const cards = document.querySelector('div.directRow');
         emailLink.innerHTML = `<a href = "mailto:${company.email}">Email</a>`;
         urlLink.innerHTML = `<a href = "${company.url}">Website</a>`;
 
-
-        card.setAttribute ('class', `directSection${company.idnumber}`);
+        card.setAttribute ('class', "companyDiv");
+        // card.setAttribute ('class', `directSection${company.idnumber}`);
         logo.setAttribute ('src', `images/${company.logo}`);
         logo.setAttribute ('alt', `${company.name} Logo`);
         logo.setAttribute ('class', "directLogo");
         
+        // console.log(card);
 
         card.appendChild(name);
         card.appendChild(logo); 
@@ -42,9 +42,10 @@ const cards = document.querySelector('div.directRow');
         card.appendChild(emailLink);
         card.appendChild(urlLink);
         cards.append(card);
-
+        // console.table(cards);  // temporary checking
 
     });
+    
 
 });
 
@@ -53,16 +54,13 @@ const cards = document.querySelector('div.directRow');
 // var gridColumnOutput = document.getElementsByClassName("directGrid");
 
 function Column1View() {
-  var gridColumnOutput = document.getElementsByClassName("directGrid");
-  gridColumnOutput.style.gridTemplateColumns == "1fr";
+  document.getElementById("directGrid").style.gridTemplateColumns = '1fr';
 }
 
 function Column2View() {
-  var gridColumnOutput = document.getElementsByClassName("directGrid");
-  gridColumnOutput.style.gridTemplateColumns == "1fr 1fr";
+  document.getElementById("directGrid").style.gridTemplateColumns = "50% 50%";
 }
 
 function Column3View() {
-  var gridColumnOutput = document.getElementsByClassName("directGrid");
-  gridColumnOutput.style.gridTemplateColumns == "1fr 1fr 1fr";
+  document.getElementById("directGrid").style.gridTemplateColumns = "33% 34% 33%";
 }
