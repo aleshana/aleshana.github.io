@@ -1,4 +1,4 @@
-const getDirectory = "json/businesses.json";
+const getDirectory = "http://aleshana.github.io/MapletonChamber/json/businesses.json";
 
 fetch(getDirectory)
   .then(function (response) {
