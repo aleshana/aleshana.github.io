@@ -34,10 +34,6 @@ fetch(apiURL)
 
     var daysShort = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
 
-    //   console.log(days3[0].dt);  //log check
-    
-    // console.table(days3);  //temporaily test 3-day forecast array
-
      //publish 3-day data to webpage
 
     var forecastDiv = document.querySelector('div.forecastWeather');
@@ -73,4 +69,7 @@ fetch(apiURL)
         forecastDiv.append(dayForecast);
       
     }
+
+/**************AlertWeather**************/
+
 });
