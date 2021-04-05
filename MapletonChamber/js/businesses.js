@@ -1,4 +1,4 @@
-const getDirectory = "http://aleshana.github.io/MapletonChamber/json/businesses.json";
+const getDirectory = "https://raw.githubusercontent.com/aleshana/aleshana.github.io/master/MapletonChamber/json/businesses.json";
 
 fetch(getDirectory)
   .then(function (response) {
@@ -7,6 +7,6 @@ fetch(getDirectory)
   .then(function (jsonDir) {
     console.table(jsonDir);  // temporary checking
 
-const companies = jsonObject['companies'];
+const companies = jsonDir['companies'];
 
 });
