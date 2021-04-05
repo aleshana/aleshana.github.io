@@ -21,6 +21,10 @@ light gray #D5D5D5---colored background and heading
     font-size: 1.75em;
 }
 
+h2 {
+    text-align: left;
+}
+
 /**************HEADER/NAVIGATION**************/
 
 header {
@@ -196,21 +200,24 @@ section.socialMedia img {
     grid-row: 2/3;
 }
 
+.forecastWeather img {
+    width: 6em;
+}
 
 #currentIcon img{
-    width: 25%;
+    width: 5em;
     display: block;
     margin: auto;
 }
 
 #currentWeather{
     padding: .5em;
-    font-size: 1.25em;
+    font-size: 1em;
     line-height: 1.5em;
 }
 
 #currentIcon img{
-    width: 60%;
+    width: 5em;
     display: block;
     margin: auto;
 }
@@ -278,6 +285,11 @@ section.socialMedia img {
     padding: 1rem 1.5rem;
     margin: 1em 0 1em 0;
      }
+
+.thankYouDiv {
+    background-color: #d5d5d5;
+    padding: 4em;
+}
 
 
   /*--------directors table---------*/

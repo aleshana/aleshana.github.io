@@ -20,7 +20,14 @@
     padding: .25em;
     position: relative;
     height: 1.2em;
+}
 
+.contact-social a{
+    color:#d5d5d5;
+}
+
+.contact-social a:visited{
+    color:#94b1c5;
 }
 
 .topSocial img{
@@ -135,6 +142,16 @@ header {
     
     padding-top: 1.5em;
     
+}
+
+#currentWeather{
+    font-size: 1.25em;
+
+}
+
+.adSection h3{
+    height: auto;
+    padding: 1.5em .5em .5em .5em;
 }
 
 /***********CONTACT US-CONTENT*************/
