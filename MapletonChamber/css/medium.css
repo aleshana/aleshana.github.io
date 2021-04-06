@@ -217,7 +217,7 @@ header {
 
 /*--------article---------*/
 .articleImg {
-    max-width:95%;
+    /* max-width:95%; */
     float: left;
     margin: auto;
 }
@@ -321,7 +321,7 @@ header {
   img.city-img {
     display:inline;
     margin: auto;
-    max-width: 100%;
+    /* max-width: 100%; */
     padding: .25em;
 }
 

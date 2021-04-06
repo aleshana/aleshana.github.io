@@ -167,9 +167,7 @@ nav .active a:visited{
 /*----small navigation-----*/
 
 .logoImgSm {    /* Small Logo */
-    /* grid-template-columns: 1; */
     display:flex;
-    /* max-width: 50%; */
     justify-content: left;
     margin:.1em auto .1em .1em;
 }
@@ -363,7 +361,6 @@ section.socialMedia a:hover img{
 }
 
 #currentIcon img{
-    /* width: 5em; */
     display: block;
     margin: auto;
 }
@@ -386,10 +383,6 @@ section.socialMedia a:hover img{
     font-weight: bold;
     background-color: #d5d5d5;
 }
-
-/* .forecastWeather img {
-    width: 4em;
-} */
 
 .forecastWeather p {
     font-size: 1.25em;
