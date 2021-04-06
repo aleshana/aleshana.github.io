@@ -240,17 +240,21 @@ section.upcomingEvents li{
 }
 
 section.socialMedia{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    margin:auto;
+    text-align: center;
     padding: .5em;
-    
+}
 
+section.socialMedia h2{
+  display:block;
 }
 
 section.socialMedia img {
-    padding: .25em;
-    
+  
+  display:inline;
+    padding: .3em;
+  
 }
 
 section.socialMedia a:hover img{
