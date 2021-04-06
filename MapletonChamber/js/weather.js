@@ -50,8 +50,8 @@ fetch(apiURL)
 
         let dayForecast = document.createElement('div');
         let image = document.createElement('img');
-        let day = document.createElement('h4');
-        let temp = document.createElement('p');
+        let day = document.createElement('div');
+        let temp = document.createElement('div');
 
         day.innerHTML =  dayWeekShort;
         image.innerHTML = "";
