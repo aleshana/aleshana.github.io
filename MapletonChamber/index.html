@@ -21,8 +21,17 @@
         <hr>
     <div class = "headerSmLg">
         <div class = "titleBar">
+            
+            
             <div class = "navSm">
-                <a href = "index.html"><img class= "logoImgSm" src = "images/logo-small-b.png" alt = "Mapleton City Chamber of Commerce"></a>
+                <a href = "index.html">
+                    <picture>
+                        <source media="(max-width: 520px)">
+                        <img class= "logoImgSm" src = "images/logo-small-b.png" alt = "Mapleton City Chamber of Commerce" load = "lazy"></a>
+                    </picture>
+                </a>
+
+                <!-- <a href = "index.html"><img class= "logoImgSm" src = "images/logo-small-b.png" alt = "Mapleton City Chamber of Commerce"></a> -->
                 <a href = "#" onclick = "toggleMenu()" class = "menuIcon">  &#9776; Menu</a>
             </div>
         </div>
@@ -31,7 +40,12 @@
                 <span class = "topBarContact">(123) 456-7890 | <a href=mailto:webmaster@example.com> contact@somemail.com </a></span>
                 <span class = "topSocial">
                         <a rel="noopener" target="_blank" href="https://www.facebook.com/">
-                            <img src="images/facebook-b.png" alt = "facebook icon"></a>
+                            <!-- <picture>
+                                <source media="(max-width: 520px)">
+                                <img  src="images/facebook-b.png" alt = "facebook icon" load = "lazy"></a>
+                            </picture> -->
+                            <img src="images/facebook-b.png" alt = "facebook icon">
+                         </a>
                     
                         <a rel="noopener" target="_blank" href="https://www.twitter.com/">
                             <img src="images/twitter-b.png" alt = "twitter icon"></a>
@@ -212,7 +226,8 @@
             <section class = "socialMedia">
                 <h2>Follow Us</h2>
                 <br><br>
-                
+
+               
                 
                 <a rel="noopener" target="_blank" href="https://www.facebook.com/">
                         <img loading = "lazy" src="images/facebook.png" alt = "facebook icon"></a>
