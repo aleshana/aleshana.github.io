@@ -73,6 +73,8 @@ fetch(apiURL)
 
 /**************AlertWeather**************/
 
+jsObject.alerts = 
+
 if (jsObject.alerts != null){
 
   var wholeMessage;
