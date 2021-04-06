@@ -9,7 +9,7 @@ fetch(getDirectory)
 
 const companies = jsonDir['companies'];
 
-const cards = document.querySelector('section.directGrid'); 
+const cards = document.querySelector('div.directGrid'); 
 
     companies.forEach(company => {
         let card = document.createElement('div');
