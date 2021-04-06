@@ -169,7 +169,7 @@ nav .active a:visited{
 .logoImgSm {    /* Small Logo */
     /* grid-template-columns: 1; */
     display:flex;
-    max-width: 50%;
+    /* max-width: 50%; */
     justify-content: left;
     margin:.1em auto .1em .1em;
 }
@@ -177,6 +177,10 @@ nav .active a:visited{
 .navSm {   /* Grid Div */
     padding: .5em;
     display:flex;
+}
+
+.navSm a {
+  color: #633836;
 }
 
 .navSm a:visited {
