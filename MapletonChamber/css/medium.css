@@ -166,7 +166,6 @@ header {
 .weather {
     display:grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 5fr;
     background-color:#d5d5d5;
     grid-gap: 5px;
     
@@ -188,7 +187,7 @@ header {
 #currentWeather{
     grid-column: 1/2;
     grid-row: 2/3;
-    padding: .5em;
+    padding: .75em;
     font-size: 1em;
     line-height: 1.5em;
 }
@@ -197,15 +196,17 @@ header {
 .forecastWeather{
     grid-column: 2/3;
     grid-row: 2/3;
-   
+    
 }
 
-/* .forecastWeather img {
-    width: 6em;
-} */
+.forecastSection0, .forecastSection1, .forecastSection2{
+    margin: 0;
+    font-size: 1.5em;
+    padding: 2em 0;
+}
+
 
 #currentIcon img{
-    /* width: 5em; */
     display: block;
     margin: auto;
 }

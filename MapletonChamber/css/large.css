@@ -31,7 +31,6 @@
 }
 
 .topSocial img{
-    /* max-width: 1em; */
     display: inline;
     margin:auto;
     padding: 2px;
@@ -94,7 +93,7 @@ nav {
 .logoImg {
     padding: .25em;
     margin: 4px;
-    height: 5.25em;
+   
 }
 
 .mainLogoImg {
