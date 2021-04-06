@@ -175,6 +175,7 @@ header {
     grid-template-rows: 1fr 5fr;
     background-color:#d5d5d5;
     grid-gap: 5px;
+    
 
 }
 
@@ -193,34 +194,31 @@ header {
 #currentWeather{
     grid-column: 1/2;
     grid-row: 2/3;
-}
-
-.forecastWeather{
-    grid-column: 2/3;
-    grid-row: 2/3;
-}
-
-.forecastWeather img {
-    width: 6em;
-}
-
-#currentIcon img{
-    width: 5em;
-    display: block;
-    margin: auto;
-}
-
-#currentWeather{
     padding: .5em;
     font-size: 1em;
     line-height: 1.5em;
 }
 
+
+.forecastWeather{
+    grid-column: 2/3;
+    grid-row: 2/3;
+   
+}
+
+/* .forecastWeather img {
+    width: 6em;
+} */
+
 #currentIcon img{
-    width: 5em;
+    /* width: 5em; */
     display: block;
     margin: auto;
 }
+
+
+    
+
 
 /*--------article---------*/
 .articleImg {

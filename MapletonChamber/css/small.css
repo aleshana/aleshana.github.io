@@ -355,7 +355,7 @@ section.socialMedia a:hover img{
 }
 
 #currentIcon img{
-    width: 5em;
+    /* width: 5em; */
     display: block;
     margin: auto;
 }
@@ -379,9 +379,9 @@ section.socialMedia a:hover img{
     background-color: #d5d5d5;
 }
 
-.forecastWeather img {
+/* .forecastWeather img {
     width: 4em;
-}
+} */
 
 .forecastWeather p {
     font-size: 1.25em;
