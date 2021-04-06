@@ -31,13 +31,16 @@
 }
 
 .topSocial img{
-    max-width: 1em;
+    /* max-width: 1em; */
     display: inline;
+    margin:auto;
+    padding: 2px;
 }
 
 .topSocial {
     position:absolute;
     right: 1em;
+    top: -.15em;
 }
 
 .topBarContact {
