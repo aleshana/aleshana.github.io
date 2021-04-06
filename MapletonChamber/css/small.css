@@ -583,9 +583,12 @@ form fieldset {
 
 
   .contactFormHead {
-      font-size: 1.25em;
-      padding:0;
+      font-size: 7em;
       margin: .2em;
+      color:#633836;
+      font-weight: 800;
+      padding:0;
+      
   }
 
   .contactFormSection fieldset{
@@ -625,6 +628,8 @@ form fieldset {
   .directorsHead {
       font-size: 1.25em;
       margin: .2em;
+      color:#633836;
+      font-weight: 800;
   }
   
   .directorsTable th {
