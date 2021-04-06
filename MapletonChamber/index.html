@@ -86,7 +86,6 @@
 
         <div class = "slideShowDiv"> 
                 <img loading = "lazy" class = "sliderImage" src="images/hero-slide1.jpg" alt="Mapleton City Hall.">
-                <!-- <img loading = "lazy" class = "sliderImage" src="images/hero-slide2.jpg" alt="Mapleton Maverick Gas Station.">     -->
                 <img loading = "lazy" class = "sliderImage" src="images/hero-slide6.jpg" alt="Mapleton Commerce Network Faces.">
                 <img loading = "lazy" class = "sliderImage" src="images/hero-slide4.jpg" alt="Mapleton medical clinic.">
                 <img loading = "lazy" class = "sliderImage" src="images/hero-slide5.jpg" alt="Mapleton Business Women setting Goals.">
@@ -104,21 +103,34 @@
             <h2 class = "goalsHeading">Our Goals </h2>    
             <div class ="goalsSection">  
                 <div class = "goals">
-                    <img loading = "lazy" class = "goalsImg" src="images/goal-service-c.png" alt="Goal of Service Icon."> 
+
+                    <picture class = "lazyLoad">
+                        <img src = "images/goal-placeholder.png" data-src = "images/goal-service-c.png" 
+                        alt = " Goal of Service Icon."/>
+                    </picture>
+                    <!-- <img loading = "lazy" class = "goalsImg" src="images/goal-service-c.png" alt="Goal of Service Icon.">  -->
                     <p class = "goalsPara">Initiate, promote, and participate in acts of service around 
                         the City of Mapleton and community</p>
                         <hr>
                 </div>
 
                 <div class = "goals">
-                    <img loading = "lazy" class = "goalsImg" src="images/goal-connect.png" alt="Icon of Connect Goal."> 
+                    <picture class = "lazyLoad">
+                        <img src = "images/goal-placeholder.png" data-src = "images/goal-connect.png" 
+                        alt = "Goal of Connect Icon."/>
+                    </picture>
+                    <!-- <img loading = "lazy" class = "goalsImg" src="images/goal-connect.png" alt="Icon of Connect Goal.">  -->
                     <p class = "goalsPara">Connect Mapleton citizens and businesses together for mutual 
                         benefit by providing networking opportunities</p>
                         <hr>
                 </div>
 
                 <div class = "goals">
-                    <img loading = "lazy" class = "goalsImg" src="images/goal-commerce.png" alt="Icon of Commerce Goal."> 
+                    <picture class = "lazyLoad">
+                        <img src = "images/goal-placeholder.png" data-src = "images/goal-commerce.png" 
+                        alt = "Goal of Commerce Icon."/>
+                    </picture>
+                    <!-- <img loading = "lazy" class = "goalsImg" src="images/goal-commerce.png" alt="Icon of Commerce Goal.">  -->
                     <p class = "goalsPara">Encourage local commerce and thriving economic health in the City of Mapleton</p>
                     <hr>
                 </div>
@@ -171,17 +183,30 @@
     <section class= "adSection">
         <div class = "adDiv1">
             <h3>Sorenson Auto Care</h3>
-                <img loading = "lazy" class = "adImg" src="images/ad1a.jpg" alt="Sorenson Auto Care"><br>
+            <picture class = "lazyLoad">
+                <img class = "adImg" src = "images/ad-placeholder.png" data-src = "images/ad1a.jpg" 
+                alt = "Sorenson Auto Care Ad">
+            </picture><br>
+            
+                <!-- <img loading = "lazy" class = "adImg" src="images/ad1a.jpg" alt="Sorenson Auto Care"><br> -->
         </div>    
         
         <div class = "adDiv2">
             <h3>Maple Mountain Pharmacy</h3>   
-                <img loading = "lazy" class = "adImg" src="images/ad2.jpg" alt="Maple Mountain Pharmacy"><br>
+            <picture class = "lazyLoad">
+                <img src = "images/ad-placeholder.png"  class = "adImg" data-src = "images/ad2.jpg" 
+                alt = "Maple Mountain Pharmacy Ad">
+            </picture><br>
+                <!-- <img loading = "lazy" class = "adImg" src="images/ad2.jpg" alt="Maple Mountain Pharmacy"><br> -->
         </div>
             
         <div class = "adDiv3">
             <h3>Blade and Beard</h3>
-            <img loading = "lazy" class = "adImg" src="images/ad3.jpg" alt="Blade and Beard"><br>
+            <picture class = "lazyLoad">
+                <img src = "images/ad-placeholder.png" class = "adImg" data-src = "images/ad3.jpg" 
+                alt = "Blade and Beard Ad"><br>
+            </picture>
+            <!-- <img loading = "lazy" class = "adImg" src="images/ad3.jpg" alt="Blade and Beard"><br> -->
         </div>
     </section>
    
@@ -230,13 +255,25 @@
                
                 
                 <a rel="noopener" target="_blank" href="https://www.facebook.com/">
-                        <img loading = "lazy" src="images/facebook.png" alt = "facebook icon"></a>
+                    <picture class = "lazyLoad">
+                        <img src = "images/sm-placeholer.png" data-src = "images/facebook.png" 
+                        alt = "facebook icon">
+                    </picture>    
+                    <!-- <img loading = "lazy" src="images/facebook.png" alt = "facebook icon"></a> -->
                    
                 <a rel="noopener" target="_blank" href="https://www.twitter.com/">
-                        <img loading = "lazy" src="images/twitter.png" alt = "twitter icon"></a>
+                    <picture class = "lazyLoad">
+                        <img src = "images/sm-placeholer.png" data-src = "images/twitter.png" 
+                        alt = "twitter icon">
+                    </picture>          
+                    <!-- <img loading = "lazy" src="images/twitter.png" alt = "twitter icon"></a> -->
                     
                 <a rel="noopener" target="_blank" href="https://www.youtube.com/">
-                            <img loading = "lazy" src="images/you-tube.png" alt = "Youtube icon"></a>
+                    <picture class = "lazyLoad">
+                        <img src = "images/sm-placeholer.png" data-src = "images/you-tube.png" 
+                        alt = "you-tube icon">
+                    </picture>    
+                    <!-- <img loading = "lazy" src="images/you-tube.png" alt = "Youtube icon"></a> -->
                    
             </section>
             </div>
@@ -258,6 +295,7 @@
 <script src = "js/scripts.js"></script>
 <script src = "js/weather.js"></script>
 <script src = "js/slider.js"></script>
+<script src = "js/lazyload.js"></script>
 <!-- <script src = "js/alert-test.js"></script> -->
 
 </body>
