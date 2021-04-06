@@ -627,6 +627,14 @@ form fieldset {
     border-radius: 4px;
     }
 
+    form label.topContact input:required {
+      border-left:red solid 4px;
+    }
+    
+    form label.topContact input:required:valid {
+      border-left:green solid 4px;
+    }
+
   /*--------directors table---------*/
 
   .directorsHead {
