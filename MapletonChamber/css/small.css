@@ -557,8 +557,14 @@ form fieldset {
   
   .googleMap {
     border: 5px solid #633836;
-    width: 400px;
-    height: 300px;
+    max-width: 100%;
+    
+    /* width: 400px;
+    height: 300px; */
+  }
+
+  .googleMap iframe{
+    max-width: 100%;
   }
 
   /*--------contact form---------*/
@@ -584,13 +590,18 @@ form fieldset {
 
 
   .contactFormHead {
-      font-size: 7em;
+      font-size: 1.5em;
       margin: .2em;
       color:#633836;
       font-weight: 800;
       padding:0;
       
   }
+
+  .contactFormSection legend{
+    font-size: 1.25em;
+  }
+
 
   .contactFormSection fieldset{
     margin-top:0;

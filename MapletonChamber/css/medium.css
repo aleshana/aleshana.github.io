@@ -247,11 +247,20 @@ header {
 .contactTableInfo {
     font-size: 1.25em;
       }
+
+      .googleMap {
+        border: 5px solid #633836;
+        width: 400px;
+        height: 300px;
+      }
+    
+      
   
   /*--------contact form---------*/
-  .contactFormHead {
-      font-size: 1.75rem;
-        }
+
+  .contactFormSection legend{
+    font-size: 1.75em;
+  }
 
   form label.topContact {
     font-size: 1.15rem;
@@ -263,7 +272,7 @@ header {
 
 
   .contactFormHead {
-      font-size: 1.5rem;
+      font-size: 2rem;
   }
   
   label.commentsContact {

@@ -175,9 +175,6 @@ header {
 /*--------information table---------*/
 
   /*--------contact form---------*/
-  .contactFormHead {
-      font-size: 1.75rem;
-        }
 
   form label.topContact {
     font-size: 1.15rem;
@@ -187,10 +184,6 @@ header {
     font-size: 1.25rem;
     }
 
-
-  .contactFormHead {
-      font-size: 1.5rem;
-  }
   
   label.commentsContact {
     font-size: 1.25rem;
