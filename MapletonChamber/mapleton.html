@@ -71,8 +71,14 @@
                 <div class ='cityEvents'>
                     <h2 class = "cityH2">Events Happening in our City</h2>
                     <h3 class = 'cityH3'>Mark your calendars for...</h3>
-                    <div class = "parade"> <img id = "parade" class = "city-img" loading = "lazy" src="images/parade3.jpg" 
-                        alt = "Small Town Parade"></div>
+                    <div class = "parade"> 
+                        <picture class = "lazyLoad">
+                            <img src = "images/parade-placeholder.png" loading = "lazy" id = "parade" class = "city-img" data-src = "images/parade3.jpg" 
+                            alt = " Small Town Parade"/>
+                        </picture>
+                        <!-- <img id = "parade" class = "city-img" loading = "lazy" src="images/parade3.jpg" 
+                        alt = "Small Town Parade"> -->
+                    </div>
                     <ul class = "cityEventsList">
                         <li>April 23, 2021-- City Cleanup Day-- throughout the City</li>
                         <li>May 25, 2021-- Memorial Day Vetrans Memorial-- at Mapleton City Park </li>
@@ -92,16 +98,28 @@
                 <h2 class = "cityH2">A Rich Heritage from our Forefathers</h2>
                 <h3 class = 'cityH3'>From the First Pioneers and Beyond</h3>
                 <div class = 'pioneers'>
-                    <div class = "school-bell"><img loading = "lazy" id = "school-bell" class = "city-img" src="images/school-bell.jpg" 
-                        alt = "school bell from old school house"></div>
+                    <div class = "school-bell">
+                        <picture class = "lazyLoad">
+                            <img src = "images/bell-placeholder.png" loading = "lazy" id = "school-bell" class = "city-img" data-src = "images/school-bell.jpg" 
+                            alt = "school bell from old school house"/>
+                        </picture>
+                        <!-- <img loading = "lazy" id = "school-bell" class = "city-img" src="images/school-bell.jpg" 
+                        alt = "school bell from old school house"> -->
+                    </div>
                     <p> A fairly new city by anyone standards, Mapleton wasn’t incorporated until 1948.  Originally the land was 
                         used by settlers and farmers for grazing and farming form around Utah County.  In the 1850’s the land was 
                         surveyed for farming and irrigation.  Irrigation was installed by a group of men shortly after.  The first 
                         permanent settlers came in the 1870s.   The area was originally called Union Bench.   But was later changed 
                         to Mapleton in the early 1900s. 
                     </p>
-                    <div class = "pioneer-house"><img loading = "lazy" id = "pioneer-house" class = "city-img" 
-                        src="images/pioneer-house.jpg" alt = "pioneer house in Mapleton"></div>
+                    <div class = "pioneer-house">
+                        <picture class = "lazyLoad">
+                            <img src = "images/pioneer-placeholder.png" loading = "lazy" id = "pioneer-house" class = "city-img" data-src = "images/pioneer-house.jpg" 
+                            alt = "pioneer house in Mapleton"/>
+                        </picture>
+                    </div>
+                        <!-- <img loading = "lazy" id = "pioneer-house" class = "city-img" 
+                        src="images/pioneer-house.jpg" alt = "pioneer house in Mapleton"></div> -->
                     <p> It was during the 1900s that many of the residents were not being heard by the city of Springville.  Because 
                         they were further out, they had different needs and conditions.  A petition was started to separate from 
                         Springville and start their own community.  The city was named after a small grove of Maple trees at the base 
@@ -121,15 +139,27 @@
                 <h2 class = "cityH2">Mapleton is a Great Place to Live</h2>
                 <h3 class = 'cityH3'>Today We are a Thriving Close Knit Community</h3>
                 <div class = "today">
-                    <div class = "path"><img loading = "lazy" id = "path" class = "city-img" src="images/path2.jpg" 
-                        alt = "Mapleton Recreation Path"></div>
+                    <div class = "path">
+                        <picture class = "lazyLoad">
+                            <img loading = "lazy" id = "path" src = "images/path-placeholder.png" loading = "lazy" 
+                            class = "city-img" data-src = "images/path2.jpg" alt = "Mapleton Recreation Path"/>
+                        </picture>
+                        <!-- <img loading = "lazy" id = "path" class = "city-img" src="images/path2.jpg" 
+                        alt = "Mapleton Recreation Path"> -->
+                    </div>
                     <p> Mapleton loves its rural charm which is fast disintegrating with all the farmland being used up 
                         for new home developments.  Many new move people are moving in, including a healthy dose from California.
                         The population is growing rapidly.  During its last US census, the population was around 9,000, 
                         it is believed to be more around 20,000 now as we wait the results of the 2020 census.
                     </p>
-                    <div class = "park"><img loading = "lazy" id = "park" class = "city-img" src="images/park.jpg" 
-                    alt = "Mapleton City Park"></div>
+                    <div class = "park">
+                        <picture class = "lazyLoad">
+                            <img loading = "lazy" id = "path" src = "images/park-placeholder.png" loading = "lazy" id = "park" 
+                            class = "city-img" data-src = "images/park.jpg" alt = "Mapleton City Park"/>
+                        </picture>
+                    <!-- <img loading = "lazy" id = "park" class = "city-img" src="images/park.jpg" 
+                    alt = "Mapleton City Park"> -->
+                </div>
                     <p> The city is located about 8 miles from Provo, 5 miles from Spanish Fork, and 3.5 from Springville. One of its most 
                         charming features is the view of Maple Mountain, once called Sierra Bonita.  The mountain offers a 
                         since of familiarity and comfort to its residents as well as wonderful seasonal views.  The. City has a 
@@ -150,16 +180,29 @@
                 <h2 class = "cityH2">Development and Property Values Rising</h2>
                 <h3 class = 'cityH3'>We have only just begun</h3>
                 <div class = "future">
-                    <div class = "new-houses"><img loading = "lazy" id = "new-houses" class = "city-img" src="images/new-houses.jpg" 
-                        alt = "New Housing Development"></div>
+                    <div class = "new-houses">
+                        <picture class = "lazyLoad">
+                            <img loading = "lazy" id = "new-houses" src = "images/houses-placeholder.png" loading = "lazy"
+                            class = "city-img" data-src = "images/new-houses.jpg" alt = "New Housing Development"/>
+                        </picture>
+                        
+                        <!-- <img loading = "lazy" id = "new-houses" class = "city-img" src="images/new-houses.jpg" 
+                        alt = "New Housing Development"> -->
+                    </div>
                     <p> The future of Mapleton can only be surmised as with any other place.  Current forecasts put property values
                         homes in very high price ranges in 30 years.  In fact, it is predicted that home values will rival the 
                         costs of homes in Silicone Valley.  As people seek to put down roots these days, everyone wants to return
                         to their place of heritage.  Those of whom bought homes in the housing recession of 2011 and 2012 have
                         seen their home values double and in some cases triple in just ten years.
                     </p>
-                    <div class = "school"><img loading = "lazy" id = "school" class = "city-img" src="images/school.jpg" 
-                    alt = "Mapleton City Hall and Library"></div>
+                    <div class = "school">
+                        <picture class = "lazyLoad">
+                            <img loading = "lazy" id = "school" src = "images/school-placeholder.png" 
+                            class = "city-img" data-src = "images/school.jpg" alt = "Mapleton City Hall and Library"/>
+                        </picture>
+                        <!-- <img loading = "lazy" id = "school" class = "city-img" src="images/school.jpg" 
+                    alt = "Mapleton City Hall and Library"> -->
+                </div>
                     <p> New schools are being built to accomodate the growth.  However, the commercial side and commerece development 
                         of Mapelton are sorely lacking leading to high tax rates for its residents.  New people moving in want to keep
                         the small town feel while long time residents are struggling to pay taxes.
@@ -282,6 +325,7 @@
     </div>
     
     <script src = "js/scripts.js"></script>
+    
     
     </body>
     

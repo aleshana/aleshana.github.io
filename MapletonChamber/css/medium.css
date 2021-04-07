@@ -329,6 +329,10 @@ header {
   font-size: 1.5em;
 }
 
+.cityHistory{
+    display:block;
+}
+
 /*--------Events table---------*/
 
 .cityEventsList {
