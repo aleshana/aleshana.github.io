@@ -130,14 +130,12 @@ header {
 }
 
 .joinUsAction a:hover{
-    color:#485051;
-    background-color:#94b1c5 ;
     padding: .75em;
+    background-color: #336a85;
 }
 
+
 .joinUsAction a:visited{
-    color:white;
-    background-color:#633836 ;
     padding: .75em;
     opacity: 50%;
 }
@@ -466,10 +464,12 @@ header {
     
     .joinUsAction a:hover{
         padding: 1em;
+        background-color: #336a85;
     }
     
     .joinUsAction a:visited{
         padding: 1em;
+        
         
     }
     

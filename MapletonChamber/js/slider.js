@@ -7,7 +7,7 @@ function slideShow() {
   var slides = document.getElementsByClassName("sliderImage");
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
-    // console.log(slides[i]);
+    
   }
   
   slideIndex++;

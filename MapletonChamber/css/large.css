@@ -19,7 +19,8 @@
     background-color: #336a85;
     padding: .25em;
     position: relative;
-    height: 1.2em;
+    height: 1.5em;
+    margin: auto;
 }
 
 .contact-social a{
@@ -33,7 +34,8 @@
 .topSocial img{
     display: inline;
     margin:auto;
-    padding: 2px;
+    padding: 6px 2px 0 0;
+    justify-self: center;
 }
 
 .topSocial {

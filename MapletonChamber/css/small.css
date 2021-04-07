@@ -311,7 +311,7 @@ section.socialMedia a:hover img{
 }
 
 .joinUsAction{
-    background-color: orange;
+    background-color: #94b1c5;
     color:white;
     font-size: 2em;
     font-weight: 800;
@@ -328,7 +328,7 @@ section.socialMedia a:hover img{
 .joinUsAction a:hover{
     display: block;
     color: #485051;
-    background-color:#94b1c5;
+    background-color:#d5d5d5;
     padding: .5em;
     text-decoration: none;
 }
@@ -620,7 +620,7 @@ form fieldset {
     padding: .5rem 1rem;
     margin: 1em 0 1em 0;
     width: 90%;
-    max-width: 35rem;
+    max-width: 25rem;
     border-radius: 4px;
     }
 

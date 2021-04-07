@@ -5,9 +5,9 @@ const jsObject = new Array;
 fetch(apiURL)
   .then((response) => response.json())
   .then ((jsObject) => {
-    console.table(jsObject); ///Temporary reference and check
+    
     d = Date.now();
-    // console.log(d);
+    
 
     
 /**************CurrentWeather**************/
@@ -31,7 +31,7 @@ fetch(apiURL)
     for (i = 0; i<3; i++) {
       days3.push(jsObject.daily[i+1]);
     }
-    console.table(days3);  // Check
+   
 
     var daysShort = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
 
@@ -42,12 +42,11 @@ fetch(apiURL)
     for (i = 0; i<3; i++) {
         var epochDate = days3[i].dt;
         var forecastDate = new Date(epochDate*1000);
-                // console.log(forecastDate);  //log check
+                
         dayWeekShort = daysShort[forecastDate.getDay()];
-                // console.log(dayWeekShort);  //log check
+                
         dayTemp = days3[i].temp.day;
-                // console.log(dayTemp);  //log check
-
+                
         let dayForecast = document.createElement('div');
         let image = document.createElement('img');
         let day = document.createElement('div');
@@ -80,13 +79,11 @@ if (jsObject.alerts != null){
   let eStartDate = jsObject.alerts[0].start;
   let alertStartDate = new Date(eStartDate*1000);
   
-                  console.log(alertStartDate);  //log check
+                  
   
   let eEndDate = jsObject.alerts[0].start;
   let alertEndDate = new Date(eEndDate*1000);
-                  console.log(alertEndDate);  //log check
-  
-          console.log(eEndDate.toLocaleString('en-US', { timeZone: 'UTC' }));
+                  
           
     let alertH = "EXTREME WEATHER WARNING";
     let sender = jsObject.alerts[0].sender_name;
